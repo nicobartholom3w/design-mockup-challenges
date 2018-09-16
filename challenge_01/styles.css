@@ -9,7 +9,7 @@ h1 {
 	color: rgb(85, 114, 214);
 	letter-spacing: .3em;
 	font-size: 1.2em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 
 }
 
@@ -24,34 +24,49 @@ img {
 	margin: 1em 0 2em 0;
 }
 
+sup {
+	font-size: .5em;
+}
+
 #main {
 	background-color: white;
 	border-radius: 5px;
 	text-align: center;
-	margin: 5% 25%;
+	margin: 5% 15%;
 	overflow: hidden;
+	width: 75%;
 	max-width: 900px;
-
+	display: inline-block;
+	box-shadow: 0em 1em 5em rgb(93, 118, 157);
 }
 
 #mobile {
 	float: left;
-	margin: 1.5em 1em 1em 3em;
-	width: 22%;
+	margin: 4% 1% 1% 5%;
+	width: 12.5em;
 }
 
 #desktop{
 	float: left;
-	margin: 1.5em 1em 1em 4em; 
-	width: 22%;
+	margin: 4% 1% 1% 10%; 
+	width: 12.5em;
 }
 
 #tv {
 	float: left;
-	margin: 1.5em 1em 1em 4em;
-	width: 22%;
+	margin: 4% 1% 1% 10%;
+	width: 12.5em;
 }
 
 .pricing {
 	color: rgb(71, 117, 211);
+	font-size: .8em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.price_num {
+	display: inline-block;
+	font-size: 2.3em;
+	font-weight: 500;
 }
