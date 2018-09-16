@@ -1,3 +1,57 @@
 body {
-	background-color: rgb(127, 166, 210);
+	background-color: rgb(133, 165, 212);
+	font-family: Roboto, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: rgb(85, 114, 214);
+	letter-spacing: .3em;
+	font-size: 1.2em;
+	margin-bottom: 1.5em;
+
+}
+
+p {
+	color: rgb(167, 167, 167);
+	max-width: 100%;
+	font-size: .8em;
+}
+
+img {
+	width: 5em;
+	margin: 1em 0 2em 0;
+}
+
+#main {
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	margin: 5% 25%;
+	overflow: hidden;
+	max-width: 900px;
+
+}
+
+#mobile {
+	float: left;
+	margin: 1.5em 1em 1em 3em;
+	width: 22%;
+}
+
+#desktop{
+	float: left;
+	margin: 1.5em 1em 1em 4em; 
+	width: 22%;
+}
+
+#tv {
+	float: left;
+	margin: 1.5em 1em 1em 4em;
+	width: 22%;
+}
+
+.pricing {
+	color: rgb(71, 117, 211);
 }
