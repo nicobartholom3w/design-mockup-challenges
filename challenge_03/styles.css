@@ -1,0 +1,20 @@
+body {
+	background-color: rgb(35, 160, 133);
+}
+
+.simplewheels-main {
+	background-color: white;
+	height: 25rem;
+	width: 35rem;
+	background-image: url(img/bicycle.png);
+	background-position: center 8.5rem;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
