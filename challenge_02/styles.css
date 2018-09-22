@@ -1,45 +1,41 @@
+html {
+	height: 100%
+}
 body {
 	background-image: url(img/background.jpg);
 	background-position: top 12% right 5%;
 	background-repeat: no-repeat;
 	background-size: 100%;
-}
-
-li.no-bullet {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-li.visa {
-	/*background-color: blue;*/
-	padding-bottom: 1em;
-}
-li.visa::before {
-	content: "";
-	/*display: inline-block;*/
-	height: 4em;
-	width: 3em;
-	padding-left: 5em;
-	padding-top: 0em;
-	background-image: url("img/visa.svg");
-	background-size: 3em;
-	background-repeat: no-repeat;
-	background-position: left;
-	/*background-color: pink;*/
+	height: 100%;
+	min-height: 100%;
 }
 
 .payment-main {
 	background-color: white;
-	width: 24em;
-	height: 22em;
+	width: 28em;
+	height: 23.5em;
 	text-transform: uppercase;
-	font-family: sans-serif;
-
+	font-family: Roboto, sans-serif;
 }	
+
+.loading-dot {
+	height: .5em;
+	width: .5em;
+	background-color: lightgrey;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 1.5em .1em .1em .1em;
+}
+
+.first-dot {
+	margin-left: 11.1em;
+	background-color: grey;
+}
 
 .payment-method-line {
 	text-align: center;
+	font-size: 1.5em;
+	padding-bottom: 1em;
 }
 
 .centered {
@@ -49,8 +45,81 @@ li.visa::before {
 	transform: translate(-50%, -50%);
 }
 
+.card-section {
+	border-top: 1px solid lightgrey;
+	padding: 1.4em 0em;
+	font-weight: 500;
+}
+
+.card-section::before {
+	content: "";
+	/*display: inline-block;*/
+	height: 4em;
+	width: 3em;
+	padding-left: 5em;
+	margin-left: 2em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-size: 3em;
+	background-repeat: no-repeat;
+	background-position: left 1%;
+}
+
+.visa {
+	/*background-color: blue;*/
+	color: lightgrey;
+}
+
+.visa::before {
+	background-image: url("img/visa.svg");
+}
+
+.mastercard {
+	color: black;
+}
+
+.mastercard::before {
+	background-image: url("img/mastercard.svg");
+}
+
+.maestro {
+	color: lightgrey;
+}
+
+.maestro::before {
+	background-image: url("img/maestro.svg");
+}
+
+.checkmark::after {
+	content: "";
+	/*display: inline-block;*/
+	height: 24em;
+	width: 3em;
+	padding-left: 5em;
+	margin-left: 4em;
+	padding-top: 0em;
+	background-image: url("img/check.svg");
+	background-size: 1.5em;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
 .next-step {
 	background-color: rgb(89, 139, 221);
 	color: white;
 	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.arrow::after {
+	content: "";
+	height: 1em;
+	width: .3em;
+	background-image: url("img/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-left: 1.5em;
+	background-size: 1em;
+
 }
