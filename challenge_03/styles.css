@@ -10,6 +10,7 @@ body {
 	background-position: center 8.5rem;
 	background-size: 100%;
 	background-repeat: no-repeat;
+	font-family: Roboto, sans-serif;
 }
 
 .centered {
@@ -18,3 +19,21 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+/* table css */
+
+tr, th, td {
+	padding-top: 1.8rem;
+}
+
+th.left-column {
+	text-align: left;
+	font-weight: normal;
+	padding-left: 3rem;
+	padding-right: 12rem;
+}
+
+td.right-column {
+	text-align: right;
+}
+
