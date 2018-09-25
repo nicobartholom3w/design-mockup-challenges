@@ -4,13 +4,16 @@ body {
 
 .simplewheels-main {
 	background-color: white;
-	height: 25rem;
-	width: 35rem;
+	height: 28.5rem;
+	width: 37rem;
 	background-image: url(img/bicycle.png);
-	background-position: center 8.5rem;
+	background-position: center 11rem;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	font-family: Roboto, sans-serif;
+	border-radius: .8%;
+	box-shadow: -.5rem 1rem 3rem -.5rem rgba(26, 118, 108),
+				.5rem 1rem 3rem -.5rem rgba(26, 118, 108);
 }
 
 .centered {
@@ -23,17 +26,53 @@ body {
 /* table css */
 
 tr, th, td {
-	padding-top: 1.8rem;
+	padding-bottom: 1.4rem;
 }
 
 th.left-column {
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: black;
+	padding-top: 3rem;
+
+}
+
+.left-column {
 	text-align: left;
 	font-weight: normal;
 	padding-left: 3rem;
 	padding-right: 12rem;
+	color: rgba(98, 96, 95);
 }
 
-td.right-column {
+.right-column {
 	text-align: right;
+	font-size: 1.3rem;
+	font-weight: 500;
 }
+
+.icon {
+	padding: .5rem;
+	border-radius: 50%;
+	box-shadow: 0 0 0 .1rem rgba(231, 231, 231);
+}
+
+.icon-position {
+	padding-top: 3rem;
+	padding-bottom: .3rem;
+}
+
+.order-message {
+	font-size: .85rem;
+	padding-left: 3rem;
+	color: rgba(168, 172, 173);
+	padding-bottom: 2rem;
+}
+
+.total {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
 
