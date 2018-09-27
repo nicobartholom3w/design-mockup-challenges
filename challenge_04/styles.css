@@ -31,22 +31,59 @@ html, body {
 	margin: 1.8rem 1rem .5rem 1rem;
 }
 
-.contact-name {
+.contact-name__box {
 	background-color: rgba(106, 150, 215);
 	color: white;
 	height: 2rem;
-	padding: 1.5rem 0rem .7rem 1.5rem;
+	padding: .5rem 0rem 2rem 1.3rem;
 	text-transform: uppercase;
 	font-size: 1rem;
 	font-weight: 500;
+}
 
+.contact-name {
+	display: inline-block;
 }
 
 .close {
-	background-image: url(img/close.svg);
-	background-repeat: no-repeat;
-	height: 2rem;
-	background-position: 22.3rem 1.4rem;
-	background: color: rgba(211, 223, 244);
+	filter: brightness(.8);
+	display: inline-block;
+	float: right;
+	padding-top: .8rem;
+	padding-right: 1rem;
+}
+
+.time {
+	color: grey;
+}
+
+.time__received {
+	text-align: right;
+}
+
+.speech-bubble {
+	max-width: 18rem;
+}
+
+.sent {
+	float: left;
+	clear: both
+}
+
+.sent__message {
+	background-color: rgba(230, 237, 245);
+}
+
+.received {
+	float: right;
+	clear: both
+}
+
+.received__message{
+	background-color: rgba(242, 242, 242);
+}
+
+.blocked {
+	background-color: rgba(254, 194, 193);
 }
 
