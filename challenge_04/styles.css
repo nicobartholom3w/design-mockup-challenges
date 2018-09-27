@@ -11,6 +11,7 @@ html, body {
 	height: 30rem;
 	width: 25rem;
 	background-color: white;
+	font-family: Roboto, sans-serif;
 }
 
 .centered {
@@ -19,3 +20,33 @@ html, body {
 	margin-top: 5rem;
 	transform: translate(-50%, 0);
 }
+
+.contact-name__dot {
+	height: .5rem;
+	width: .5rem;
+	display: inline-block;
+	background-color: white;
+	border-radius: 50%;
+	float: left;
+	margin: 1.8rem 1rem .5rem 1rem;
+}
+
+.contact-name {
+	background-color: rgba(106, 150, 215);
+	color: white;
+	height: 2rem;
+	padding: 1.5rem 0rem .7rem 1.5rem;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+
+}
+
+.close {
+	background-image: url(img/close.svg);
+	background-repeat: no-repeat;
+	height: 2rem;
+	background-position: 22.3rem 1.4rem;
+	background: color: rgba(211, 223, 244);
+}
+
