@@ -8,7 +8,7 @@ html, body {
 }
 
 .main {
-	height: 30rem;
+	height: 33rem;
 	width: 25rem;
 	background-color: white;
 	font-family: Roboto, sans-serif;
@@ -21,6 +21,7 @@ html, body {
 	transform: translate(-50%, 0);
 }
 
+/*Contact Info Box*/
 .contact-name__dot {
 	height: .5rem;
 	width: .5rem;
@@ -52,19 +53,82 @@ html, body {
 	padding-top: .8rem;
 	padding-right: 1rem;
 }
-
-.time {
-	color: grey;
+/*Date Line Section*/
+.date {
+	color: lightgrey;
+	font-size: .8rem;
+	text-align: center;
+	background-color: white;
+	margin-left: 8.5rem;
+	margin-top: -.3rem;
+	display: block;
+	position: absolute;
+	width: 4rem;
 }
 
+.date__line {
+	height: .1rem;
+	background-color: rgba(221, 221, 221);
+	width: 22rem;
+	margin-top: 1.8rem;
+	margin-bottom: 1.8rem;
+	margin-left: 1.3rem;
+
+}
+
+.time {
+	color: rgba(183, 173, 170);
+	padding-left: 1.5rem;
+	font-size: .8rem;
+	margin-bottom: -.5rem;
+	margin-top: -.1rem;
+}
+
+/*Messages Section*/
 .time__received {
 	text-align: right;
+	padding-right: 1.5rem;
 }
 
 .speech-bubble {
-	max-width: 18rem;
+	max-width: 15.5rem;
+	border-radius: .2rem;
+	padding: 1rem .5rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	font-size: .8rem;
+	position: relative;
 }
 
+.speech-bubble__sent::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: .3rem;
+	border: .8rem solid transparent;
+	border-right-color: rgba(230, 237, 245);
+	border-left: 0;
+	border-top: 0;
+	margin-top: -0.3rem;
+	margin-left: -0.6rem;
+	/*rgba(230, 237, 245)*/
+	
+}
+
+.speech-bubble__rec::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: .3rem;
+	border: .8rem solid transparent;
+	border-left-color: rgba(242, 242, 242);
+	border-right: 0;
+	border-top: 0;
+	margin-top: -0.3rem;
+	margin-right: -0.6rem;
+}
+
+/*Types of messages*/
 .sent {
 	float: left;
 	clear: both
@@ -85,5 +149,30 @@ html, body {
 
 .blocked {
 	background-color: rgba(254, 194, 193);
+	margin-top: -.1rem;
 }
 
+.line {
+	height: .01rem;
+	background-color: rgba(221, 221, 221);
+	width: 22rem;
+	margin-top: 22rem;
+	margin-bottom: .5rem;
+	margin-left: 1.5rem;
+}
+
+.send-box {
+	color: grey;
+	margin-left: 1.5rem;
+	display: inline-block;
+}
+
+.send-button {
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-right: 1.5rem;
+	color: rgba(110, 150, 216);
+	font-weight: 700;
+	letter-spacing: .1rem;
+}
