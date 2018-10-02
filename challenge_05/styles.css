@@ -10,7 +10,7 @@ html {
 body {
 	background-image: url("img/background.jpg");
 	background-size: cover;
-	font-family: Roboto, sans-serif;
+	font-family: Pakenham Kayo, sans-serif;
 	width: 100%;
 	height: 100%;
 }
@@ -27,3 +27,46 @@ body {
 	height: 28rem;
 	width: 25rem;
 }
+
+.main__data {
+	position: relative;
+	padding: 2.3rem;
+}
+
+.dash {
+	background-color: rgba(211, 230, 244);
+	height: .3rem;
+	width: 1.8rem;
+	position: absolute;
+	margin: 4.1rem 9.1rem 0;
+}
+.departure-location {
+	float: left;
+	margin-top: -1.3rem;
+}
+
+.arrival-location {
+	float: right;
+	margin-top: -1.3rem;
+	text-align: right;
+
+}
+
+.location-abbreviation {
+	color: rgba(53, 138, 207);
+	font-size: 3rem;
+	font-weight: 700;
+	text-shadow: .1rem 0rem rgba(53, 138, 207),
+				-.1rem 0rem rgba(53, 138, 207),
+				.1rem .1rem rgba(53, 138, 207),
+				-.1rem .1rem rgba(53, 138, 207),
+				.1rem -.1rem rgba(53, 138, 207),
+				-.1rem -.1rem rgba(53, 138, 207);
+}
+
+.location-full-name {
+	color: rgba(183, 173, 170);
+	margin-top: -3rem;
+	font-size: .9rem;
+}
+
