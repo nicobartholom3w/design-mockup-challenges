@@ -24,15 +24,16 @@ body {
 
 .main {
 	background-color: white;
-	height: 28rem;
+	height: 27rem;
 	width: 25rem;
+	border-radius: .2rem;
 }
 
 .main__data {
 	position: relative;
 	/*padding: 2.3rem;*/
 	height: 24rem;
-	width: 21rem;
+	width: 20rem;
 	padding-top: 1rem;
 }
 
@@ -43,7 +44,7 @@ body {
 	float: left;
 	/*display: inline-block;*/
 	position: absolute;
-	margin: 4rem 9.5rem 0;
+	margin: 4rem 9rem 0;
 }
 .departure-location {
 	float: left;
@@ -71,20 +72,39 @@ body {
 	font-size: .9rem;
 }
 
-table {
+table.top-table {
 	display: block;
 	clear: both;
+	padding-top: 1.5rem;
+}
+
+.side-table {
+	float: left;
+	/*background-color: red;*/
+	display: inline-block;
 }
 
 th.flight-info-header {
-	font-size: .8rem;
+	font-size: .75rem;
 	text-transform: uppercase;
 	font-weight: 400;
 	color: rgba(183, 173, 170);
 	text-align: left;
+	padding-right: 4.5rem;
+	padding-top: 1rem;
 }
 
 td.flight-info-data {
 	text-align: left;
 }
+
+.qr-code {
+	height: 9.2rem;
+	width: 9.2rem;
+	background-image: url("img/qr.svg");
+	background-repeat: no-repeat;
+	float: right;
+	display: inline-block;
+	background-size: contain;
+	margin-top: 1rem;
 }
