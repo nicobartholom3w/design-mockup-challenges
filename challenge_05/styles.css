@@ -10,8 +10,8 @@ html {
 body {
 	background-image: url("img/background.jpg");
 	background-size: cover;
-	font-family: Pakenham Kayo, sans-serif;
-	width: 100%;
+	font-family: Roboto, sans-serif;
+	width: 100%;b]
 	height: 100%;
 }
 
@@ -30,24 +30,29 @@ body {
 
 .main__data {
 	position: relative;
-	padding: 2.3rem;
+	/*padding: 2.3rem;*/
+	height: 24rem;
+	width: 21rem;
+	padding-top: 1rem;
 }
 
 .dash {
 	background-color: rgba(211, 230, 244);
 	height: .3rem;
 	width: 1.8rem;
+	float: left;
+	/*display: inline-block;*/
 	position: absolute;
-	margin: 4.1rem 9.1rem 0;
+	margin: 4rem 9.5rem 0;
 }
 .departure-location {
 	float: left;
-	margin-top: -1.3rem;
+	/*margin-top: -1.3rem;*/
 }
 
 .arrival-location {
 	float: right;
-	margin-top: -1.3rem;
+	/*margin-top: -1.3rem;*/
 	text-align: right;
 
 }
@@ -56,17 +61,30 @@ body {
 	color: rgba(53, 138, 207);
 	font-size: 3rem;
 	font-weight: 700;
-	text-shadow: .1rem 0rem rgba(53, 138, 207),
-				-.1rem 0rem rgba(53, 138, 207),
-				.1rem .1rem rgba(53, 138, 207),
-				-.1rem .1rem rgba(53, 138, 207),
-				.1rem -.1rem rgba(53, 138, 207),
-				-.1rem -.1rem rgba(53, 138, 207);
+	font-family: Prompt, sans-serif;
+	margin-top: 1.5rem;
 }
 
 .location-full-name {
 	color: rgba(183, 173, 170);
-	margin-top: -3rem;
+	margin-top: -3.5rem;
 	font-size: .9rem;
 }
 
+table {
+	display: block;
+	clear: both;
+}
+
+th.flight-info-header {
+	font-size: .8rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: rgba(183, 173, 170);
+	text-align: left;
+}
+
+td.flight-info-data {
+	text-align: left;
+}
+}
