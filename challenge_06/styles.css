@@ -1,0 +1,31 @@
+html {
+	min-height: 100%
+}
+
+body {
+	height: 100%
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	background-color: rgba(77, 81, 92);
+}
+
+.card-base {
+	background-color: white;
+	width: 50rem;
+	height: 35rem;
+	margin: 4rem auto 0;
+}
+
+.card-data {
+	padding: 3rem;
+}
+
+h1.headline {
+	font-weight: 300;
+}
+
+p.service-info {
+	color: rgba(177, 172, 169);
+	font-size: .65rem;
+}
