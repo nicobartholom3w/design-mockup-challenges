@@ -12,23 +12,35 @@ body {
 .card {
 	background-color: white;
 	height: 35rem;
-	width: 55rem;
+	width: 63rem;
 	margin: 4rem auto 0;
+	box-shadow: 0rem 1rem 2.5rem .3rem rgba(203, 173, 134);
 }
 
 /*------ Left side css-----*/
 
 .card__left {
-	width: 40%;
+	width: 35%;
 	height: 100%;
 	background-color: rgba(72, 73, 85);
 	color: white;
-}
-.title {
-	padding-top: 3rem;
 	padding-left: 3rem;
-	font-size: 1.5rem;
-	border-bottom: solid ;
+	float: left;
+}
+
+.title {
+	padding-top: 3.5rem;
+	font-size: 1.8rem;
+	position: relative;
+}
+
+.title::before {
+	content: "";
+	margin-top: 4.9rem;
+	height: .2rem;
+	width: 3.5rem;
+	background-color: rgba(234, 126, 99);
+	position: absolute;
 }
 
 .title__main {
@@ -39,7 +51,90 @@ body {
 	font-weight: 300;
 }
 
-/*-----Right side css-----*/
-.card__right {
-
+.userinfo {
+	margin-top: 21rem;
 }
+
+.userinfo__avatar {
+	border-radius: 50%;
+	height: 4rem;
+	float: left;
+	box-shadow: 0rem 0.3rem 1rem .3rem rgba(45, 46, 53) ;
+}
+
+.userinfo__name {
+	float: left;
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+	font-size: 1.1rem;
+	font-weight: 300;
+}
+
+
+/*-----Right side css-----*/
+
+.card__right {
+	float: left;
+	height: 100%;
+	width: 37.95rem;
+	/*background-color: blue;*/
+}
+
+.article {
+	width: 33.5rem;
+	font-size: 1.3rem;
+	font-weight: 300;
+	padding-top: 2.5rem;
+	padding-left: 2.5rem;
+	line-height: 1.9rem;
+}
+
+.article__firstletter {
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+/*-----footer css-----*/
+
+.footer {
+	/*background-color: pink;*/
+	box-shadow: 0rem -.9rem 1rem -.3rem rgba(246, 246, 246);
+	padding-top: 1.8rem;
+	margin-top: 2rem;
+	height: 2.1rem;
+}
+
+.footer__date {
+	float: left;
+	padding-left: 2.5rem;
+	font-weight: 300;
+}
+
+.footer__time {
+	font-weight: 700;
+}
+
+.footer__continue {
+	float: right;
+	padding-right: 2.1rem;
+	/*background-color: blue;*/
+}
+
+.footer__pagenumber {
+	color: rgba(170, 170, 173);
+	font-weight: 300;
+	float: left;
+	padding-left: .5rem;
+	margin-top: .1rem;
+}
+
+.footer__messagebubble {
+	float: left;
+}
+
+.footer__more {
+	padding-left: 1rem;
+	float: left;
+}
+
+
