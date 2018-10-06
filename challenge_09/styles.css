@@ -11,10 +11,55 @@ body {
   height: 28rem;
   width: 50rem;
   background-color: white;
-  margin: 6rem auto 0; }
+  margin: 6rem auto 0;
+  box-shadow: 0rem 1rem 2rem -0.5rem #d5ab47; }
+  .card__left {
+    background-color: #f2f2f2;
+    width: 37%;
+    height: 100%; }
+    .card__left-content {
+      padding-left: 2.5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem; }
+    .card__left-header {
+      margin-bottom: 4rem; }
+      .card__left-headertext {
+        font-size: 1.3rem;
+        color: #32394c;
+        float: left; }
+      .card__left-headerplus {
+        float: right;
+        padding-right: 2rem; }
+    .card__left-cards {
+      clear: both; }
+    .card__left-singlecard {
+      background-color: white;
+      height: 7rem;
+      width: 13rem;
+      border: 0.05rem solid #dedede;
+      border-radius: .3rem;
+      margin-top: 1.8rem; }
+      .card__left-singlecard-active {
+        border: 0.1rem solid #8994c8; }
+      .card__left-singlecardlogo {
+        margin: .7rem; }
+        .card__left-singlecardlogo-visa {
+          height: 2.3rem; }
+        .card__left-singlecardlogo-mastercard {
+          height: 2.3rem; }
+        .card__left-singlecardlogo-maestro {
+          height: 2.3rem; }
+      .card__left-singlecardnum {
+        color: #707e8d;
+        margin-left: .7rem;
+        margin-bottom: .4rem; }
+      .card__left-singlecarddate {
+        color: #707e8d;
+        font-size: .8rem;
+        margin-left: .7rem; }
 
-.scrollable {
-  height: 100%;
-  overflow-y: auto; }
+.scrollbar {
+  height: 28rem;
+  overflow: auto; }
 
 /*# sourceMappingURL=styles.css.map */

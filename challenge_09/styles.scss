@@ -1,3 +1,6 @@
+$cardlogoheight: 2.3rem;
+
+
 html {
 	min-height: 100%;
 }
@@ -14,22 +17,86 @@ body {
 	width: 50rem;
 	background-color: white;
 	margin: 6rem auto 0;
+	box-shadow: 0rem 1rem 2rem -.5rem rgb(213, 171, 71);
 
 	&__left {
+		background-color: rgb(242, 242, 242);
+		width: 37%;
+		height: 100%;
+
+		&-content {
+			padding-left: 2.5rem;
+			padding-top: 2.5rem;
+			padding-bottom: 2.5rem;
+		}
 		
+		&-header {
+			margin-bottom: 4rem;
+
+			&text {
+				font-size: 1.3rem;
+				color: rgb(50, 57, 76);
+				float: left;
+			}
+
+			&plus {
+					float: right;
+					padding-right: 2rem;
+			}
+		}
+		&-cards {
+			clear: both;
+		}
+
+		&-singlecard {
+			background-color: white;
+			height: 7rem;
+			width: 13rem;
+			border: .05rem solid rgb(222, 222, 222);
+			border-radius: .3rem;
+			margin-top: 1.8rem;
+
+			&-active {
+				border: .1rem solid rgb(137, 148, 200);
+			}
+
+			&logo {
+				margin: .7rem;
+
+				&-visa {
+					height: $cardlogoheight;
+				}
+
+				&-mastercard {
+					height: $cardlogoheight;
+				}
+				
+				&-maestro {
+					height: $cardlogoheight;
+				}
+			}
+			
+			&num {
+				color: rgb(112, 126, 141);
+				margin-left: .7rem;
+				margin-bottom: .4rem;
+			}
+
+			&date {
+				color: rgb(112, 126, 141);
+				font-size: .8rem;
+				margin-left: .7rem;
+			}
+		}
 	}
+
 
 	&__right {
 
 	}
 }
 
-// .sample {
-// 	height: 50rem;
-// 	width: 10rem;
-// 	background-color: red;
-// }
-.scrollable {
-	height: 100%;
-	overflow-y: auto;
+.scrollbar {
+	height: 28rem;
+	overflow: auto;
 }
