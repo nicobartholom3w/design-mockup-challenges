@@ -23,6 +23,7 @@ body {
 		background-color: rgb(242, 242, 242);
 		width: 37%;
 		height: 100%;
+		float: left;
 
 		&-content {
 			padding-left: 2.5rem;
@@ -92,10 +93,97 @@ body {
 
 
 	&__right {
+		height: 100%;
+		width: 63%;
+		float: left;
 
+		&-content {
+			padding: 2.5rem;
+			padding-bottom: 0;
+		}
+
+		&-header {
+			border-bottom: .05rem solid rgb(222, 222, 222);
+			height: 4rem;
+			margin-bottom: 2rem;
+
+			&text {
+				font-size: 1.3rem;
+				color: rgb(50, 57, 76);
+				float: left;
+			}
+
+			&balance {
+				font-size: 1.5rem;
+				font-weight: 700;
+				float: right;
+				// background-color: red;
+				margin-top: -.5rem;
+			}
+		}
+
+		&-transactions {
+			
+			&line {
+				// background-color: red;
+				height: 4rem;
+				width: 100%;
+				margin: .5rem;
+				// background-color: red;
+			}
+
+			&button {
+				// background-color: grey;
+				width: 1.25rem;
+				height: 1.25rem;
+				border-radius: 50%;
+				border: .05rem solid rgb(223, 223, 223);
+
+				&img {
+					height: .75rem;
+					margin: .25rem;
+				}
+			}
+
+			&action {
+				font-weight: 700;
+				font-size: 1.1rem;
+			}
+
+			&reference {
+				color: rgb(180, 180, 180);
+				font-size: .75rem;
+			}
+
+			&sum {
+				float: right;
+				// background-color: red;
+				margin-top: .25rem;
+				font-weight: 700;
+				// clear: both;
+			}
+		}
 	}
 }
 
+.withdrawl {
+	color: rgb(136, 152, 198);
+}
+
+.deposit {
+	color: rgb(138, 206, 94);
+}
+.buttonposition {
+	float: left;
+	margin-top: .5rem;
+}
+
+.middlecolumn {
+	float: left;
+	width: 15rem;
+	margin-left: 1.75rem;
+
+}
 .scrollbar {
 	height: 28rem;
 	overflow: auto;

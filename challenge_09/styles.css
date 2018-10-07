@@ -16,7 +16,8 @@ body {
   .card__left {
     background-color: #f2f2f2;
     width: 37%;
-    height: 100%; }
+    height: 100%;
+    float: left; }
     .card__left-content {
       padding-left: 2.5rem;
       padding-top: 2.5rem;
@@ -57,6 +58,63 @@ body {
         color: #707e8d;
         font-size: .8rem;
         margin-left: .7rem; }
+  .card__right {
+    height: 100%;
+    width: 63%;
+    float: left; }
+    .card__right-content {
+      padding: 2.5rem;
+      padding-bottom: 0; }
+    .card__right-header {
+      border-bottom: 0.05rem solid #dedede;
+      height: 4rem;
+      margin-bottom: 2rem; }
+      .card__right-headertext {
+        font-size: 1.3rem;
+        color: #32394c;
+        float: left; }
+      .card__right-headerbalance {
+        font-size: 1.5rem;
+        font-weight: 700;
+        float: right;
+        margin-top: -.5rem; }
+    .card__right-transactionsline {
+      height: 4rem;
+      width: 100%;
+      margin: .5rem; }
+    .card__right-transactionsbutton {
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 50%;
+      border: 0.05rem solid #dfdfdf; }
+      .card__right-transactionsbuttonimg {
+        height: .75rem;
+        margin: .25rem; }
+    .card__right-transactionsaction {
+      font-weight: 700;
+      font-size: 1.1rem; }
+    .card__right-transactionsreference {
+      color: #b4b4b4;
+      font-size: .75rem; }
+    .card__right-transactionssum {
+      float: right;
+      margin-top: .25rem;
+      font-weight: 700; }
+
+.withdrawl {
+  color: #8898c6; }
+
+.deposit {
+  color: #8ace5e; }
+
+.buttonposition {
+  float: left;
+  margin-top: .5rem; }
+
+.middlecolumn {
+  float: left;
+  width: 15rem;
+  margin-left: 1.75rem; }
 
 .scrollbar {
   height: 28rem;
