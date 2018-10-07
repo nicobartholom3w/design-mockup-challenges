@@ -1,0 +1,35 @@
+.siteheaderblock {
+	// clear: both;
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+
+	}
+}
+
+.nav {
+	float: right;
+
+	&links {
+		color: rgb(153, 153, 153);
+		font-weight: 300;
+		font-size: .75rem;
+
+	}
+
+	&display {
+		display: inline-block;
+		margin-left: 2rem;
+		// clear: both;
+	}
+
+}
+
+.applelogo {
+	float: left;
+}
+
+.helpform {
+}
