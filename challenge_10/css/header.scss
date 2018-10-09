@@ -1,0 +1,26 @@
+.nav {
+	float: right;
+
+	&links {
+		color: rgb(153, 153, 153);
+		font-weight: 300;
+		font-size: .75rem;
+
+	}
+
+	&display {
+		display: inline-block;
+		margin-left: 2rem;
+	}
+
+}
+
+.applelogo {
+	float: left;
+}
+
+.helpform {
+	border: 0;
+	box-shadow: none;
+	background-color: pink;
+}

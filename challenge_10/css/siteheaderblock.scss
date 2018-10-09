@@ -1,5 +1,8 @@
 .siteheaderblock {
 	// clear: both;
+	color: rgb(153, 153, 153);
+	font-weight: 300;
+	font-size: .75rem;
 
 	&:after {
 		content: "";
@@ -13,10 +16,6 @@
 	float: right;
 
 	&links {
-		color: rgb(153, 153, 153);
-		font-weight: 300;
-		font-size: .75rem;
-
 	}
 
 	&display {
@@ -32,4 +31,15 @@
 }
 
 .helpform {
+	border: 0;
+	border-bottom: .05rem solid rgb(178, 178, 178);
+	padding-bottom: .25rem;
+	background-color: transparent;
+	box-shadow: none;
+	// box-shadow: none;
+	// background-color: pink;
+	&:focus {
+		outline: none;
+		border-bottom: .05rem solid black;
+	}
 }

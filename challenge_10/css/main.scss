@@ -1,4 +1,4 @@
-
+ 
 @import "siteheaderblock";
 
 
@@ -14,7 +14,7 @@ body {
 }
 
 .centered {
-	margin: 1rem 0 0 2%;
+	margin: 1rem 1% 0;
 }
 
 .section__one {
@@ -31,5 +31,5 @@ body {
 .sectioncontent {
 	// padding: 3rem 10rem;
 	min-width: 50rem;
-	width: 50rem;
+	max-width: 50rem;
 }

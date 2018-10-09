@@ -1,20 +1,30 @@
-.siteheaderblock:after {
-  content: "";
-  display: table;
-  clear: both; }
+.siteheaderblock {
+  color: #999999;
+  font-weight: 300;
+  font-size: .75rem; }
+  .siteheaderblock:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .nav {
   float: right; }
-  .navlinks {
-    color: #999999;
-    font-weight: 300;
-    font-size: .75rem; }
   .navdisplay {
     display: inline-block;
     margin-left: 2rem; }
 
 .applelogo {
   float: left; }
+
+.helpform {
+  border: 0;
+  border-bottom: 0.05rem solid #b2b2b2;
+  padding-bottom: .25rem;
+  background-color: transparent;
+  box-shadow: none; }
+  .helpform:focus {
+    outline: none;
+    border-bottom: .05rem solid black; }
 
 html {
   height: 100%; }
@@ -26,7 +36,7 @@ body {
   min-width: 50rem; }
 
 .centered {
-  margin: 1rem 0 0 2%; }
+  margin: 1rem 1% 0; }
 
 .section__one {
   background-image: url("../img/watches.jpg");
@@ -40,6 +50,6 @@ body {
 
 .sectioncontent {
   min-width: 50rem;
-  width: 50rem; }
+  max-width: 50rem; }
 
 /*# sourceMappingURL=main.css.map */
