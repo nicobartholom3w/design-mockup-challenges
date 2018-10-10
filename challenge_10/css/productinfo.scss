@@ -1,0 +1,29 @@
+.productinfo {
+	width: 30rem;
+	margin-top: 7.5rem;
+
+	&__header {
+		font-size: 2.5rem;
+		font-weight: 700;
+
+	}
+
+	&__description {
+		font-size: .75rem;
+		color: rgb(153, 153, 153);
+		line-height: 1.25rem;
+		width: 21rem;
+		margin-top: 2.5rem;
+		margin-left: 2rem;
+		position: relative;
+
+		&:before {
+			content: "";
+			height: 6rem;
+			width: .1rem;
+			background-color: rgb(153, 153, 153);
+			position: absolute;
+			margin-left: -2rem;
+		}
+	}
+}

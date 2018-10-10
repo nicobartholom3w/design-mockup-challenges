@@ -1,6 +1,7 @@
  
 @import "siteheaderblock";
-
+@import "productinfo";
+@import "linkbox";
 
 html {
 	height: 100%;
@@ -14,13 +15,13 @@ body {
 }
 
 .centered {
-	margin: 1rem 1% 0;
+	margin: 2.75em auto 0;
 }
 
 .section__one {
 	background-image: url("../img/watches.jpg");
 	min-width: 60rem;
-	height: 60rem;
+	height: 50rem;
 	width: 100%;
 	background-color: white;
 	background-position: top 10rem left 30rem;
@@ -30,6 +31,7 @@ body {
 }
 .sectioncontent {
 	// padding: 3rem 10rem;
-	min-width: 50rem;
-	max-width: 50rem;
+	// min-width: 50rem;
+	max-width: 56.5rem;
+	// background-color: pink;
 }

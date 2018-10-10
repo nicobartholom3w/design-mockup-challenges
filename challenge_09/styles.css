@@ -7,6 +7,9 @@ body {
   font-family: Roboto, sans-serif;
   background-color: #f7cd75; }
 
+a {
+  text-decoration: none; }
+
 .card {
   height: 28rem;
   width: 50rem;

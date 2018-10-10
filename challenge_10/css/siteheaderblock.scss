@@ -14,6 +14,7 @@
 
 .nav {
 	float: right;
+	margin-top: 1.25rem;
 
 	&links {
 	}
@@ -28,6 +29,10 @@
 
 .applelogo {
 	float: left;
+
+	&__img {
+		width: 1.5rem;
+	}
 }
 
 .helpform {

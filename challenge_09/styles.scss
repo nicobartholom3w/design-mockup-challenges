@@ -12,6 +12,9 @@ body {
 	background-color: rgb(247, 205, 117);
 }
 
+a {
+	text-decoration: none;
+}
 .card {
 	height: 28rem;
 	width: 50rem;
@@ -167,7 +170,7 @@ body {
 }
 
 .withdrawl {
-	color: rgb(136, 152, 198);
+	// color: rgb(136, 152, 198);
 }
 
 .deposit {
