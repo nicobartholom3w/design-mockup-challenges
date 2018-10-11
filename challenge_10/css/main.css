@@ -70,22 +70,59 @@
   font-weight: 500;
   text-align: center; }
 
-.interlude__column {
-  width: 15.2rem;
-  float: left;
-  padding: 1rem;
-  background-color: purple; }
-.interlude__header {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .87rem;
-  margin-bottom: 3rem; }
-.interlude__info {
-  font-size: .8rem;
-  line-height: 1.5rem; }
+.interlude {
+  margin-top: 1.6rem; }
+  .interlude__column {
+    width: 15.2rem;
+    float: left;
+    padding: 1rem; }
+  .interlude__header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .87rem;
+    margin-bottom: 2.75rem; }
+  .interlude__info {
+    font-size: .8rem;
+    line-height: 1.5rem; }
 
 .margin-right {
   margin-right: 2.5rem; }
+
+.dot {
+  background-color: #cccccc;
+  height: .25rem;
+  width: .25rem;
+  margin: .25rem;
+  float: left; }
+  .dot__group {
+    width: 5rem;
+    margin-top: .75rem; }
+
+.link {
+  text-decoration: none; }
+  .link:before {
+    content: "";
+    background-color: #ea635c;
+    height: .1rem;
+    width: 2rem;
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+    position: absolute;
+    transition: width .25s; }
+  .link:hover:before {
+    width: 2.5rem; }
+  .link:hover > .link__learnmore {
+    margin-left: 3.5rem; }
+  .link__learnmore {
+    text-transform: uppercase;
+    color: #ea635c;
+    font-weight: 700;
+    font-size: .75rem;
+    position: relative;
+    margin-left: 2.75rem;
+    margin-top: 1rem;
+    transition: margin-left .25s;
+    width: 5rem; }
 
 html {
   height: 100%;
@@ -113,7 +150,10 @@ body {
   margin-top: 2.75rem; }
 
 .sectioncontent {
-  max-width: 56.75rem;
-  background-color: pink; }
+  max-width: 56.75rem; }
+
+.section__two {
+  width: 100%;
+  min-width: 60rem; }
 
 /*# sourceMappingURL=main.css.map */

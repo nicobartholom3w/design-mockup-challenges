@@ -1,18 +1,19 @@
 .interlude {
 	// width: 56.75rem;
+	margin-top: 1.6rem;
 
 	&__column {
 		width: 15.2rem;
 		float: left;
 		padding: 1rem;
-		background-color: purple;
+		// background-color: purple;
 	}
 
 	&__header {
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: .87rem;
-		margin-bottom: 3rem;
+		margin-bottom: 2.75rem;
 	}
 
 	&__info {
@@ -25,3 +26,70 @@
 .margin-right {
 	margin-right: 2.5rem;
 }
+
+.dot {
+	background-color: rgb(204, 204, 204);
+	height: .25rem;
+	width: .25rem;
+	margin: .25rem;
+	float: left;
+
+	&__group {
+		width: 5rem;
+		margin-top: .75rem;
+	}
+}
+
+.link {
+	text-decoration: none;
+
+
+
+	&:before {
+		content: "";
+		background-color: rgb(234, 99, 92);
+		height: .1rem;
+		width: 2rem;
+		margin-left: 0rem;
+		margin-top: 1.5rem;
+		position: absolute;
+		transition: width .25s;
+	}
+	
+	&:hover:before {
+		width: 2.5rem;
+	}
+
+	&:hover > &__learnmore {
+		margin-left: 3.5rem;
+	}
+
+	&__learnmore {
+		text-transform: uppercase;
+		color: rgb(234, 99, 92);
+		font-weight: 700;
+		font-size: .75rem;
+		position: relative;
+		margin-left: 2.75rem;
+		margin-top: 1rem;
+		transition: margin-left .25s;
+		width: 5rem;
+
+	
+	}
+}
+// @keyframes slide {
+// 	from {
+
+// 	}
+// }
+
+// @keyframes stretch {
+// 	from {
+// 		transform: scale(1);
+// 	}
+
+// 	100% {
+// 		transform: scale(2);
+// 	}
+// }
