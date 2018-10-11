@@ -1,0 +1,27 @@
+.interlude {
+	// width: 56.75rem;
+
+	&__column {
+		width: 15.2rem;
+		float: left;
+		padding: 1rem;
+		background-color: purple;
+	}
+
+	&__header {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: .87rem;
+		margin-bottom: 3rem;
+	}
+
+	&__info {
+		font-size: .8rem;
+		line-height: 1.5rem;
+		
+	}
+}
+
+.margin-right {
+	margin-right: 2.5rem;
+}

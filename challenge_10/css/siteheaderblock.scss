@@ -2,7 +2,7 @@
 	// clear: both;
 	color: rgb(153, 153, 153);
 	font-weight: 300;
-	font-size: .75rem;
+	font-size: .8rem;
 
 	&:after {
 		content: "";
@@ -17,11 +17,19 @@
 	margin-top: 1.25rem;
 
 	&links {
+		padding-bottom: .5rem;
+		color: rgb(153, 153, 153);
+
+		&:hover {
+			color: black;
+			border-bottom: .15rem solid rgb(153, 153, 153);
+
+		}
 	}
 
 	&display {
 		display: inline-block;
-		margin-left: 2rem;
+		margin-left: 2.2rem;
 		// clear: both;
 	}
 
@@ -41,6 +49,7 @@
 	padding-bottom: .25rem;
 	background-color: transparent;
 	box-shadow: none;
+	font-size: .8rem;
 	// box-shadow: none;
 	// background-color: pink;
 	&:focus {

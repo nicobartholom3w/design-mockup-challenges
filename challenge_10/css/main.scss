@@ -2,9 +2,11 @@
 @import "siteheaderblock";
 @import "productinfo";
 @import "linkbox";
+@import "interludesection";
 
 html {
 	height: 100%;
+	width: 100%;
 }
 
 body {
@@ -15,23 +17,30 @@ body {
 }
 
 .centered {
-	margin: 2.75em auto 0;
+	margin: 0 auto 0;
 }
 
 .section__one {
 	background-image: url("../img/watches.jpg");
 	min-width: 60rem;
-	height: 50rem;
+	height: 40rem;
 	width: 100%;
 	background-color: white;
-	background-position: top 10rem left 30rem;
-	background-size: cover;
+	background-position: bottom -2.5rem right -12.5rem;
+	background-size: 40rem;
 	background-repeat: no-repeat;
+	border-bottom: .05rem solid rgb(222, 222, 222);
+	margin-top: 2.75rem;
 
 }
+
 .sectioncontent {
 	// padding: 3rem 10rem;
 	// min-width: 50rem;
-	max-width: 56.5rem;
-	// background-color: pink;
+	max-width: 56.75rem;
+	background-color: pink;
+}
+
+.section__two {
+
 }
