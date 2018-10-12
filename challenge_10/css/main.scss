@@ -39,9 +39,29 @@ body {
 	// min-width: 50rem;
 	max-width: 56.75rem;
 	// background-color: pink;
+	
+	&__three {
+		background-image: url("../img/preview.jpg");
+
+	}
 }
 
 .section__two {
 	width: 100%;
 	min-width: 60rem;
+
+	&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+}
+
+
+
+.section__three {
+	width: 100%;
+	min-width: 60rem;
+	height: 50rem;
+
 }

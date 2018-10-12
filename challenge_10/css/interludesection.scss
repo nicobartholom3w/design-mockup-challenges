@@ -43,8 +43,6 @@
 .link {
 	text-decoration: none;
 
-
-
 	&:before {
 		content: "";
 		background-color: rgb(234, 99, 92);
@@ -73,23 +71,6 @@
 		margin-left: 2.75rem;
 		margin-top: 1rem;
 		transition: margin-left .25s;
-		width: 5rem;
-
-	
+		width: 5rem;	
 	}
 }
-// @keyframes slide {
-// 	from {
-
-// 	}
-// }
-
-// @keyframes stretch {
-// 	from {
-// 		transform: scale(1);
-// 	}
-
-// 	100% {
-// 		transform: scale(2);
-// 	}
-// }

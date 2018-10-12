@@ -39,9 +39,12 @@
 .productinfo {
   width: 30rem;
   margin-top: 7.5rem; }
+  .productinfo__three {
+    margin-top: 10rem; }
   .productinfo__header {
     font-size: 2.5rem;
-    font-weight: 700; }
+    font-weight: 700;
+    width: 20rem; }
   .productinfo__description {
     font-size: .75rem;
     color: #999999;
@@ -151,9 +154,20 @@ body {
 
 .sectioncontent {
   max-width: 56.75rem; }
+  .sectioncontent__three {
+    background-image: url("../img/preview.jpg"); }
 
 .section__two {
   width: 100%;
   min-width: 60rem; }
+  .section__two:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.section__three {
+  width: 100%;
+  min-width: 60rem;
+  height: 50rem; }
 
 /*# sourceMappingURL=main.css.map */
