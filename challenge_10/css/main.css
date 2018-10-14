@@ -42,15 +42,18 @@
   .productinfo__three {
     padding-top: 8.5rem;
     margin-top: 3.5rem; }
+  .productinfo__four {
+    padding-top: 11.5rem;
+    float: right; }
   .productinfo__header {
     font-size: 2.5rem;
     font-weight: 700;
-    width: 20rem; }
+    width: 23rem; }
   .productinfo__description {
     font-size: .75rem;
     color: #999999;
     line-height: 1.25rem;
-    width: 21rem;
+    width: 21.25rem;
     margin-top: 2.5rem;
     margin-left: 2rem;
     position: relative; }
@@ -66,8 +69,8 @@
   background-color: #ea635c;
   width: fit-content;
   height: 1rem;
-  padding: .5rem 1rem;
-  margin-top: 2rem;
+  padding: .75rem 1rem;
+  margin-top: 2.25rem;
   color: white;
   text-transform: uppercase;
   font-size: .75rem;
@@ -172,5 +175,23 @@ body {
   background-size: 25rem;
   background-repeat: no-repeat;
   background-position: right top; }
+
+.section__four {
+  width: 100%;
+  min-width: 60rem;
+  height: 42.5rem;
+  background-image: url("../img/runners.jpg");
+  background-size: cover;
+  color: white; }
+
+.four {
+  color: white; }
+  .four:before {
+    background-color: white;
+    content: "";
+    height: 6rem;
+    width: .1rem;
+    position: absolute;
+    margin-left: -2rem; }
 
 /*# sourceMappingURL=main.css.map */
