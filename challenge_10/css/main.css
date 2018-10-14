@@ -66,16 +66,20 @@
       margin-left: -2rem; }
 
 .linkbox {
-  background-color: #ea635c;
-  width: fit-content;
-  height: 1rem;
-  padding: .75rem 1rem;
-  margin-top: 2.25rem;
-  color: white;
-  text-transform: uppercase;
-  font-size: .75rem;
-  font-weight: 500;
-  text-align: center; }
+  text-decoration: none; }
+  .linkbox:hover > .linkbox__style {
+    background-color: #db5b56; }
+  .linkbox__style {
+    background-color: #ea635c;
+    width: fit-content;
+    height: 1rem;
+    padding: .75rem 1rem;
+    margin-top: 2.25rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+    text-align: center; }
 
 .interlude {
   margin-top: 1.6rem; }
