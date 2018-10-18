@@ -10,3 +10,19 @@ body {
 	font-family: Roboto, sans-serif;
 	
 }
+
+.heading {
+	
+
+	&__link {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: rgb(234, 185, 184);
+		font-size: 3.5rem;
+		font-weight: 700;
+		display: inline-block;
+		padding: 1rem;
+		margin: 1rem;
+	}
+}
+
