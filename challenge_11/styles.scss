@@ -11,8 +11,12 @@ body {
 	
 }
 
+.content {
+	margin-top: 5rem;
+}
+
 .heading {
-	
+	width: 70rem;
 
 	&__link {
 		text-decoration: none;
@@ -21,8 +25,19 @@ body {
 		font-size: 3.5rem;
 		font-weight: 700;
 		display: inline-block;
-		padding: 1rem;
-		margin: 1rem;
+		padding-right: 1rem;
+		margin-right: 1rem;
+
+		&:hover {
+			color: rgb(242, 208, 208);
+		}
 	}
 }
 
+.synthetic {
+	color: white;
+}
+
+.subheader {
+	color: white;
+}
