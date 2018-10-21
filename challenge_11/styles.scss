@@ -38,17 +38,34 @@ body {
 	color: white;
 }
 
+.info {
+	
+}
+
 .subheader {
 	color: white;
+}
+
+.timer {
+	background-color: rgb(63, 60, 61);
+}
+
+.temperature {
+	background-color: rgb(53, 51, 52);
+}
+
+.load {
+	background-color: rgb(32, 30, 31);
 }
 
 .wash {
 	
 	&__header {
-
+		color: rgb(199, 143, 139);
 	}
 
 	&__info {
-		
+		color: white;
+		font-weight: 500;
 	}
 }

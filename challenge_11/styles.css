@@ -31,4 +31,19 @@ body {
 .subheader {
   color: white; }
 
+.timer {
+  background-color: #3f3c3d; }
+
+.temperature {
+  background-color: #353334; }
+
+.load {
+  background-color: #201e1f; }
+
+.wash__header {
+  color: #c78f8b; }
+.wash__info {
+  color: white;
+  font-weight: 500; }
+
 /*# sourceMappingURL=styles.css.map */
