@@ -36,30 +36,49 @@ body {
 
 .synthetic {
 	color: white;
+
+	&:hover {
+		color: white;
+		cursor: default;
+	}
 }
 
-.info {
-	
-}
+
 
 .subheader {
 	color: white;
 }
 
-.timer {
+
+.info {
+
+	&__content {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__timer {
 	background-color: rgb(63, 60, 61);
-}
+	}
 
-.temperature {
+	&__temperature {
 	background-color: rgb(53, 51, 52);
-}
+	}
 
-.load {
+	&__load {
 	background-color: rgb(32, 30, 31);
+	}
+
 }
 
 .wash {
+	min-width: 19rem;
+	min-height: 19rem;
 	
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
 	&__header {
 		color: rgb(199, 143, 139);
 	}

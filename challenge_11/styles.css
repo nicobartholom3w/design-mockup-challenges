@@ -27,23 +27,33 @@ body {
 
 .synthetic {
   color: white; }
+  .synthetic:hover {
+    color: white;
+    cursor: default; }
 
 .subheader {
   color: white; }
 
-.timer {
+.info__content {
+  display: flex;
+  flex-direction: row; }
+.info__timer {
   background-color: #3f3c3d; }
-
-.temperature {
+.info__temperature {
   background-color: #353334; }
-
-.load {
+.info__load {
   background-color: #201e1f; }
 
-.wash__header {
-  color: #c78f8b; }
-.wash__info {
-  color: white;
-  font-weight: 500; }
+.wash {
+  min-width: 19rem;
+  min-height: 19rem; }
+  .wash__content {
+    display: flex;
+    flex-direction: column; }
+  .wash__header {
+    color: #c78f8b; }
+  .wash__info {
+    color: white;
+    font-weight: 500; }
 
 /*# sourceMappingURL=styles.css.map */
