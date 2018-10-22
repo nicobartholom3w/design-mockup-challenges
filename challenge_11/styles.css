@@ -12,16 +12,16 @@ body {
   margin-top: 5rem; }
 
 .heading {
-  width: 70rem; }
+  width: 85rem; }
   .heading__link {
     text-decoration: none;
     text-transform: uppercase;
     color: #eab9b8;
-    font-size: 3.5rem;
+    font-size: 3.75rem;
     font-weight: 700;
     display: inline-block;
     padding-right: 1rem;
-    margin-right: 1rem; }
+    margin-right: 2.75rem; }
     .heading__link:hover {
       color: #f2d0d0; }
 
@@ -32,13 +32,23 @@ body {
     cursor: default; }
 
 .subheader {
-  color: white; }
+  color: white;
+  max-width: 39rem;
+  padding: 1rem 0;
+  margin-bottom: 3rem; }
 
 .info__content {
   display: flex;
   flex-direction: row; }
 .info__timer {
-  background-color: #3f3c3d; }
+  background-color: #3f3c3d;
+  display: relative; }
+  .info__timer:before {
+    content: "";
+    display: absolute;
+    background-color: #e6b7b6;
+    height: 5rem;
+    width: 5rem; }
 .info__temperature {
   background-color: #353334; }
 .info__load {
@@ -55,5 +65,14 @@ body {
   .wash__info {
     color: white;
     font-weight: 500; }
+
+.start {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 12rem;
+  padding: 1.25rem;
+  border-radius: .25rem; }
 
 /*# sourceMappingURL=styles.css.map */
