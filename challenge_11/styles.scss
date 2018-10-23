@@ -8,15 +8,20 @@ body {
 	margin: 0;
 	background-color: rgb(221, 139, 137);
 	font-family: Roboto, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	
 }
 
 .content {
 	margin-top: 5rem;
+
 }
 
 .heading {
-	width: 85rem;
+	width: 76.75rem;
 
 	&__link {
 		text-decoration: none;
@@ -25,8 +30,8 @@ body {
 		font-size: 3.75rem;
 		font-weight: 700;
 		display: inline-block;
-		padding-right: 1rem;
-		margin-right: 2.75rem;
+		padding-left: 1rem;
+		margin-left: 2.75rem;
 
 		&:hover {
 			color: rgb(242, 208, 208);
@@ -36,6 +41,8 @@ body {
 
 .synthetic {
 	color: white;
+	padding-left: 0;
+	margin-left: 0;
 
 	&:hover {
 		color: white;
@@ -54,6 +61,15 @@ body {
 
 
 .info {
+	display: relative;
+
+	&:before {
+		content: "";
+		display: absolute;
+		background-color: rgb(230, 183, 182);
+		height: 5rem;
+		width: 5rem;
+	}
 
 	&__content {
 		display: flex;
@@ -64,13 +80,7 @@ body {
 		background-color: rgb(63, 60, 61);
 		display: relative;
 
-		&:before {
-			content: "";
-			display: absolute;
-			background-color: rgb(230, 183, 182);
-			height: 5rem;
-			width: 5rem;
-		}
+
 	}
 
 	&__temperature {
@@ -86,11 +96,10 @@ body {
 .wash {
 	min-width: 19rem;
 	min-height: 19rem;
-	
-	&__content {
-		display: flex;
-		flex-direction: column;
-	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
 	&__header {
 		color: rgb(199, 143, 139);

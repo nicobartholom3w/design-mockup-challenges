@@ -6,13 +6,17 @@ body {
   padding: 0;
   margin: 0;
   background-color: #dd8b89;
-  font-family: Roboto, sans-serif; }
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .content {
   margin-top: 5rem; }
 
 .heading {
-  width: 85rem; }
+  width: 76.75rem; }
   .heading__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -20,13 +24,15 @@ body {
     font-size: 3.75rem;
     font-weight: 700;
     display: inline-block;
-    padding-right: 1rem;
-    margin-right: 2.75rem; }
+    padding-left: 1rem;
+    margin-left: 2.75rem; }
     .heading__link:hover {
       color: #f2d0d0; }
 
 .synthetic {
-  color: white; }
+  color: white;
+  padding-left: 0;
+  margin-left: 0; }
   .synthetic:hover {
     color: white;
     cursor: default; }
@@ -37,29 +43,32 @@ body {
   padding: 1rem 0;
   margin-bottom: 3rem; }
 
-.info__content {
-  display: flex;
-  flex-direction: row; }
-.info__timer {
-  background-color: #3f3c3d;
+.info {
   display: relative; }
-  .info__timer:before {
+  .info:before {
     content: "";
     display: absolute;
     background-color: #e6b7b6;
     height: 5rem;
     width: 5rem; }
-.info__temperature {
-  background-color: #353334; }
-.info__load {
-  background-color: #201e1f; }
+  .info__content {
+    display: flex;
+    flex-direction: row; }
+  .info__timer {
+    background-color: #3f3c3d;
+    display: relative; }
+  .info__temperature {
+    background-color: #353334; }
+  .info__load {
+    background-color: #201e1f; }
 
 .wash {
   min-width: 19rem;
-  min-height: 19rem; }
-  .wash__content {
-    display: flex;
-    flex-direction: column; }
+  min-height: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
   .wash__header {
     color: #c78f8b; }
   .wash__info {
