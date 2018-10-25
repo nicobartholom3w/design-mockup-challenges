@@ -54,23 +54,33 @@ body {
 .subheader {
 	color: white;
 	max-width: 39rem;
-	margin-bottom: -1rem;
+	margin-bottom: 2rem;
 }
 
 .selector {
 	background-color: rgb(230, 183, 182);
-	height: 5rem;
-	width: 5rem;
+	height: 6rem;
+	width: 6rem;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
+	&:hover {
+		cursor: pointer;
+		background-color: rgb(241, 208, 208);
+
+	}
 
 	&__left {
-		right: 5rem;
-		top: 5rem;
-
+		right: 6rem;
+		bottom: 19rem;
+		
+		&:hover:before {
+			border-top: .5rem solid transparent;
+			border-bottom: .5rem solid transparent;
+			border-right: .5rem solid black;
+		}
 
 		&:before {
 			content: "";
@@ -86,7 +96,13 @@ body {
 
 	&__right {
 		left: 57rem;
-		bottom: 19rem;
+		bottom: 25rem;
+		
+		&:hover:before {
+			border-top: .5rem solid transparent;
+			border-bottom: .5rem solid transparent;
+			border-left: .5rem solid black;
+		}
 
 		&:before {
 			content: "";
@@ -100,10 +116,15 @@ body {
 
 .info {
 	position: relative;
+	width: 57rem;
+	height: 19rem;
+	box-shadow: 0rem 1rem 3rem .25rem rgb(153, 101, 109);
+
 
 	&__content {
 		display: flex;
 		flex-direction: row;
+
 	}
 
 	&__timer {
@@ -151,9 +172,10 @@ body {
 	background-color: black;
 	color: white;
 	text-align: center;
-	width: 12rem;
+	width: 13rem;
 	padding: 1.25rem;
 	border-radius: .25rem;
 	position: relative;
-	bottom: 10rem;
+	bottom: 13.75rem;
+	left: 1.5rem;
 }
