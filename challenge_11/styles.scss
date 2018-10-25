@@ -9,9 +9,6 @@ body {
 	background-color: rgb(221, 139, 137);
 	font-family: Roboto, sans-serif;
 	display: flex;
-	// flex-direction: column;
-	// justify-content: center;
-	// align-items: center;
 
 	
 }
@@ -23,6 +20,7 @@ body {
 
 .heading {
 	width: 76.75rem;
+	padding-bottom: 1rem;
 
 	&__link {
 		text-decoration: none;
@@ -56,21 +54,52 @@ body {
 .subheader {
 	color: white;
 	max-width: 39rem;
-	padding: 1rem 0;
-	margin-bottom: 3rem;
+	margin-bottom: -1rem;
 }
 
+.selector {
+	background-color: rgb(230, 183, 182);
+	height: 5rem;
+	width: 5rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	&__left {
+		right: 5rem;
+		top: 5rem;
+
+
+		&:before {
+			content: "";
+			position: absolute;
+			height: 0;
+			width: 0;
+			border-top: .5rem solid transparent;
+			border-bottom: .5rem solid transparent;
+			border-right: .5rem solid rgb(131, 83, 81);
+
+		}
+	}
+
+	&__right {
+		left: 57rem;
+		bottom: 19rem;
+
+		&:before {
+			content: "";
+			position: absolute;
+			border-top: .5rem solid transparent;
+			border-bottom: .5rem solid transparent;
+			border-left: .5rem solid rgb(131, 83, 81);
+		}
+	}
+}
 
 .info {
-	display: relative;
-
-	&:before {
-		content: "";
-		display: absolute;
-		background-color: rgb(230, 183, 182);
-		height: 15rem;
-		width: 15rem;
-	}
+	position: relative;
 
 	&__content {
 		display: flex;
@@ -125,4 +154,6 @@ body {
 	width: 12rem;
 	padding: 1.25rem;
 	border-radius: .25rem;
+	position: relative;
+	bottom: 10rem;
 }
