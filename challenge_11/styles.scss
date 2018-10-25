@@ -9,14 +9,15 @@ body {
 	background-color: rgb(221, 139, 137);
 	font-family: Roboto, sans-serif;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: center;
+
 	
 }
 
 .content {
-	margin-top: 5rem;
+	margin: 5rem auto auto auto;
 
 }
 
@@ -67,8 +68,8 @@ body {
 		content: "";
 		display: absolute;
 		background-color: rgb(230, 183, 182);
-		height: 5rem;
-		width: 5rem;
+		height: 15rem;
+		width: 15rem;
 	}
 
 	&__content {
@@ -100,14 +101,19 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	align-content: flex-start;
+
 
 	&__header {
 		color: rgb(199, 143, 139);
+		font-size: 1.25rem;
+		margin-bottom: .5rem;
 	}
 
 	&__info {
 		color: white;
 		font-weight: 500;
+		font-size: 1.75rem;
 	}
 }
 

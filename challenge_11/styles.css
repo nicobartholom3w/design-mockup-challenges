@@ -7,13 +7,10 @@ body {
   margin: 0;
   background-color: #dd8b89;
   font-family: Roboto, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  display: flex; }
 
 .content {
-  margin-top: 5rem; }
+  margin: 5rem auto auto auto; }
 
 .heading {
   width: 76.75rem; }
@@ -49,8 +46,8 @@ body {
     content: "";
     display: absolute;
     background-color: #e6b7b6;
-    height: 5rem;
-    width: 5rem; }
+    height: 15rem;
+    width: 15rem; }
   .info__content {
     display: flex;
     flex-direction: row; }
@@ -68,12 +65,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  align-content: flex-start; }
   .wash__header {
-    color: #c78f8b; }
+    color: #c78f8b;
+    font-size: 1.25rem;
+    margin-bottom: .5rem; }
   .wash__info {
     color: white;
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 1.75rem; }
 
 .start {
   text-transform: uppercase;
