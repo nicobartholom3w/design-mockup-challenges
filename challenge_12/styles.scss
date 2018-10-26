@@ -16,28 +16,35 @@ body {
 	height: 41rem;
 	margin: 6rem auto 8.75rem;
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	// flex-direction: column;
+	// // justify-content: space-between;
+	// // align-content: center;
+	// // align-items: center;
 
 	&__content {
-		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 1.25rem;
 	}
 
 	&__header {
-
+		
 	}
 
 	&__footer {
 		color: rgb(112, 108, 61);
 		display: flex;
-		justify-content: row;
-		align-self: flex-end;
+		justify-content: flex-end;
+		width: 38rem;
+		background-color: purple;
+
+		
 	}
 
 	&__button {
 		padding: .5rem;
-
+		background-color: pink;
 	}
 }
 

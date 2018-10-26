@@ -13,16 +13,20 @@ body {
   width: 38rem;
   height: 41rem;
   margin: 6rem auto 8.75rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center; }
+  display: flex; }
+  .backing__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.25rem; }
   .backing__footer {
     color: #706c3d;
     display: flex;
-    justify-content: row;
-    align-self: flex-end; }
+    justify-content: flex-end;
+    width: 38rem;
+    background-color: purple; }
   .backing__button {
-    padding: .5rem; }
+    padding: .5rem;
+    background-color: pink; }
 
 /*# sourceMappingURL=styles.css.map */
