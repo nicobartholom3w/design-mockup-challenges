@@ -12,21 +12,48 @@ body {
   background-color: #fcec52;
   width: 38rem;
   height: 41rem;
-  margin: 6rem auto 8.75rem;
-  display: flex; }
+  margin: 6rem auto 8.75rem; }
   .backing__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    padding: 3rem;
+    float: right; }
+  .backing__title {
+    display: inline-block;
+    margin-right: 20rem; }
   .backing__footer {
     color: #706c3d;
-    display: flex;
-    justify-content: flex-end;
-    width: 38rem;
-    background-color: purple; }
+    margin-top: 32.5rem;
+    float: right; }
   .backing__button {
     padding: .5rem;
-    background-color: pink; }
+    display: inline-block; }
+    .backing__button:hover {
+      cursor: pointer;
+      color: black; }
+
+.close {
+  height: 1.25rem;
+  width: 1.25rem;
+  display: inline-block;
+  position: relative;
+  padding-bottom: .25rem;
+  padding-right: .25rem;
+  top: .25rem; }
+  .close:hover {
+    cursor: pointer; }
+  .close:before, .close:after {
+    content: "";
+    height: 1.15rem;
+    width: .19rem;
+    background-color: #7e7629;
+    position: absolute;
+    left: .7rem;
+    top: .25rem; }
+  .close:before {
+    transform: rotate(45deg); }
+  .close:after {
+    transform: rotate(-45deg); }
+  .close:hover:before, .close:hover:after {
+    background-color: black; }
 
 /*# sourceMappingURL=styles.css.map */

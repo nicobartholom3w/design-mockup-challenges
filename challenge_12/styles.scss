@@ -15,36 +15,77 @@ body {
 	width: 38rem;
 	height: 41rem;
 	margin: 6rem auto 8.75rem;
-	display: flex;
-	// flex-direction: column;
-	// // justify-content: space-between;
-	// // align-content: center;
-	// // align-items: center;
 
 	&__content {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
 		font-size: 1.25rem;
+		padding: 3rem;
+		float: right;
 	}
 
 	&__header {
-		
+
+	}
+
+	&__title {
+		display: inline-block;
+		margin-right: 20rem;
 	}
 
 	&__footer {
 		color: rgb(112, 108, 61);
-		display: flex;
-		justify-content: flex-end;
-		width: 38rem;
-		background-color: purple;
+		margin-top: 32.5rem;
+		float: right;
 
-		
+
 	}
 
 	&__button {
 		padding: .5rem;
-		background-color: pink;
+		display: inline-block;
+		
+		&:hover {
+			cursor: pointer;
+			color: black;
+		}
+
 	}
 }
 
+.close {
+	height: 1.25rem;
+	width: 1.25rem;
+	display: inline-block;
+	position: relative;
+	// background-color: blue;
+	padding-bottom: .25rem;
+	padding-right: .25rem;
+	top: .25rem;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:before , &:after {
+		content: "";
+		height: 1.15rem;
+		width: .19rem;
+		background-color: rgb(126, 118, 41);
+		position: absolute;
+		left: .7rem;
+		top: .25rem;
+
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+	&:hover:before , &:hover:after {
+		background-color: black;
+		
+	}
+}
