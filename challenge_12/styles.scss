@@ -12,9 +12,11 @@ body {
 
 .backing {
 	background-color: rgb(252, 236, 82);
-	width: 38rem;
+	width: 32rem;
 	height: 41rem;
 	margin: 6rem auto 8.75rem;
+	position: relative;
+	
 
 	&__content {
 		font-size: 1.25rem;
@@ -28,7 +30,7 @@ body {
 
 	&__title {
 		display: inline-block;
-		margin-right: 20rem;
+		margin-right: 14rem;
 	}
 
 	&__footer {
@@ -42,7 +44,7 @@ body {
 	&__button {
 		padding: .5rem;
 		display: inline-block;
-		
+
 		&:hover {
 			cursor: pointer;
 			color: black;
@@ -87,5 +89,18 @@ body {
 	&:hover:before , &:hover:after {
 		background-color: black;
 		
+	}
+}
+
+.main {
+	background-color: white;
+	height: 27rem;
+	width: 31.5rem;
+	position: absolute;
+	top: 9rem;
+	left: 3.5rem;
+
+	&__content {
+		margin-top: 3rem;
 	}
 }

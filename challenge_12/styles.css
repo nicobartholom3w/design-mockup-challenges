@@ -10,16 +10,17 @@ body {
 
 .backing {
   background-color: #fcec52;
-  width: 38rem;
+  width: 32rem;
   height: 41rem;
-  margin: 6rem auto 8.75rem; }
+  margin: 6rem auto 8.75rem;
+  position: relative; }
   .backing__content {
     font-size: 1.25rem;
     padding: 3rem;
     float: right; }
   .backing__title {
     display: inline-block;
-    margin-right: 20rem; }
+    margin-right: 14rem; }
   .backing__footer {
     color: #706c3d;
     margin-top: 32.5rem;
@@ -55,5 +56,15 @@ body {
     transform: rotate(-45deg); }
   .close:hover:before, .close:hover:after {
     background-color: black; }
+
+.main {
+  background-color: white;
+  height: 27rem;
+  width: 31.5rem;
+  position: absolute;
+  top: 9rem;
+  left: 3.5rem; }
+  .main__content {
+    margin-top: 3rem; }
 
 /*# sourceMappingURL=styles.css.map */
