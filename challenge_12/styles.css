@@ -100,4 +100,11 @@ body {
 .bio {
   height: 6rem; }
 
+.avatar {
+  border-radius: 50%;
+  height: 4rem;
+  position: absolute;
+  bottom: 25rem;
+  left: 2.5rem; }
+
 /*# sourceMappingURL=styles.css.map */
