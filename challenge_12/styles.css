@@ -65,6 +65,39 @@ body {
   top: 9rem;
   left: 3.5rem; }
   .main__content {
-    margin-top: 3rem; }
+    margin: 2.75rem 2.5rem 3rem 2.5rem; }
+
+.form__label {
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-size: .75rem;
+  font-weight: 500;
+  padding: 1.25rem 0rem .25rem 0; }
+.form__input {
+  border: transparent;
+  box-shadow: none;
+  font-size: .85rem;
+  border-bottom: solid 0.05rem #dedede;
+  width: 100%;
+  line-height: 1.75rem; }
+  .form__input:focus {
+    outline: none; }
+
+.firstname, .lastname {
+  display: inline-block; }
+
+.firstname {
+  margin-right: -1rem; }
+
+.firstname__input {
+  width: 14rem;
+  margin-right: 10; }
+
+.lastname__input {
+  width: 13rem;
+  margin-left: 0; }
+
+.bio {
+  height: 6rem; }
 
 /*# sourceMappingURL=styles.css.map */
