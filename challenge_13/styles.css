@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#b785e4, #8489f0);
+  font-family: Roboto, sans-serif; }
+
+.card {
+  height: 19rem;
+  width: 19rem;
+  background: linear-gradient(135deg, #bc7eda, #8b76cd);
+  margin: 6rem auto 0; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgb(183, 133, 228), rgb(132, 137, 240));
+	font-family: Roboto, sans-serif;
+}
+
+.card {
+	height: 19rem;
+	width: 19rem;
+	background: linear-gradient(135deg, rgb(188, 126, 218), rgb(139, 118, 205));
+	margin: 6rem auto 0;
+
+	&__content {
+
+	}
+}
+
+.folder {
+
+	&__sub {
+
+		&-content {
+
+		}
+
+		&-files {
+
+		}
+	}
+}
