@@ -12,6 +12,27 @@ body {
   height: 19rem;
   width: 19rem;
   background: linear-gradient(135deg, #bc7eda, #8b76cd);
-  margin: 6rem auto 0; }
+  margin: 6rem auto 0;
+  border-radius: .25rem;
+  box-shadow: 0rem 0.75rem 3rem 0.25rem #846ebe; }
+
+li {
+  display: block; }
+
+.arrow {
+  float: right; }
+
+.folder {
+  color: white;
+  float: left; }
+  .folder:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .folder__sub {
+    background-color: #605280;
+    width: 100%;
+    height: 10rem;
+    color: #dcd9e3; }
 
 /*# sourceMappingURL=styles.css.map */
