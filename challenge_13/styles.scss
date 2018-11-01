@@ -23,22 +23,24 @@ body {
 		
 	}
 }
-
-li {
-	display: block;
-}
+	
 .arrow {
 	float: right;
+
 }
 
 .folder {
 	color: white;
 	float: left;
+	
+	&__icon {
+		background-color: white;
+		border-radius: 50%;
+		float: left;
 
-	&:after {
-			content: "";
-			display: table;
-			clear: both;
+		&-img {
+			size: 50rem;
+		}
 	}
 
 	&__sub {
@@ -52,7 +54,15 @@ li {
 		}
 
 		&-files {
-
+			
 		}
 	}
+}
+
+.active-folder {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
 }
