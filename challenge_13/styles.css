@@ -32,11 +32,25 @@ body {
     background-color: #605280;
     width: 100%;
     height: 10rem;
-    color: #dcd9e3; }
+    color: #dcd9e3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    align-content: center; }
 
 .active-folder:after {
   content: "";
   display: table;
   clear: both; }
+
+.bullets {
+  display: flex; }
+
+.dot {
+  background-color: white;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  box-shadow: inset 0rem 0rem 0rem 0.4rem #605280; }
 
 /*# sourceMappingURL=styles.css.map */
