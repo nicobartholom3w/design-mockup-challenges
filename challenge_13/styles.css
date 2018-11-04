@@ -16,8 +16,23 @@ body {
   border-radius: .25rem;
   box-shadow: 0rem 0.75rem 3rem 0.25rem #846ebe; }
 
+.active-folder:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .arrow {
   float: right; }
+
+.bullets {
+  display: flex; }
+
+.dot {
+  background-color: white;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  box-shadow: inset 0rem 0rem 0rem 0.4rem #605280; }
 
 .folder {
   color: white;
@@ -37,20 +52,5 @@ body {
     flex-direction: column;
     flex-wrap: wrap-reverse;
     align-content: center; }
-
-.active-folder:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.bullets {
-  display: flex; }
-
-.dot {
-  background-color: white;
-  height: 1.25rem;
-  width: 1.25rem;
-  border-radius: 50%;
-  box-shadow: inset 0rem 0rem 0rem 0.4rem #605280; }
 
 /*# sourceMappingURL=styles.css.map */
