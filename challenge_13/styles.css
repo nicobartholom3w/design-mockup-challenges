@@ -53,4 +53,9 @@ body {
     flex-wrap: wrap-reverse;
     align-content: center; }
 
+.line__sub {
+  border-left: 1rem solid #afa9c0;
+  width: 10rem;
+  margin-left: 1rem; }
+
 /*# sourceMappingURL=styles.css.map */
