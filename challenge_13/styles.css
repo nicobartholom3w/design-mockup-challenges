@@ -25,7 +25,10 @@ body {
   float: right; }
 
 .bullets {
-  display: flex; }
+  display: flex;
+  height: 1.25rem; }
+  .bullets__leftmargin {
+    margin-left: 1.25rem; }
 
 .dot {
   background-color: white;
@@ -37,12 +40,17 @@ body {
 .folder {
   color: white;
   float: left; }
+  .folder__line {
+    display: flex;
+    align-items: center; }
   .folder__icon {
     background-color: white;
     border-radius: 50%;
-    float: left; }
+    float: left;
+    display: flex;
+    justify-content: center; }
     .folder__icon-img {
-      size: 50rem; }
+      width: 60%; }
   .folder__sub {
     background-color: #605280;
     width: 100%;
@@ -52,6 +60,11 @@ body {
     flex-direction: column;
     flex-wrap: wrap-reverse;
     align-content: center; }
+    .folder__sub-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%; }
 
 .line__sub {
   border-left: 1rem solid #afa9c0;

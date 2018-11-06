@@ -39,6 +39,11 @@ body {
 
 .bullets {
 	display: flex;
+	height: 1.25rem;
+	
+	&__leftmargin {
+		margin-left: 1.25rem;
+	}
 }
 
 .dot {
@@ -52,14 +57,25 @@ body {
 .folder {
 	color: white;
 	float: left;
+
 	
+	&__line {
+		display: flex;
+		align-items: center;
+
+	}
+
 	&__icon {
 		background-color: white;
 		border-radius: 50%;
 		float: left;
+		display: flex;
+		justify-content: center;
+
 
 		&-img {
-			size: 50rem;
+			width: 60%;
+
 		}
 	}
 
@@ -74,7 +90,10 @@ body {
 		align-content: center; 
 
 		&-content {
-
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			height: 100%;
 		}
 
 		&-files {
@@ -88,5 +107,6 @@ body {
 	width: 10rem;
 	margin-left: 1rem;
 }
+
 
 
