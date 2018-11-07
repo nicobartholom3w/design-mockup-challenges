@@ -19,12 +19,14 @@ body {
 	box-shadow: 0rem .75rem 3rem .25rem rgb(132, 110, 190);
 
 	&__content {
-		
+		padding-top: 1.25rem;
 		
 	}
 }
 
 .active-folder {
+	// background-color: pink;
+
 	&:after {
 		content: "";
 		display: table;
@@ -48,10 +50,11 @@ body {
 
 .dot {
 	background-color: white;
-	height: 1.25rem;
-	width: 1.25rem;
+	height: .5rem;
+	width: .5rem;
+	border: solid .25rem rgb(96, 82, 128);
 	border-radius: 50%;
-	box-shadow: inset 0rem 0rem 0rem .4rem rgb(96, 82, 128);
+	// box-shadow: inset 0rem 0rem 0rem .4rem rgb(96, 82, 128);
 }
 
 .folder {
@@ -62,6 +65,7 @@ body {
 	&__line {
 		display: flex;
 		align-items: center;
+		height: 4rem;
 
 	}
 
