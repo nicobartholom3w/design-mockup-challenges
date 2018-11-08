@@ -46,6 +46,11 @@ body {
 	display: flex;
 	height: 1.25rem;
 	margin-left: 1.05rem;
+
+	&:hover {
+		color: white;
+		cursor: pointer;
+	}
 }
 
 .dot {
@@ -62,6 +67,7 @@ body {
 	float: left;
 	margin-left: .75rem;
 
+
 	
 	&__line {
 		display: flex;
@@ -69,6 +75,11 @@ body {
 		height: 4rem;
 		z-index: 2;
 		margin-left: 1rem;
+		width: 95%;
+
+		&:hover {
+			cursor: pointer;
+		}
 
 	}
 
@@ -109,6 +120,8 @@ body {
 
 		&-files {
 			margin-left: .75rem;
+
+
 		}
 	}
 }
