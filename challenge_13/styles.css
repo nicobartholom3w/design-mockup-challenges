@@ -16,7 +16,9 @@ body {
   border-radius: .25rem;
   box-shadow: 0rem 0.75rem 3rem 0.25rem #846ebe; }
   .card__content {
-    padding-top: 1.25rem; }
+    padding-top: 1.25rem;
+    position: relative;
+    height: 19rem; }
 
 .active-folder:after {
   content: "";
@@ -24,34 +26,38 @@ body {
   clear: both; }
 
 .arrow {
-  float: right; }
+  float: right;
+  margin-left: 10rem; }
 
 .bullets {
   display: flex;
-  height: 1.25rem; }
-  .bullets__leftmargin {
-    margin-left: 1.25rem; }
+  height: 1.25rem;
+  margin-left: 1.05rem; }
 
 .dot {
   background-color: white;
-  height: .5rem;
-  width: .5rem;
-  border: solid 0.25rem #605280;
+  height: .45rem;
+  width: .45rem;
+  border: solid 0.5rem #605280;
   border-radius: 50%; }
 
 .folder {
   color: white;
-  float: left; }
+  float: left;
+  margin-left: .75rem; }
   .folder__line {
     display: flex;
     align-items: center;
-    height: 4rem; }
+    height: 4rem;
+    z-index: 2;
+    margin-left: 1rem; }
   .folder__icon {
     background-color: white;
     border-radius: 50%;
     float: left;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    z-index: 2; }
     .folder__icon-img {
       width: 60%; }
   .folder__sub {
@@ -62,16 +68,38 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
-    align-content: center; }
+    align-content: center;
+    position: relative; }
     .folder__sub-content {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      height: 100%; }
+      height: 100%;
+      z-index: 2; }
+    .folder__sub-files {
+      margin-left: .75rem; }
 
-.line__sub {
-  border-left: 1rem solid #afa9c0;
+.verticalline__top {
+  border-left: .1rem solid white;
+  height: 2.75rem;
   width: 10rem;
-  margin-left: 1rem; }
+  z-index: 1;
+  top: 0rem;
+  left: 1.65rem;
+  position: absolute; }
+.verticalline__sub {
+  border-left: 0.1rem solid #afa9c0;
+  height: 10rem;
+  width: 18.2rem;
+  margin-left: 1rem;
+  position: absolute;
+  z-index: 1; }
+.verticalline__bottom {
+  border-left: .1rem solid white;
+  height: 3.75rem;
+  width: 10rem;
+  left: 1.7rem;
+  z-index: 1;
+  position: absolute; }
 
 /*# sourceMappingURL=styles.css.map */

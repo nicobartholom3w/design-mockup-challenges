@@ -20,6 +20,8 @@ body {
 
 	&__content {
 		padding-top: 1.25rem;
+		position: relative;
+		height: 19rem;
 		
 	}
 }
@@ -36,23 +38,21 @@ body {
 
 .arrow {
 	float: right;
+	margin-left: 10rem;
 
 }
 
 .bullets {
 	display: flex;
 	height: 1.25rem;
-	
-	&__leftmargin {
-		margin-left: 1.25rem;
-	}
+	margin-left: 1.05rem;
 }
 
 .dot {
 	background-color: white;
-	height: .5rem;
-	width: .5rem;
-	border: solid .25rem rgb(96, 82, 128);
+	height: .45rem;
+	width: .45rem;
+	border: solid .5rem rgb(96, 82, 128);
 	border-radius: 50%;
 	// box-shadow: inset 0rem 0rem 0rem .4rem rgb(96, 82, 128);
 }
@@ -60,12 +60,15 @@ body {
 .folder {
 	color: white;
 	float: left;
+	margin-left: .75rem;
 
 	
 	&__line {
 		display: flex;
 		align-items: center;
 		height: 4rem;
+		z-index: 2;
+		margin-left: 1rem;
 
 	}
 
@@ -75,6 +78,7 @@ body {
 		float: left;
 		display: flex;
 		justify-content: center;
+		z-index: 2;
 
 
 		&-img {
@@ -92,25 +96,52 @@ body {
 		flex-direction: column;
 		flex-wrap: wrap-reverse;
 		align-content: center; 
+		position: relative;
+
 
 		&-content {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
 			height: 100%;
+			z-index: 2;
 		}
 
 		&-files {
-			
+			margin-left: .75rem;
 		}
 	}
 }
 
-.line__sub {
-	border-left: 1rem solid rgb(175, 169, 192);
-	width: 10rem;
+
+.verticalline {
+
+	&__top {
+		border-left: .1rem solid white;
+		height: 2.75rem;
+		width: 10rem;
+		z-index: 1;
+		top: 0rem;
+		left: 1.65rem;
+		position: absolute;
+	}
+
+	&__sub {
+	border-left: .1rem solid rgb(175, 169, 192);
+	height: 10rem;
+	width: 18.2rem;
 	margin-left: 1rem;
+	position: absolute;
+	z-index: 1;
+	}
+
+	&__bottom {
+		border-left: .1rem solid white;
+		height: 3.75rem;
+		width: 10rem;
+		left: 1.7rem;
+		z-index: 1;
+		position: absolute;
+	}
 }
-
-
 
