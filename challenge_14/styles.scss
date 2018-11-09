@@ -6,6 +6,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Roboto, sans-serif;
 	background-color: rgb(85, 86, 126);
 }
 
@@ -44,16 +45,59 @@ body {
 }
 
 .card {
+	max-width: 20rem;
+	background-color: white;
+	height: 23.5rem;
+	margin: 2rem auto 0;
+	border-radius: 1%;
+	box-shadow: 0 .75rem 2rem 0rem rgb(64, 64, 94);
 
 	&__content {
-
+		
 	}
 }
 
 .header {
+	height: 9.9rem;
+	width: 100%;
+	background-image: url("img/food.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom -1.75rem left;
+	background-color: rgb(85, 86, 126);
+	box-shadow: 0 -1 rgb(85, 86, 126);
+	border-radius: 2%;
 
 	&__content {
+		color: white;
+		position: relative;
+	}
 
+	&__text {
+		padding: 1rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.darken-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.selection {
+	font-size: 1.5rem;
+	font-weight: 500;
+
+}
+
+.location {
+	font-size: .75rem;
+
+	&__icon {
+		height: 1rem;
 	}
 }
 
