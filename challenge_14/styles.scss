@@ -1,0 +1,73 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(85, 86, 126);
+}
+
+.main {
+	max-width: 25rem;
+	margin: 6rem auto 0;
+
+}
+
+.menu {
+	max-width: 100%;
+	height: 3.5rem;
+	// background-color: pink;
+
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__icon {
+		height: 3.5rem;
+		width: 4.75rem;
+		background-color: rgb(37, 37, 37, );
+		opacity: 0.5;
+		display: flex;
+		justify-content: center;
+			
+			&:hover {
+				opacity: .75;
+			}
+		&-img {
+
+		}
+	}
+}
+
+.card {
+
+	&__content {
+
+	}
+}
+
+.header {
+
+	&__content {
+
+	}
+}
+
+.items {
+
+	&__content {
+
+	}
+}
+
+.food {
+
+}
+
+.price {
+
+}
