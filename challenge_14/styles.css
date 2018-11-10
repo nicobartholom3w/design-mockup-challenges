@@ -9,7 +9,7 @@ body {
   background-color: #55567e; }
 
 .main {
-  max-width: 25rem;
+  max-width: 23rem;
   margin: 6rem auto 0; }
 
 .menu {
@@ -17,21 +17,33 @@ body {
   height: 3.5rem; }
   .menu__content {
     display: flex;
-    justify-content: space-between; }
+    align-items: center;
+    height: 3.5rem; }
   .menu__icon {
-    height: 3.5rem;
-    width: 4.75rem;
+    height: 3.75rem;
+    width: 4.5rem;
     background-color: #252525;
     opacity: 0.5;
     display: flex;
     justify-content: center; }
     .menu__icon:hover {
       opacity: .75; }
+    .menu__icon-border {
+      border-left: solid 0.05rem rgba(255, 255, 255, 0.5); }
+
+.active__icon {
+  padding: .5rem .75rem;
+  margin: -.5rem;
+  opacity: 1;
+  box-shadow: 0 0 0.65rem 0.25rem #48486a; }
+  .active__icon-img {
+    height: 2rem;
+    align-self: center; }
 
 .card {
-  max-width: 20rem;
+  max-width: 19rem;
   background-color: white;
-  height: 23.5rem;
+  height: 24rem;
   margin: 2rem auto 0;
   border-radius: 1%;
   box-shadow: 0 0.75rem 2rem 0rem #40405e; }
@@ -42,7 +54,7 @@ body {
   background-image: url("img/food.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: bottom -1.75rem left;
+  background-position: bottom -1.25rem left;
   background-color: #55567e;
   box-shadow: 0 -1 #55567e;
   border-radius: 2%; }
@@ -68,5 +80,30 @@ body {
   font-size: .75rem; }
   .location__icon {
     height: 1rem; }
+
+.items {
+  color: #aaaaaa;
+  height: 14.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+  .items__content {
+    border-bottom: solid 0.05rem #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%; }
+    .items__content:hover {
+      cursor: pointer; }
+    .items__content:hover > .price {
+      color: black;
+      font-size: 1.25rem; }
+
+.food {
+  margin-left: 1rem; }
+
+.price {
+  margin-right: 1rem;
+  transition: font-size .25s; }
 
 /*# sourceMappingURL=styles.css.map */
