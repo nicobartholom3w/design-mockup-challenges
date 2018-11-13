@@ -10,4 +10,19 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+	font-family: Roboto, sans-serif;
+}
+
+.left {
+	color: white;
+	font-weight: 300;
+	font-size: 1.25rem;
+
+	&__upper {
+
+		&-content {
+			
+		}
+	}
+
 }
