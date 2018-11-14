@@ -13,6 +13,13 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+.yellow {
+	background-color: rgba(236, 198, 56, 1);
+	height: 20rem;
+	width: 20rem;
+	z-index: 5;
+}
+
 .left {
 	color: white;
 	font-weight: 300;
@@ -25,4 +32,21 @@ body {
 		}
 	}
 
+}
+
+.right {
+
+	&__upper {
+		
+		&-content {
+
+		}
+	}
+
+	&__lower {
+		
+		&-content {
+
+		}
+	}
 }

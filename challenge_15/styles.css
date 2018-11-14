@@ -11,6 +11,12 @@ body {
   background-position: 50% 50%;
   font-family: Roboto, sans-serif; }
 
+.yellow {
+  background-color: #ecc638;
+  height: 20rem;
+  width: 20rem;
+  z-index: 5; }
+
 .left {
   color: white;
   font-weight: 300;
