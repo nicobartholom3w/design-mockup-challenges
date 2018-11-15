@@ -11,11 +11,15 @@ body {
   background-position: 50% 50%;
   font-family: Roboto, sans-serif; }
 
-.yellow {
-  background-color: #ecc638;
-  height: 20rem;
-  width: 20rem;
-  z-index: 5; }
+.background__yellow {
+  content: "";
+  background-color: rgba(236, 198, 56, 0.85);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient();
+  position: absolute;
+  display: block; }
 
 .left {
   color: white;
