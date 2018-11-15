@@ -9,21 +9,34 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  font-family: Roboto, sans-serif; }
-
-.background__yellow {
-  content: "";
-  background-color: rgba(236, 198, 56, 0.85);
+  font-family: Roboto, sans-serif;
   height: 100%;
-  width: 100%;
-  z-index: 10;
-  background: linear-gradient();
-  position: absolute;
-  display: block; }
+  width: 100%; }
+
+.content {
+  height: 100%;
+  width: 100%; }
 
 .left {
   color: white;
   font-weight: 300;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  float: left;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 3rem; }
+  .left__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.right {
+  float: right;
+  background-color: rgba(255, 215, 40, 0.85);
+  height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
