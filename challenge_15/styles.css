@@ -29,6 +29,8 @@ body {
   align-items: center;
   height: 100%;
   width: 3rem; }
+  .left:hover {
+    cursor: pointer; }
   .left__content {
     display: flex;
     flex-direction: column;
@@ -38,5 +40,7 @@ body {
   float: right;
   background-color: rgba(255, 215, 40, 0.85);
   height: 100%; }
+  .right__upper:hover {
+    cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
