@@ -15,30 +15,43 @@ body {
 
 .content {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: reltaive; }
+  .content:before {
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    transform: rotate(20deg);
+    background-color: rgba(255, 215, 40, 0.85);
+    z-index: -11;
+    left: 10%;
+    bottom: -80%; }
 
 .left {
   color: white;
+  height: 100%;
   font-weight: 300;
   font-size: 1.25rem;
   float: left;
-  background-color: pink;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   width: 3rem; }
   .left:hover {
     cursor: pointer; }
   .left__content {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding: 1.25rem; }
+
+.num {
+  padding: .25rem; }
 
 .right {
   float: right;
-  background-color: rgba(255, 215, 40, 0.85);
   height: 100%; }
   .right__upper:hover {
     cursor: pointer; }
