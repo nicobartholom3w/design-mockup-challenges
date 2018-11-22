@@ -14,19 +14,17 @@ body {
   width: 100%; }
 
 .content {
-  height: 100%;
-  width: 100%;
-  position: reltaive; }
-  .content:before {
-    content: "";
-    position: absolute;
-    height: 200%;
-    width: 100%;
-    transform: rotate(20deg);
-    background-color: rgba(255, 215, 40, 0.85);
-    z-index: -11;
-    left: 10%;
-    bottom: -80%; }
+  min-height: 100%;
+  width: 100%; }
+
+.main__content {
+  text-align: right; }
+.main__num {
+  font-size: 5.5rem; }
+.main__text {
+  font-size: 2.25rem;
+  font-weight: 500;
+  max-width: 20rem; }
 
 .left {
   color: white;
@@ -52,8 +50,23 @@ body {
 
 .right {
   float: right;
+  background-color: pink;
   height: 100%; }
   .right__upper:hover {
     cursor: pointer; }
+  .right__upper-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }
+  .right__lower {
+    height: 100%; }
+    .right__lower-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: flex-end;
+      background-color: purple; }
 
 /*# sourceMappingURL=styles.css.map */
