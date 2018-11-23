@@ -14,17 +14,20 @@ body {
   width: 100%; }
 
 .content {
-  min-height: 100%;
+  height: 100%;
   width: 100%; }
 
-.main__content {
-  text-align: right; }
-.main__num {
-  font-size: 5.5rem; }
-.main__text {
-  font-size: 2.25rem;
-  font-weight: 500;
-  max-width: 20rem; }
+.main {
+  margin-right: 1rem;
+  margin-top: 50%; }
+  .main__content {
+    text-align: right; }
+  .main__num {
+    font-size: 5.75rem; }
+  .main__text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    max-width: 21rem; }
 
 .left {
   color: white;
@@ -37,36 +40,52 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 3rem; }
-  .left:hover {
-    cursor: pointer; }
   .left__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.25rem; }
+    .left__content:hover {
+      cursor: pointer; }
 
 .num {
   padding: .25rem; }
 
 .right {
-  float: right;
-  background-color: pink;
-  height: 100%; }
-  .right__upper:hover {
-    cursor: pointer; }
-  .right__upper-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center; }
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  align-content: flex-end; }
+  .right__upper {
+    margin-right: 1rem;
+    margin-top: 1rem; }
+    .right__upper:hover {
+      cursor: pointer; }
+    .right__upper-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
   .right__lower {
+    margin-right: 1rem;
+    margin-top: 10%;
     height: 100%; }
     .right__lower-content {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-      align-content: flex-end;
-      background-color: purple; }
+      align-content: flex-end; }
+
+.text {
+  margin-left: .75rem;
+  font-size: 1.25rem; }
+
+.view {
+  height: 1.5rem; }
+
+.next {
+  margin-left: 1rem; }
 
 /*# sourceMappingURL=styles.css.map */
