@@ -13,13 +13,33 @@ body {
   height: 100%;
   width: 100%; }
 
+.mask {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+.background__yellow {
+  height: 100%;
+  position: relative;
+  z-index: 1; }
+  .background__yellow:before {
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    transform: rotate(20deg);
+    background-color: rgba(255, 215, 40, 0.85);
+    z-index: -11;
+    left: 23%;
+    bottom: -80%; }
+
 .content {
   height: 100%;
   width: 100%; }
 
 .main {
   margin-right: 1rem;
-  margin-top: 50%; }
+  margin-top: 72%; }
   .main__content {
     text-align: right; }
   .main__num {
@@ -69,7 +89,7 @@ body {
       align-items: center; }
   .right__lower {
     margin-right: 1rem;
-    margin-top: 10%;
+    margin-top: 8%;
     height: 100%; }
     .right__lower-content {
       display: flex;
