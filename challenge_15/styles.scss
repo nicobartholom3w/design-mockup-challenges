@@ -49,10 +49,14 @@ body {
 	// 
 	// }
 }
-
+.bottom-right {
+	position: absolute;
+	margin-bottom: 1.5rem;
+	bottom: 0;
+}
 .main {
 	margin-right: 1rem;
-	margin-top: 72%;
+	// margin-top: 72%;
 	
 
 	&__content {
