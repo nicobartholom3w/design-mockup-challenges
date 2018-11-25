@@ -3,6 +3,22 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: #79accd; }
+  background-color: #79accd;
+  font-family: Roboto, sans-serif; }
+
+.card {
+  height: 27rem;
+  width: 25rem;
+  background-color: white;
+  margin: 9rem auto 0; }
+
+.header {
+  color: #7e8a94;
+  border-bottom: solid 0.05rem #dedede; }
+  .header__content {
+    display: flex;
+    justify-content: space-between; }
+  .header__info {
+    padding: 1.25rem; }
 
 /*# sourceMappingURL=styles.css.map */

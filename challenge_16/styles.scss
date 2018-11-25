@@ -4,4 +4,31 @@ html, body {
 	height: 100%;
 	width: 100%;
 	background-color: rgb(121, 172, 205);
+	font-family: Roboto, sans-serif;
+}
+
+.card {
+	height: 27rem;
+	width: 25rem;
+	background-color: white;
+	margin: 9rem auto 0;
+
+	&__content {
+
+	}
+}
+
+.header {
+	color: rgb(126, 138, 148);
+	border-bottom: solid .05rem rgb(222, 222, 222);
+	// margin: 1rem;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		padding: 1.25rem;
+	}
 }
