@@ -32,3 +32,40 @@ html, body {
 		padding: 1.25rem;
 	}
 }
+
+.calendar {
+
+	&__content {
+		display: flex;
+		align-content: space-between;
+	}
+}
+.day, .date {
+	padding: 1rem;
+}
+
+.day {
+	color: rgb(126, 138, 148);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: .85rem;
+}
+
+.plus {
+
+}
+
+.circle {
+	
+	&__orange {
+		
+		&-filled {
+			
+		}
+	}
+
+	&__purple {
+
+	}
+}
+

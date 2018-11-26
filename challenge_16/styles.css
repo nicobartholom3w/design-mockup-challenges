@@ -21,4 +21,17 @@ html, body {
   .header__info {
     padding: 1.25rem; }
 
+.calendar__content {
+  display: flex;
+  align-content: space-between; }
+
+.day, .date {
+  padding: 1rem; }
+
+.day {
+  color: #7e8a94;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .85rem; }
+
 /*# sourceMappingURL=styles.css.map */
