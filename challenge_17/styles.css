@@ -64,4 +64,48 @@ a {
     font-size: .85rem;
     margin-left: .35rem; }
 
+.right {
+  width: 100%;
+  height: 100%; }
+  .right__content {
+    height: 30.5rem;
+    width: 29.25rem;
+    margin: 2.5rem; }
+
+.pointer:hover {
+  cursor: pointer; }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 2rem; }
+
+.years {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #c1c1c1;
+  overflow: hidden;
+  position: relative; }
+  .years:after {
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background-image: linear-gradient(to right, transparent, white);
+    position: absolute;
+    left: 27.25rem;
+    bottom: 0rem; }
+  .years__content {
+    display: flex; }
+
+.year {
+  margin-right: 1.15rem; }
+  .year:hover {
+    color: black;
+    cursor: pointer; }
+  .year__active {
+    color: black; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -113,5 +113,68 @@ a {
 }
 
 .right {
+	width: 100%;
+	height: 100%;
+
+	&__content {
+		height: 30.5rem;
+		width: 29.25rem;
+		margin: 2.5rem;
+		// background-color: pink;
+	}
+}
+
+.pointer {
+	&:hover {
+		cursor: pointer;
+	}
+}
+.header {
+	width: 100%;
+	// background-color: red;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.75rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+
+.years {
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: rgb(193, 193, 193);
+	// background-color: pink;
+	overflow: hidden;
+	position: relative;
 	
+	&:after {
+		content: "";
+		height: 2rem;
+		width: 2rem;
+		// background-color: purple;
+		background-image: linear-gradient(to right, transparent, white);
+		position: absolute; 
+		left: 27.25rem;
+		bottom: 0rem;
+	}
+
+	&__content {
+		display: flex;
+
+	}
+	
+	
+}
+
+.year {
+	margin-right: 1.15rem;
+	
+	&:hover {
+		color: black;
+		cursor: pointer;
+	}
+
+	&__active {
+		color: black;
+	}
 }
