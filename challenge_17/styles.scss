@@ -7,18 +7,12 @@ html, body {
 	font-family: Roboto, sans-serif;
 }
 
-a {
-	color: inherit;
-	text-decoration: inherit;
-}
-
-
-
 .card {
 	margin: 3.75rem auto 0;
 	height: 35.5rem;
 	width: 62.5rem;
 	background-color: white;
+	box-shadow: 0rem 0rem 1rem 0.25rem rgb(190, 235, 241);
 
 	&__content {
 		display: flex;
@@ -120,7 +114,6 @@ a {
 		height: 30.5rem;
 		width: 29.25rem;
 		margin: 2.5rem;
-		// background-color: pink;
 	}
 }
 
@@ -131,7 +124,6 @@ a {
 }
 .header {
 	width: 100%;
-	// background-color: red;
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.75rem;
@@ -143,7 +135,6 @@ a {
 	font-size: 1.25rem;
 	font-weight: 400;
 	color: rgb(193, 193, 193);
-	// background-color: pink;
 	overflow: hidden;
 	position: relative;
 	
@@ -151,7 +142,6 @@ a {
 		content: "";
 		height: 2rem;
 		width: 2rem;
-		// background-color: purple;
 		background-image: linear-gradient(to right, transparent, white);
 		position: absolute; 
 		left: 27.25rem;
@@ -185,7 +175,6 @@ a {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		// background-color: purple;
 		height: 22rem;
 		font-size: .9rem;
 	}

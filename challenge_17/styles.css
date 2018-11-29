@@ -6,15 +6,12 @@ html, body {
   background-color: #c8f8fe;
   font-family: Roboto, sans-serif; }
 
-a {
-  color: inherit;
-  text-decoration: inherit; }
-
 .card {
   margin: 3.75rem auto 0;
   height: 35.5rem;
   width: 62.5rem;
-  background-color: white; }
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem 0.25rem #beebf1; }
   .card__content {
     display: flex;
     width: 100%;
