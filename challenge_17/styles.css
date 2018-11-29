@@ -6,6 +6,10 @@ html, body {
   background-color: #c8f8fe;
   font-family: Roboto, sans-serif; }
 
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
 .card {
   margin: 3.75rem auto 0;
   height: 35.5rem;
@@ -16,12 +20,48 @@ html, body {
     width: 100%;
     height: 100%; }
 
+.darken-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .left {
   width: 45%;
   height: 100%;
-  background-image: url("img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -12.75rem; }
+  color: white; }
+  .left__background {
+    width: 28.25rem;
+    height: 100%;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -12.75rem; }
+  .left__content {
+    height: 8rem;
+    width: 13.75rem; }
+  .left__title {
+    font-size: 1.75rem;
+    font-weight: 500; }
+  .left__subtext {
+    font-size: .9rem;
+    margin: .75rem 0 1.25rem 0; }
+
+.button__left {
+  height: 3rem;
+  width: 8rem;
+  background-color: rgba(122, 193, 171, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem; }
+  .button__left:hover {
+    cursor: pointer;
+    background-color: #7ac1ab; }
+  .button__left-text {
+    font-size: .85rem;
+    margin-left: .35rem; }
 
 /*# sourceMappingURL=styles.css.map */
