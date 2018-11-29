@@ -108,4 +108,42 @@ a {
   .year__active {
     color: black; }
 
+.feed {
+  margin-top: 2.75rem; }
+  .feed__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22rem;
+    font-size: .9rem; }
+
+.line__content {
+  display: flex;
+  align-items: center; }
+
+.icon {
+  height: 2.5rem;
+  border-radius: 50%; }
+
+.summary {
+  margin-left: 1.25rem;
+  width: 18rem; }
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem; }
+  .date__day {
+    font-size: 2.25rem;
+    font-weight: 100; }
+  .date__right {
+    margin-left: .5rem; }
+  .date__month {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem; }
+  .date__year {
+    font-size: .8rem; }
+
 /*# sourceMappingURL=styles.css.map */
