@@ -9,10 +9,13 @@ html, body {
 .card {
   margin: 9rem auto 9rem;
   width: 25rem;
-  height: 40rem;
+  height: 42.75rem;
   background-color: white;
   border: solid 1rem black;
   border-radius: 3rem;
   box-shadow: 0 0.5rem 2rem 0.25rem #abacaf; }
+
+.bluediagonal {
+  background-color: #5388f4; }
 
 /*# sourceMappingURL=styles.css.map */

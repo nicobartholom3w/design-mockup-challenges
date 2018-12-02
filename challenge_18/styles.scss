@@ -10,7 +10,7 @@ html, body {
 .card {
 	margin: 9rem auto 9rem;
 	width: 25rem;
-	height: 40rem;
+	height: 42.75rem;
 	background-color: white;
 	border: solid 1rem black;
 	border-radius: 3rem;
@@ -19,4 +19,9 @@ html, body {
 	&__content {
 
 	}
+}
+
+.bluediagonal {
+	background-color: rgb(83, 136, 244);
+	
 }
