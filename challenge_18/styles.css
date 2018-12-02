@@ -16,6 +16,24 @@ html, body {
   box-shadow: 0 0.5rem 2rem 0.25rem #abacaf; }
 
 .bluediagonal {
-  background-color: #5388f4; }
+  height: 20rem;
+  width: 30rem;
+  overflow: hidden;
+  position: relative;
+  background-color: red; }
+  .bluediagonal:before {
+    content: "";
+    background-color: #5388f4;
+    position: absolute;
+    height: 20rem;
+    width: 20rem; }
+
+.creditcard {
+  height: 15rem; }
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem; }
 
 /*# sourceMappingURL=styles.css.map */
