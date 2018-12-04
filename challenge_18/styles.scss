@@ -15,36 +15,87 @@ html, body {
 	border: solid 1rem black;
 	border-radius: 3rem;
 	box-shadow: 0 0.5rem 2rem .25rem rgb(171, 172, 175);
+	overflow: hidden;
+	
 
 	&__content {
 
 	}
 }
 
+.blackbar {
+	background-color: black;
+	height: 2.25rem;
+	width: 15rem;
+	position: absolute;
+	z-index: 2;
+	border-radius: .5rem;
+	bottom: 31.75rem;
+	left: 12.5rem;
+
+	&:before, &:after {
+		content: "";
+		height: 2.25rem;
+		width: 1rem;
+		background-color: rgb(83, 136, 244);
+		position: absolute;
+		z-index: 2;
+		border-radius: .45rem;
+		top: .35rem;
+	}
+
+	&:before {
+		right: 15rem;
+	}
+	
+	&:after {
+		left: 15rem;
+	}
+
+	&__curve {
+		height: 1rem;
+		width: 16rem;
+		background-color: black;
+		position: absolute;
+		bottom: 32.75rem;
+		left: 12rem;
+		z-index: 2;
+	}
+}
+
+
 .bluediagonal {
-	height: 20rem;
+	height: 17rem;
 	width: 30rem;
-	overflow: hidden;
 	position: relative;
-	background-color: red;
+	z-index: 1;
 
 	&:before {
 		content: "";
 		background-color: rgb(83, 136, 244);
 		position: absolute;
 		height: 20rem;
-		width: 20rem;
+		width: 35rem;
+		transform: rotate(30deg);
+		left: 0rem;
+		bottom: 8rem;
+		z-index: -1;
 	}
 }
 
 .creditcard {
 	height: 15rem;
+	margin: 1rem 1rem;
 }
 
 .title {
 	text-transform: uppercase;
+	width: 25rem;
+	color: white;
+	text-align: center;
 	font-weight: 500;
 	font-size: 1.25rem;
+	margin-top: 3rem;
 }
 
 .text__title {

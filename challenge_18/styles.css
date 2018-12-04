@@ -13,28 +13,68 @@ html, body {
   background-color: white;
   border: solid 1rem black;
   border-radius: 3rem;
-  box-shadow: 0 0.5rem 2rem 0.25rem #abacaf; }
+  box-shadow: 0 0.5rem 2rem 0.25rem #abacaf;
+  overflow: hidden; }
+
+.blackbar {
+  background-color: black;
+  height: 2.25rem;
+  width: 15rem;
+  position: absolute;
+  z-index: 2;
+  border-radius: .5rem;
+  bottom: 31.75rem;
+  left: 12.5rem; }
+  .blackbar:before, .blackbar:after {
+    content: "";
+    height: 2.25rem;
+    width: 1rem;
+    background-color: #5388f4;
+    position: absolute;
+    z-index: 2;
+    border-radius: .45rem;
+    top: .35rem; }
+  .blackbar:before {
+    right: 15rem; }
+  .blackbar:after {
+    left: 15rem; }
+  .blackbar__curve {
+    height: 1rem;
+    width: 16rem;
+    background-color: black;
+    position: absolute;
+    bottom: 32.75rem;
+    left: 12rem;
+    z-index: 2; }
 
 .bluediagonal {
-  height: 20rem;
+  height: 17rem;
   width: 30rem;
-  overflow: hidden;
   position: relative;
-  background-color: red; }
+  z-index: 1; }
   .bluediagonal:before {
     content: "";
     background-color: #5388f4;
     position: absolute;
     height: 20rem;
-    width: 20rem; }
+    width: 35rem;
+    transform: rotate(30deg);
+    left: 0rem;
+    bottom: 8rem;
+    z-index: -1; }
 
 .creditcard {
-  height: 15rem; }
+  height: 15rem;
+  margin: 1rem 1rem; }
 
 .title {
   text-transform: uppercase;
+  width: 25rem;
+  color: white;
+  text-align: center;
   font-weight: 500;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin-top: 3rem; }
 
 .text__title {
   font-weight: 700; }
