@@ -10,7 +10,7 @@ html, body {
   margin: 9rem auto 9rem;
   width: 25rem;
   height: 42.75rem;
-  background-color: white;
+  background-color: #f7f7f7;
   border: solid 1rem black;
   border-radius: 3rem;
   box-shadow: 0 0.5rem 2rem 0.25rem #abacaf;
@@ -24,7 +24,7 @@ html, body {
   z-index: 2;
   border-radius: .5rem;
   bottom: 31.75rem;
-  left: 12.5rem; }
+  left: 12rem; }
   .blackbar:before, .blackbar:after {
     content: "";
     height: 2.25rem;
@@ -44,7 +44,7 @@ html, body {
     background-color: black;
     position: absolute;
     bottom: 32.75rem;
-    left: 12rem;
+    left: 11.5rem;
     z-index: 2; }
 
 .bluediagonal {
@@ -63,10 +63,6 @@ html, body {
     bottom: 8rem;
     z-index: -1; }
 
-.creditcard {
-  height: 15rem;
-  margin: 1rem 1rem; }
-
 .title {
   text-transform: uppercase;
   width: 25rem;
@@ -76,10 +72,62 @@ html, body {
   font-size: 1.25rem;
   margin-top: 3rem; }
 
-.text__title {
-  font-weight: 700; }
+.creditcard {
+  height: 14.5rem;
+  margin: .9rem 1.25rem; }
 
+.options {
+  margin-top: 2.5rem;
+  height: 17rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .options__line {
+    display: flex;
+    align-items: center;
+    height: 3rem; }
+  .options__text {
+    width: 15rem;
+    margin-right: 2rem; }
+
+.icon {
+  margin: 0 1rem; }
+
+.text__title {
+  font-weight: 700;
+  font-size: 1.1rem; }
 .text__description {
-  color: #aaaaaa; }
+  color: #aaaaaa;
+  font-size: .95rem; }
+
+.selector {
+  height: 2rem;
+  width: 3.5rem;
+  background-color: white;
+  border: solid 0.08rem #e0e0e0;
+  border-radius: 2rem;
+  position: relative; }
+  .selector:hover {
+    cursor: pointer;
+    background-color: #5388f4;
+    border-color: #5388f4; }
+  .selector:hover:before {
+    transform: translate(1.5rem);
+    border-color: #5388f4;
+    box-shadow: none; }
+  .selector:before {
+    content: "";
+    background-color: white;
+    height: 1.79rem;
+    width: 1.79rem;
+    border: solid 0.08rem #e0e0e0;
+    border-radius: 50%;
+    position: absolute;
+    top: .031rem;
+    left: .045rem;
+    box-shadow: 0 0 0.25rem 0.05rem #dedede;
+    display: block;
+    transition: transform 1s, border-color 1s; }
 
 /*# sourceMappingURL=styles.css.map */
