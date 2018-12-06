@@ -52,6 +52,7 @@ html, body {
 	position: absolute;
 	right: -.5rem;
 	border-radius: .25rem;
+	box-shadow: 0rem 1rem 3.75rem -1.5rem black;
 
 	&__content {
 		color: white;
@@ -87,7 +88,7 @@ html, body {
 
 .car__icon {
 	height: 1rem;
-	margin-left: 4rem;
+	margin-left: 4.25rem;
 }
 
 .distance__bar {
@@ -131,8 +132,36 @@ html, body {
 	right: 1rem;
 	top: 13rem;
 	border-radius: .25rem;
+	box-shadow: 0rem .5rem 1.5rem -1rem black;
+
 	&__img {
 		height: 1rem;
 		padding: .75rem;
 	}
+}
+
+.directions {
+	margin-top: 1.25rem;
+	// background-color: pink;
+	height: 11.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&__from {
+		margin-top: 12rem;
+		margin-left: 2rem;
+	}
+
+	&__line {
+		padding-left: 2rem;
+		display: flex;
+
+	}
+	&__info {
+		padding-left: 2rem;
+	}
+}
+.last {
+	margin-top: 8rem;
 }
