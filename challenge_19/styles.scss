@@ -12,6 +12,8 @@ html, body {
 	height: 42.75rem;
 	width: 28rem;
 	margin: 9rem auto 9rem;
+	position: relative;
+
 	&__content {
 		
 	}
@@ -31,5 +33,106 @@ html, body {
 
 	&__icon {
 		filter: opacity(0.25);
+	}
+}
+
+.blue-overlay {
+		background-color: rgba(70, 119, 246, 0.7);
+		height: 100%;
+		width: 100%;
+}
+
+.map {
+	height: 9.25rem;
+	width: 29rem;
+	background: url("img/map.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	position: absolute;
+	right: -.5rem;
+	border-radius: .25rem;
+
+	&__content {
+		color: white;
+		padding: 2rem 2.5rem;
+	}
+
+	&__places {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__location {
+		font-weight: 500;
+	}
+	&__info {
+		display: flex;
+		margin-top: 1rem;
+		font-size: .95rem;
+	}
+
+	&__time {
+		margin-right: 5rem;
+	}
+
+	&__distance {
+
+	}
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.car__icon {
+	height: 1rem;
+	margin-left: 4rem;
+}
+
+.distance__bar {
+	background-color: white;
+	width: 13rem;
+	height: .15rem;
+	background: linear-gradient(to right, white, white 25%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 80%);
+	position:relative;
+	margin: 0 1.5rem 1rem;
+
+	&:before, &:after {
+		content: "";
+		height: .5rem;
+		width: .5rem;
+		background-color: white;
+		position: absolute;
+		border-radius: 50%;
+		bottom: -.15rem;
+	}
+
+	&:before {
+		right: 13rem;
+
+	}
+
+	&:after {
+		left: 13rem;
+	}
+}
+
+.openbutton {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	height: 2.5rem;
+	width: 8rem;
+	font-size: .9rem;
+	background-color: rgb(70, 119, 246);
+	color: white;
+	text-transform: uppercase;
+	right: 1rem;
+	top: 13rem;
+	border-radius: .25rem;
+	&__img {
+		height: 1rem;
+		padding: .75rem;
 	}
 }
