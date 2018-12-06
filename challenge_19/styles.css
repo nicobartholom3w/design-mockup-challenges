@@ -107,15 +107,34 @@ html, body {
   flex-direction: column;
   justify-content: space-between; }
   .directions__from {
-    margin-top: 12rem;
+    margin-top: 11.75rem;
     margin-left: 2rem; }
   .directions__line {
     padding-left: 2rem;
     display: flex; }
   .directions__info {
     padding-left: 2rem; }
+  .directions__time {
+    color: #aaaaaa;
+    font-size: .8rem;
+    margin-bottom: .25rem; }
+
+.streetview {
+  height: 4rem;
+  width: 26.5rem;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  background-image: url("img/streetview.jpg");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  float: right;
+  margin: 2rem 0; }
+  .streetview__img {
+    margin-left: .75rem; }
 
 .last {
-  margin-top: 8rem; }
+  clear: both; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -13,9 +13,10 @@ html, body {
 	width: 28rem;
 	margin: 9rem auto 9rem;
 	position: relative;
+	
 
 	&__content {
-		
+
 	}
 }
 
@@ -149,7 +150,7 @@ html, body {
 	justify-content: space-between;
 
 	&__from {
-		margin-top: 12rem;
+		margin-top: 11.75rem;
 		margin-left: 2rem;
 	}
 
@@ -161,7 +162,36 @@ html, body {
 	&__info {
 		padding-left: 2rem;
 	}
+	&__time {
+		color: rgb(170, 170, 170);
+		font-size: .8rem;
+		margin-bottom: .25rem;
+	}
 }
+
+.streetview {
+	height: 4rem;
+	width: 26.5rem;
+	border-top-left-radius: .25rem;
+	border-bottom-left-radius: .25rem;
+	background-image: url("img/streetview.jpg");
+	background-size: cover;
+	// background-color: pink;
+	background-position: right;
+	display: flex;
+	align-items: center;
+	float: right;
+	margin: 2rem 0;
+	
+	&__img {
+		margin-left: .75rem;
+	}
+	
+}
+
 .last {
-	margin-top: 8rem;
+	// margin-top: 5rem;
+	// background-color: purple;
+	// width: 100%;
+	clear: both;
 }
