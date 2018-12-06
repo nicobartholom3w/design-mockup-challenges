@@ -23,6 +23,9 @@ html, body {
     text-transform: uppercase; }
   .search__icon {
     filter: opacity(0.25); }
+    .search__icon:hover {
+      cursor: pointer;
+      filter: opacity(1); }
 
 .blue-overlay {
   background-color: rgba(70, 119, 246, 0.7);
@@ -96,6 +99,9 @@ html, body {
   top: 13rem;
   border-radius: .25rem;
   box-shadow: 0rem .5rem 1.5rem -1rem black; }
+  .openbutton:hover {
+    cursor: pointer;
+    background-color: #5380f3; }
   .openbutton__img {
     height: 1rem;
     padding: .75rem; }

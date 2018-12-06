@@ -34,6 +34,11 @@ html, body {
 
 	&__icon {
 		filter: opacity(0.25);
+
+		&:hover {
+			cursor: pointer;
+			filter: opacity(1);
+		}
 	}
 }
 
@@ -134,7 +139,12 @@ html, body {
 	top: 13rem;
 	border-radius: .25rem;
 	box-shadow: 0rem .5rem 1.5rem -1rem black;
-
+	
+	&:hover {
+		cursor: pointer;
+		background-color: rgb(83, 128, 243);
+	}
+	
 	&__img {
 		height: 1rem;
 		padding: .75rem;
