@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #f6f8f9; }
+
+.header {
+  min-width: 65rem;
+  height: 7.5rem;
+  background-color: white;
+  border-bottom: solid black; }
+
+.nav {
+  width: 65rem;
+  margin: 0 auto 0; }
+
+/*# sourceMappingURL=main.css.map */
