@@ -1,6 +1,63 @@
 .left {
 	background-color: white;
 	width: 12.25rem;
-	height: 30rem;
+	height: 33.25rem;
+	border: .01rem solid rgb(232, 244, 251);
+	
+	&__top {
+		border-bottom: .01rem solid rgb(232, 244, 251);
+		height: 19rem;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
+	&__avatar {
+		padding: 1.25rem;
+
+		&-img {
+			height: 6.25rem;
+			border-radius: 50%;
+		}
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: 1.15rem;
+	}
+
+	&__title {
+		font-size: .8rem;
+		font-weight: 300;
+	}
+
+	&__location {
+		font-size: .8rem;
+		color: rgb(170, 170, 170);
+	}
+
+}
+
+
+.button {
+	height: 2rem;
+	width: 10rem;
+	border-radius: 1rem;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: .95rem;
+
+	&__follow {
+		background-color: rgb(95, 181, 229);
+		color: white;
+		
+	}
+
+	&__connect {
+		border: solid .05rem rgb(95, 181, 229);
+		color: rgb(95, 181, 229);
+	}
 }
