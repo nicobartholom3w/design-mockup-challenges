@@ -2,21 +2,27 @@
   min-width: 65rem;
   height: 7.5rem;
   background-color: white;
-  border-bottom: solid black; }
+  border-bottom: 0.01rem solid #f1f1f1;
+  position: relative; }
 
 .nav {
-  min-width: 65rem;
-  height: 5rem;
-  margin: 0 auto 0;
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   font-weight: 300; }
   .nav__main {
-    height: 100%;
+    width: 62.75rem;
+    height: 5rem;
+    margin: 0 auto 0;
     display: flex;
     align-items: center; }
     .nav__main-borderbottom {
+      position: absolute;
       width: 100%;
-      border-bottom: 0.01rem solid #f1f1f1; }
+      height: .04rem;
+      background-color: #f1f1f1;
+      top: 5rem; }
     .nav__main-buttons {
       display: flex;
       align-items: center;
@@ -30,6 +36,24 @@
         height: 100%;
         width: 33rem;
         border-right: 0.01rem solid #f1f1f1; }
+  .nav__sub {
+    display: flex;
+    width: 62rem;
+    height: 2.5rem;
+    margin: 0 auto 0;
+    font-size: .85rem; }
+    .nav__sub-button {
+      display: flex;
+      align-items: center;
+      color: #5b5b5b;
+      height: 100%;
+      padding: 0rem 1.25rem;
+      margin: 0rem .25rem; }
+      .nav__sub-button:hover {
+        cursor: pointer;
+        border-bottom: 0.15rem solid #5fb5e5; }
+  .nav .current {
+    border-bottom: 0.15rem solid #5fb5e5; }
   .nav__icon {
     display: flex;
     align-items: center;
@@ -96,52 +120,5 @@ html, body {
   margin: 0;
   font-family: Roboto, sans-serif;
   background-color: #f6f8f9; }
-
-.header {
-  min-width: 65rem;
-  height: 7.5rem;
-  background-color: white;
-  border-bottom: solid black; }
-
-.nav {
-  width: 65rem;
-  height: 5rem;
-  margin: 0 auto 0;
-  display: flex;
-  font-weight: 300;
-  border-bottom: 0.05rem solid #f1f1f1; }
-  .nav__main {
-    height: 100%;
-    display: flex;
-    align-items: center; }
-    .nav__main-buttons {
-      display: flex;
-      align-items: center;
-      height: 100%; }
-  .nav__icon {
-    display: flex;
-    align-items: center;
-    height: 100%; }
-    .nav__icon-message {
-      transform: scale(-1, 1);
-      fill: #2ecc72; }
-    .nav__icon-notifications {
-      fill: #f1c40e; }
-    .nav__icon-addperson {
-      fill: #9b59b6; }
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 4rem;
-  border-right: 0.05rem solid #f1f1f1; }
-  .logo__in {
-    height: 1.75rem; }
-
-.avatar1 {
-  border-radius: 50%;
-  height: 3rem; }
 
 /*# sourceMappingURL=main.css.map */
