@@ -1,4 +1,7 @@
 @import "navigation.scss";
+@import "left.scss";
+@import "middle.scss";
+@import "right.scss";
 
 html, body {
 	height: 100%;
@@ -9,3 +12,12 @@ html, body {
 	background-color: rgb(246, 248, 249);
 }
 
+.body {
+	width: 62.75rem;
+	margin: 1rem auto 0;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+}

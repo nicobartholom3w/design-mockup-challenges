@@ -12,7 +12,7 @@
   flex-direction: column;
   font-weight: 300; }
   .nav__main {
-    width: 62.75rem;
+    width: 65rem;
     height: 5rem;
     margin: 0 auto 0;
     display: flex;
@@ -44,7 +44,7 @@
         border-right: 0.01rem solid #f1f1f1; }
   .nav__sub {
     display: flex;
-    width: 62rem;
+    width: 63rem;
     height: 2.5rem;
     margin: 0 auto 0;
     font-size: .85rem; }
@@ -54,7 +54,7 @@
       color: #5b5b5b;
       height: 100%;
       padding: 0rem 1.25rem;
-      margin: 0rem .25rem;
+      margin-right: .75rem;
       transition: box-shadow .3s; }
       .nav__sub-button:hover {
         cursor: pointer;
@@ -87,7 +87,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 4rem;
+  width: 4.25rem;
   border-right: 0.01rem solid #f1f1f1; }
   .logo__in {
     height: 1.75rem; }
@@ -97,19 +97,20 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 10.75rem;
+  width: 12rem;
   border-right: 0.01rem solid #f1f1f1;
   position: relative; }
   .search-bar {
     border-radius: 1rem;
     height: 1.5rem;
-    border: 0.05rem solid #dfdfdf; }
+    border: 0.05rem solid #dfdfdf;
+    width: 9.25rem; }
     .search-bar:focus {
       outline: none; }
   .search__icon {
     position: absolute;
     fill: #333333;
-    left: 7.75rem;
+    left: 9rem;
     top: 2rem;
     cursor: text; }
 
@@ -126,6 +127,24 @@
 .red {
   color: red; }
 
+.left {
+  background-color: white;
+  width: 12.25rem;
+  height: 30rem; }
+
+.middle {
+  width: 38rem; }
+
+.posts {
+  width: 100%;
+  height: 40rem;
+  background-color: white; }
+
+.right {
+  width: 10rem;
+  height: 40rem;
+  background-color: violet; }
+
 html, body {
   height: 100%;
   min-width: 100%;
@@ -133,5 +152,12 @@ html, body {
   margin: 0;
   font-family: Roboto, sans-serif;
   background-color: #f6f8f9; }
+
+.body {
+  width: 62.75rem;
+  margin: 1rem auto 0; }
+  .body__content {
+    display: flex;
+    justify-content: space-between; }
 
 /*# sourceMappingURL=main.css.map */
