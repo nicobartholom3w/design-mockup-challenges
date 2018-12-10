@@ -25,6 +25,17 @@
 		align-items: center;
 		// background-color: pink;
 		// border-bottom: .01rem solid rgb(241, 241, 241);
+		
+		&-hover {
+			transition: all .3s;
+			// background-color: pink;
+			padding: .25rem;
+
+			&:hover {
+				cursor: pointer;
+				transform: translate(0, -.15rem);
+			}
+		}
 
 		
 		&-borderbottom {
@@ -34,6 +45,17 @@
 			background-color: rgb(241, 241, 241);
 			top: 5rem;
 		}
+		
+		// &-button {
+		// 	transition: all .3s;
+		// 	// background-color: pink;
+		// 	padding: .25rem;
+
+		// 	&:hover {
+		// 		cursor: pointer;
+		// 		transform: translate(0, -.15rem);
+		// 	}
+		// }
 
 		&-buttons {
 
@@ -42,9 +64,9 @@
 			justify-content: space-around;
 			height: 100%;
 			width: 29.5rem;
-			
 			font-size: .9rem;
 			// background-color: purple;
+			
 
 			&-container {
 				display: flex;
@@ -93,6 +115,13 @@
 		&-message {
 			transform: scale(-1, 1);
 			fill: rgb(46, 204, 114);
+			transition: margin-bottom .3s;
+			padding: .25rem;
+
+			&:hover {
+				cursor: pointer;
+				margin-bottom: .25rem;
+			}
 		}
 
 		&-notifications {
@@ -104,6 +133,7 @@
 		}
 	}
 }
+
 
 .logo {
 	display: flex;

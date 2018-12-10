@@ -17,6 +17,12 @@
     margin: 0 auto 0;
     display: flex;
     align-items: center; }
+    .nav__main-hover {
+      transition: all .3s;
+      padding: .25rem; }
+      .nav__main-hover:hover {
+        cursor: pointer;
+        transform: translate(0, -0.15rem); }
     .nav__main-borderbottom {
       position: absolute;
       width: 100%;
@@ -63,7 +69,12 @@
     border-right: 0.01rem solid #f1f1f1; }
     .nav__icon-message {
       transform: scale(-1, 1);
-      fill: #2ecc72; }
+      fill: #2ecc72;
+      transition: margin-bottom .3s;
+      padding: .25rem; }
+      .nav__icon-message:hover {
+        cursor: pointer;
+        margin-bottom: .25rem; }
     .nav__icon-notifications {
       fill: #f1c40e; }
     .nav__icon-addperson {
