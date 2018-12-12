@@ -43,16 +43,7 @@
 
 }
 
-.connected {
 
-	&__num {
-
-	}
-
-	&__title {
-		
-	}
-}
 
 .button {
 	height: 2rem;
@@ -73,5 +64,32 @@
 	&__connect {
 		border: solid .05rem rgb(95, 181, 229);
 		color: rgb(95, 181, 229);
+	}
+}
+
+.connections {
+	display: flex;
+	width: 100%;
+	height: 4.5rem;
+
+	&__section {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: solid .01rem rgb(241, 241, 241);
+	}
+
+	&__num {
+		font-weight: 500;
+
+	}
+
+	&__title {
+		color: rgb(170, 170, 170);
+		font-weight: 300;
+		font-size: .85rem;
 	}
 }
