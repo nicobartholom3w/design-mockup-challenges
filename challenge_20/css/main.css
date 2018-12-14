@@ -139,6 +139,8 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .left__top-margin {
+      margin-top: .5rem; }
   .left__avatar {
     padding: 1.25rem; }
     .left__avatar-img {
@@ -153,6 +155,16 @@
   .left__location {
     font-size: .8rem;
     color: #aaaaaa; }
+  .left__link {
+    color: #aaaaaa;
+    font-size: .8rem;
+    fill: #aaaaaa; }
+    .left__link-line {
+      text-decoration: none; }
+      .left__link-line:hover {
+        text-decoration: underline; }
+      .left__link-line:visited {
+        color: #aaaaaa; }
 
 .button {
   height: 2rem;
@@ -168,7 +180,8 @@
     color: white; }
   .button__connect {
     border: solid 0.05rem #5fb5e5;
-    color: #5fb5e5; }
+    color: #5fb5e5;
+    fill: #5fb5e5; }
 
 .connections {
   display: flex;

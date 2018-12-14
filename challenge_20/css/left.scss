@@ -11,6 +11,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		&-margin {
+			margin-top: .5rem;
+		}
 	}
 
 	&__avatar {
@@ -40,7 +44,23 @@
 	&__bottom {
 
 	}
+	
+	&__link {
+		color: rgb(170, 170, 170);
+		font-size: .8rem;
+		fill: rgb(170, 170, 170);
+		
 
+		&-line {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+			&:visited {
+			color: rgb(170, 170, 170);
+			}
+		}
+	}
 }
 
 
@@ -64,6 +84,7 @@
 	&__connect {
 		border: solid .05rem rgb(95, 181, 229);
 		color: rgb(95, 181, 229);
+		fill: rgb(95, 181, 229) ;
 	}
 }
 
