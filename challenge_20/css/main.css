@@ -207,8 +207,14 @@
 
 .posts {
   width: 100%;
-  height: 40rem;
-  background-color: white; }
+  height: 22rem;
+  background-color: white;
+  border: 0.01rem solid #e8f4fb; }
+  .posts__title {
+    text-transform: uppercase; }
+
+.article__img {
+  height: 10rem; }
 
 .right {
   width: 10rem;

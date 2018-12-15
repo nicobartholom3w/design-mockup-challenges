@@ -4,11 +4,22 @@
 
 .posts {
 	width: 100%;
-	height: 40rem;
+	height: 22rem;
 	background-color: white;
+	border: .01rem solid rgb(232, 244, 251);
+	
 
+	&__title {
+		text-transform: uppercase;	
+	}
 }
 
+.article {
+
+	&__img {
+		height: 10rem;
+	}
+}
 .background {
 
 }
