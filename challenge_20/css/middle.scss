@@ -11,13 +11,36 @@
 
 	&__title {
 		text-transform: uppercase;	
+		padding: 1rem;
 	}
 }
 
+.articles {
+	display: flex;
+	background-color: pink;
+	width: 100%;
+	justify-content: space-around;
+}
+
 .article {
+	background-color: purple;
+	width: 11rem;
+
+	
+	&__title {
+		font-weight: 400;
+		font-size: .95rem;
+		margin-bottom: .5rem;
+	}
+
+	&__date {
+		color: rgb(170, 170, 170);
+		font-weight: 300;
+		font-size: .85rem;
+	}
 
 	&__img {
-		height: 10rem;
+		height: 11rem;
 	}
 }
 .background {

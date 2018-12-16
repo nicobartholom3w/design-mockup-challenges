@@ -211,10 +211,28 @@
   background-color: white;
   border: 0.01rem solid #e8f4fb; }
   .posts__title {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 1rem; }
 
-.article__img {
-  height: 10rem; }
+.articles {
+  display: flex;
+  background-color: pink;
+  width: 100%;
+  justify-content: space-around; }
+
+.article {
+  background-color: purple;
+  width: 11rem; }
+  .article__title {
+    font-weight: 400;
+    font-size: .95rem;
+    margin-bottom: .5rem; }
+  .article__date {
+    color: #aaaaaa;
+    font-weight: 300;
+    font-size: .85rem; }
+  .article__img {
+    height: 11rem; }
 
 .right {
   width: 10rem;
