@@ -155,16 +155,36 @@
   .left__location {
     font-size: .8rem;
     color: #aaaaaa; }
+  .left__bottom-links {
+    height: 5.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 0.01rem solid #f1f1f1; }
+  .left__bottom-export {
+    height: 4rem;
+    display: flex;
+    align-items: center; }
   .left__link {
     color: #aaaaaa;
     font-size: .8rem;
-    fill: #aaaaaa; }
+    fill: #aaaaaa;
+    font-weight: 300; }
     .left__link-line {
-      text-decoration: none; }
-      .left__link-line:hover {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-left: 1.25rem;
+      padding: .25rem; }
+      .left__link-line:hover .left__link {
         text-decoration: underline; }
       .left__link-line:visited {
         color: #aaaaaa; }
+
+.material-icons {
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: .25rem; }
 
 .button {
   height: 2rem;

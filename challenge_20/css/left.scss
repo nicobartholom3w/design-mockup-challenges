@@ -42,19 +42,44 @@
 	}
 
 	&__bottom {
+		
+		&-links {
+			// background-color: pink;
+			height: 5.75rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			border-bottom: .01rem solid rgb(241, 241, 241);
 
+		}
+
+		&-export {
+			height: 4rem;
+			// background-color: pink;
+			display: flex;
+			align-items: center;
+		}
 	}
 	
 	&__link {
 		color: rgb(170, 170, 170);
 		font-size: .8rem;
 		fill: rgb(170, 170, 170);
+		font-weight: 300;
 		
+
 
 		&-line {
 			text-decoration: none;
+			display: flex;
+			align-items: center;
+			margin-left: 1.25rem;
+			padding: .25rem;
+
 			&:hover {
-				text-decoration: underline;
+				.left__link {
+					text-decoration: underline;
+				}
 			}
 			&:visited {
 			color: rgb(170, 170, 170);
@@ -63,7 +88,11 @@
 	}
 }
 
-
+.material-icons {
+	font-size: 1rem;
+	display: inline-block;
+	margin-right: .25rem;
+}
 
 .button {
 	height: 2rem;
