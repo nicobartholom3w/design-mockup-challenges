@@ -195,13 +195,19 @@
   justify-content: center;
   align-items: center;
   font-size: .95rem; }
+  .button:hover {
+    cursor: pointer; }
   .button__follow {
     background-color: #5fb5e5;
     color: white; }
+    .button__follow:hover {
+      background-color: #58a5e4; }
   .button__connect {
     border: solid 0.05rem #5fb5e5;
     color: #5fb5e5;
     fill: #5fb5e5; }
+    .button__connect:hover {
+      background-color: #eff8fc; }
 
 .connections {
   display: flex;
@@ -258,9 +264,100 @@
 
 .background {
   width: 100%;
-  height: 40rem;
+  height: 60rem;
   background-color: white;
   margin-top: 1.5rem; }
+  .background__subtitle {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-left: .25rem; }
+    .background__subtitle-line {
+      display: flex;
+      padding: .5rem;
+      margin-left: .5rem; }
+  .background__from, .background__until {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .background__until {
+    position: relative; }
+  .background__from {
+    position: relative; }
+    .background__from-small {
+      height: 2.25rem; }
+  .background__date {
+    position: relative;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    font-size: .7rem; }
+    .background__date:before {
+      content: "";
+      height: .4rem;
+      width: .4rem;
+      border-radius: 50%;
+      border: solid 0.08rem #dedede;
+      position: absolute;
+      right: 34rem; }
+  .background__position {
+    font-weight: 300;
+    font-size: .93rem; }
+  .background__company {
+    color: #69acec;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: .93rem; }
+
+.microsoft:after {
+  content: "";
+  background-image: url("../img/logo-microsoft.png");
+  background-repeat: no-repeat;
+  height: 2.5rem;
+  width: 8rem;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.youtube:after {
+  content: "";
+  background-image: url("../img/logo-youtube.png");
+  background-repeat: no-repeat;
+  height: 1.4rem;
+  width: 8rem;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.middle-icon {
+  font-size: 1.5rem;
+  color: #333333; }
+
+.summary {
+  font-weight: 300;
+  width: 34.75rem;
+  padding: .5rem 3rem;
+  font-size: .97rem; }
+
+.timeline {
+  margin-left: 4.5rem;
+  margin-bottom: 1rem;
+  height: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; }
+  .timeline:before {
+    content: "";
+    height: 5.1rem;
+    width: .1rem;
+    background-color: #dedede;
+    position: absolute;
+    right: 34.22rem;
+    top: .5rem; }
+  .timeline-small {
+    height: 7.75rem; }
 
 .right {
   width: 10rem;

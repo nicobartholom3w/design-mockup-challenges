@@ -104,16 +104,29 @@
 	align-items: center;
 	font-size: .95rem;
 
+	&:hover {
+			cursor: pointer;
+			
+		}
+
 	&__follow {
 		background-color: rgb(95, 181, 229);
 		color: white;
-		
+
+		&:hover {
+			background-color: rgb(88, 165, 228);
+		}
+
 	}
 
 	&__connect {
 		border: solid .05rem rgb(95, 181, 229);
 		color: rgb(95, 181, 229);
 		fill: rgb(95, 181, 229) ;
+
+		&:hover {
+			background-color: rgb(239, 248, 252);
+		}
 	}
 }
 
