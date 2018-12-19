@@ -234,10 +234,12 @@
     border: 0.01rem solid #e8f4fb; }
   .middle__title {
     text-transform: uppercase;
-    padding: 1.25rem;
+    height: 3.5rem;
+    padding-left: 1.25rem;
     border-bottom: 0.01rem solid #e8f4fb;
-    margin-bottom: 1rem;
-    font-weight: 500; }
+    font-weight: 500;
+    display: flex;
+    align-items: center; }
 
 .posts {
   width: 100%;
@@ -273,8 +275,9 @@
     margin-left: .25rem; }
     .background__subtitle-line {
       display: flex;
-      padding: .5rem;
-      margin-left: .5rem; }
+      padding-bottom: .5rem;
+      margin-left: .5rem;
+      margin-top: .5rem; }
   .background__from, .background__until {
     height: 4rem;
     display: flex;
@@ -307,6 +310,9 @@
     text-decoration: none;
     font-weight: 300;
     font-size: .93rem; }
+
+.bottom-margin {
+  margin-bottom: 1rem; }
 
 .microsoft:after {
   content: "";
@@ -424,10 +430,91 @@
     padding: .25rem;
     color: #333333; }
 
+.recommendations {
+  width: 100%;
+  height: 23rem;
+  background-color: white;
+  margin-top: 1.5rem; }
+  .recommendations__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.01rem solid #e8f4fb;
+    justify-content: space-between; }
+  .recommendations__navarrows {
+    display: flex;
+    width: 4.25rem;
+    justify-content: space-between;
+    margin-right: 1rem; }
+    .recommendations__navarrows-icon {
+      font-size: 1.2rem; }
+    .recommendations__navarrows-left, .recommendations__navarrows-right {
+      height: 1.75rem;
+      width: 1.75rem;
+      border: solid 0.05rem #333333;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .recommendations__navarrows-right > .recommendations__navarrows-icon {
+      margin-left: .5rem; }
+  .recommendations__quote {
+    height: 12rem;
+    width: 11rem;
+    border: solid 0.05rem #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .recommendations__quote-content {
+      height: 9.75rem;
+      width: 8.75rem;
+      font-weight: 300;
+      font-size: .98rem; }
+    .recommendations__quote-alignment {
+      display: flex;
+      justify-content: space-evenly; }
+  .recommendations__user {
+    display: flex;
+    align-items: center; }
+    .recommendations__user-info {
+      margin-left: .5rem; }
+    .recommendations__user-name {
+      font-size: .9rem;
+      margin-bottom: .25rem; }
+    .recommendations__user-company {
+      color: #afaaaa;
+      font-weight: 300;
+      font-size: .8rem; }
+
 .right {
   width: 10rem;
   height: 40rem;
   background-color: violet; }
+
+.arrow {
+  height: 1.9rem;
+  width: 2rem;
+  border-bottom: 0.01rem solid #efefef;
+  position: relative;
+  transform: rotate(90deg);
+  margin-top: -.1rem;
+  margin-bottom: .5rem; }
+  .arrow:before {
+    content: "";
+    position: absolute;
+    height: 2.57rem;
+    width: .05rem;
+    background-color: #efefef;
+    left: 1.01rem;
+    top: -.34rem;
+    transform: rotate(135deg); }
+  .arrow:after {
+    content: "";
+    height: 1.75rem;
+    width: 1rem;
+    background-color: white;
+    position: absolute;
+    right: 1.79rem;
+    top: .1rem; }
 
 html, body {
   height: 100%;
