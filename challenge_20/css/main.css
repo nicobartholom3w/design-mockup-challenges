@@ -432,7 +432,7 @@
 
 .recommendations {
   width: 100%;
-  height: 23rem;
+  height: 21.75rem;
   background-color: white;
   margin-top: 1.5rem; }
   .recommendations__header {
@@ -484,6 +484,12 @@
       color: #afaaaa;
       font-weight: 300;
       font-size: .8rem; }
+
+.following {
+  width: 100%;
+  height: 15rem;
+  background-color: white;
+  margin-top: 1.5rem; }
 
 .right {
   width: 10rem;
