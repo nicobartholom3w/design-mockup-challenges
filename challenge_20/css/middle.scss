@@ -303,7 +303,7 @@
 
 .recommendations {
 	width: 100%;
-	height: 21.75rem;
+	height: 23rem;
 	background-color: white;
 	margin-top: 1.5rem;
 	
@@ -351,6 +351,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-top: 1rem;
 
 
 		&-content{
@@ -386,6 +387,8 @@
 			color: rgb(175, 170, 170);
 			font-weight: 300;
 			font-size: .8rem;
+
+			
 		}
 	}
 }
@@ -395,4 +398,25 @@
 	height: 15rem;
 	background-color: white;
 	margin-top: 1.5rem;
+	display: flex;
+	
+	// &__header {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	border-bottom: .01rem solid rgb(232, 244, 251);
+	// 	// justify-content: space-between;
+
+	// }
+	&-img {
+		position: relative;
+
+		&:before {
+			content: "";
+			height: 2.5rem;
+			width: 4.5rem;
+			border: solid .1rem grey;
+			position: absolute;
+		}
+	}
+
 }
