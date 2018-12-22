@@ -398,25 +398,31 @@
 	height: 15rem;
 	background-color: white;
 	margin-top: 1.5rem;
-	display: flex;
+
+	&__content {
+		display: flex;
+		justify-content: space-evenly;
+	}
 	
-	// &__header {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	border-bottom: .01rem solid rgb(232, 244, 251);
-	// 	// justify-content: space-between;
+	&__company {
 
-	// }
-	&-img {
-		position: relative;
-
-		&:before {
-			content: "";
-			height: 2.5rem;
-			width: 4.5rem;
-			border: solid .1rem grey;
-			position: absolute;
+		&-img {
+			position: relative;
+			height: 4.5rem;
+			width: 8rem;
+			border: solid .01rem rgb(241, 241, 241);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 68%;
 		}
 	}
 
+	&__microsoft {
+		background-image: url("../img/logo-microsoft.png");
+	}
+
+	&__amazon {
+		background-image: url("../img/logo-amazon.jpg");		
+	}
 }
+

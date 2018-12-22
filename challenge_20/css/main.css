@@ -490,16 +490,22 @@
   width: 100%;
   height: 15rem;
   background-color: white;
-  margin-top: 1.5rem;
-  display: flex; }
-  .following-img {
-    position: relative; }
-    .following-img:before {
-      content: "";
-      height: 2.5rem;
-      width: 4.5rem;
-      border: solid .1rem grey;
-      position: absolute; }
+  margin-top: 1.5rem; }
+  .following__content {
+    display: flex;
+    justify-content: space-evenly; }
+  .following__company-img {
+    position: relative;
+    height: 4.5rem;
+    width: 8rem;
+    border: solid 0.01rem #f1f1f1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 68%; }
+  .following__microsoft {
+    background-image: url("../img/logo-microsoft.png"); }
+  .following__amazon {
+    background-image: url("../img/logo-amazon.jpg"); }
 
 .right {
   width: 10rem;
