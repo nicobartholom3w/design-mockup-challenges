@@ -553,4 +553,14 @@ html, body {
     display: flex;
     justify-content: space-around; }
 
+.footer {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 0.01rem #dedede;
+  margin-top: 1.25rem;
+  font-weight: 300; }
+
 /*# sourceMappingURL=main.css.map */
