@@ -405,6 +405,7 @@
 	}
 	
 	&__company {
+		font-weight: 300;
 
 		&-img {
 			position: relative;
@@ -415,6 +416,11 @@
 			background-repeat: no-repeat;
 			background-size: 68%;
 		}
+	}
+
+	&__follow {
+		color: blue;
+	
 	}
 
 	&__microsoft {

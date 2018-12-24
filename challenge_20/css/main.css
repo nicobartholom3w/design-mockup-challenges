@@ -494,14 +494,18 @@
   .following__content {
     display: flex;
     justify-content: space-evenly; }
-  .following__company-img {
-    position: relative;
-    height: 4.5rem;
-    width: 8rem;
-    border: solid 0.01rem #f1f1f1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 68%; }
+  .following__company {
+    font-weight: 300; }
+    .following__company-img {
+      position: relative;
+      height: 4.5rem;
+      width: 8rem;
+      border: solid 0.01rem #f1f1f1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 68%; }
+  .following__follow {
+    color: blue; }
   .following__microsoft {
     background-image: url("../img/logo-microsoft.png"); }
   .following__amazon {
