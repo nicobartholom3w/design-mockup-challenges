@@ -418,8 +418,12 @@
 		}
 	}
 
+	&__add {
+		display: flex;
+	}
+
 	&__follow {
-		color: blue;
+		color: rgb(105, 172, 237);
 	
 	}
 
@@ -432,3 +436,26 @@
 	}
 }
 
+.plus {
+	border: solid .05rem black;
+	height: 1.25rem;
+	width: 1.25rem;
+	border-radius: 50%;
+	font-size: .9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.see-all {
+	color: rgb(105, 172, 237);
+	width: 7.5rem;
+	height: 2rem;
+	border: solid .05rem;
+	border-radius: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 300;
+	font-size: .9rem;
+}

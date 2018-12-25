@@ -504,12 +504,36 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 68%; }
+  .following__add {
+    display: flex; }
   .following__follow {
-    color: blue; }
+    color: #69aced; }
   .following__microsoft {
     background-image: url("../img/logo-microsoft.png"); }
   .following__amazon {
     background-image: url("../img/logo-amazon.jpg"); }
+
+.plus {
+  border: solid .05rem black;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  font-size: .9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.see-all {
+  color: #69aced;
+  width: 7.5rem;
+  height: 2rem;
+  border: solid .05rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: .9rem; }
 
 .right {
   width: 10rem;
