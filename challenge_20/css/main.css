@@ -1,594 +1,75 @@
-.header {
-  min-width: 65rem;
-  height: 7.5rem;
-  background-color: white;
-  border-bottom: 0.01rem solid #f1f1f1;
-  position: relative; }
+/*
+Error: Invalid CSS after "	&__": expected "{", was "}"
+        on line 18 of right.scss
+        from line 4 of main.scss
 
-.nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-weight: 300; }
-  .nav__main {
-    width: 65rem;
-    height: 5rem;
-    margin: 0 auto 0;
-    display: flex;
-    align-items: center; }
-    .nav__main-hover {
-      transition: all .3s;
-      padding: .25rem; }
-      .nav__main-hover:hover {
-        cursor: pointer;
-        transform: translate(0, -0.15rem); }
-    .nav__main-borderbottom {
-      position: absolute;
-      width: 100%;
-      height: .04rem;
-      background-color: #f1f1f1;
-      top: 5rem; }
-    .nav__main-buttons {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      height: 100%;
-      width: 29.5rem;
-      font-size: .9rem; }
-      .nav__main-buttons-container {
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        width: 33rem;
-        border-right: 0.01rem solid #f1f1f1; }
-  .nav__sub {
-    display: flex;
-    width: 63rem;
-    height: 2.5rem;
-    margin: 0 auto 0;
-    font-size: .85rem; }
-    .nav__sub-button {
-      display: flex;
-      align-items: center;
-      color: #5b5b5b;
-      height: 100%;
-      padding: 0rem 1.25rem;
-      margin-right: .75rem;
-      transition: box-shadow .3s; }
-      .nav__sub-button:hover {
-        cursor: pointer;
-        box-shadow: inset 0 -0.15rem 0 0 #5fb5e5; }
-  .nav .current {
-    box-shadow: inset 0 -0.15rem 0 0 #5fb5e5; }
-  .nav__icon {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 10rem;
-    height: 100%;
-    border-right: 0.01rem solid #f1f1f1; }
-    .nav__icon-message {
-      transform: scale(-1, 1);
-      fill: #2ecc72;
-      transition: margin-bottom .3s;
-      padding: .25rem; }
-      .nav__icon-message:hover {
-        cursor: pointer;
-        margin-bottom: .25rem;
-        transform: scale(-1, 1); }
-    .nav__icon-notifications {
-      fill: #f1c40e; }
-    .nav__icon-addperson {
-      fill: #9b59b6; }
+13: 	&__user {
+14: 
+15: 	}
+16: 
+17: 	&__
+18: }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 4.25rem;
-  border-right: 0.01rem solid #f1f1f1; }
-  .logo__in {
-    height: 1.75rem; }
-
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 12rem;
-  border-right: 0.01rem solid #f1f1f1;
-  position: relative; }
-  .search-bar {
-    border-radius: 1rem;
-    height: 1.5rem;
-    border: 0.05rem solid #dfdfdf;
-    width: 9.25rem; }
-    .search-bar:focus {
-      outline: none; }
-  .search__icon {
-    position: absolute;
-    fill: #333333;
-    left: 9rem;
-    top: 2rem;
-    cursor: text; }
-
-.avatar {
-  height: 100%;
-  width: 4.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .avatar-one {
-    border-radius: 50%;
-    height: 2.5rem; }
-
-.red {
-  color: red; }
-
-.left {
-  background-color: white;
-  width: 12.25rem;
-  height: 33.25rem;
-  border: 0.01rem solid #e8f4fb; }
-  .left__top {
-    border-bottom: 0.01rem solid #f1f1f1;
-    height: 19rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .left__top-margin {
-      margin-top: .5rem; }
-  .left__avatar {
-    padding: 1.25rem; }
-    .left__avatar-img {
-      height: 6.25rem;
-      border-radius: 50%; }
-  .left__name {
-    font-weight: 500;
-    font-size: 1.15rem; }
-  .left__title {
-    font-size: .8rem;
-    font-weight: 300; }
-  .left__location {
-    font-size: .8rem;
-    color: #aaaaaa; }
-  .left__bottom-links {
-    height: 5.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 0.01rem solid #f1f1f1; }
-  .left__bottom-export {
-    height: 4rem;
-    display: flex;
-    align-items: center; }
-  .left__link {
-    color: #aaaaaa;
-    font-size: .8rem;
-    fill: #aaaaaa;
-    font-weight: 300; }
-    .left__link-line {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      margin-left: 1.25rem;
-      padding: .25rem; }
-      .left__link-line:hover .left__link {
-        text-decoration: underline; }
-      .left__link-line:visited {
-        color: #aaaaaa; }
-
-.material-icons {
-  font-size: 1rem;
-  display: inline-block;
-  margin-right: .25rem; }
-
-.button {
-  height: 2rem;
-  width: 10rem;
-  border-radius: 1rem;
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: .95rem; }
-  .button:hover {
-    cursor: pointer; }
-  .button__follow {
-    background-color: #5fb5e5;
-    color: white; }
-    .button__follow:hover {
-      background-color: #58a5e4; }
-  .button__connect {
-    border: solid 0.05rem #5fb5e5;
-    color: #5fb5e5;
-    fill: #5fb5e5; }
-    .button__connect:hover {
-      background-color: #eff8fc; }
-
-.connections {
-  display: flex;
-  width: 100%;
-  height: 4.5rem; }
-  .connections__section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: solid 0.01rem #f1f1f1; }
-  .connections__num {
-    font-weight: 500; }
-  .connections__title {
-    color: #aaaaaa;
-    font-weight: 300;
-    font-size: .85rem; }
-
-.middle {
-  width: 38rem; }
-  .middle__border {
-    border: 0.01rem solid #e8f4fb; }
-  .middle__title {
-    text-transform: uppercase;
-    height: 3.5rem;
-    padding-left: 1.25rem;
-    border-bottom: 0.01rem solid #e8f4fb;
-    font-weight: 500;
-    display: flex;
-    align-items: center; }
-
-.posts {
-  width: 100%;
-  height: 22rem;
-  background-color: white; }
-
-.articles {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly; }
-
-.article {
-  width: 11rem; }
-  .article__title {
-    font-weight: 400;
-    font-size: .95rem;
-    margin: .5rem 0; }
-  .article__date {
-    color: #aaaaaa;
-    font-weight: 300;
-    font-size: .85rem; }
-  .article__img {
-    height: 11rem; }
-
-.background {
-  width: 100%;
-  height: 56rem;
-  background-color: white;
-  margin-top: 1.5rem; }
-  .background__subtitle {
-    font-weight: 300;
-    font-size: 1.25rem;
-    margin-left: .25rem; }
-    .background__subtitle-line {
-      display: flex;
-      padding-bottom: .5rem;
-      margin-left: .5rem;
-      margin-top: .5rem; }
-  .background__from, .background__until {
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .background__until {
-    position: relative; }
-  .background__from {
-    position: relative; }
-    .background__from-small {
-      height: 2.25rem; }
-  .background__date {
-    position: relative;
-    color: #aaaaaa;
-    text-transform: uppercase;
-    font-size: .7rem; }
-    .background__date:before {
-      content: "";
-      height: .4rem;
-      width: .4rem;
-      border-radius: 50%;
-      border: solid 0.08rem #dedede;
-      position: absolute;
-      right: 34rem; }
-  .background__position {
-    font-weight: 300;
-    font-size: .93rem; }
-  .background__company {
-    color: #69acec;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: .93rem; }
-
-.bottom-margin {
-  margin-bottom: 1rem; }
-
-.microsoft:after {
-  content: "";
-  background-image: url("../img/logo-microsoft.png");
-  background-repeat: no-repeat;
-  height: 2.5rem;
-  width: 8rem;
-  background-size: contain;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-.youtube:after {
-  content: "";
-  background-image: url("../img/logo-youtube.png");
-  background-repeat: no-repeat;
-  height: 1.4rem;
-  width: 8rem;
-  background-size: contain;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-.middle-icon {
-  font-size: 1.5rem;
-  color: #333333; }
-
-.summary {
-  font-weight: 300;
-  width: 34.75rem;
-  padding: .5rem 3rem;
-  font-size: .97rem; }
-
-.timeline {
-  margin-left: 4.5rem;
-  margin-bottom: 1rem;
-  height: 9.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative; }
-  .timeline:before {
-    content: "";
-    height: 5.1rem;
-    width: .1rem;
-    background-color: #dedede;
-    position: absolute;
-    right: 34.22rem;
-    top: .5rem; }
-  .timeline-small {
-    height: 7.75rem; }
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-  margin-bottom: 1rem;
-  height: 8rem;
-  display: flex;
-  justify-content: space-between; }
-  .skills__line {
-    display: flex;
-    height: 2.75rem;
-    align-items: center;
-    justify-content: space-between; }
-    .skills__line-left {
-      display: flex;
-      align-items: center; }
-    .skills__line-right {
-      display: flex;
-      flex-direction: row;
-      margin-right: 1rem; }
-  .skills__rank {
-    height: 2.75rem;
-    width: 2.75rem;
-    border: solid 0.05rem #4b4b4b;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300; }
-  .skills__name {
-    margin-left: 1.5rem;
-    font-weight: 300;
-    font-size: .95rem; }
-
-.endorsers {
-  display: flex;
-  width: 13.5rem;
-  justify-content: space-around; }
-  .endorsers__avatar-img {
-    height: 2.5rem;
-    border-radius: 50%; }
-  .endorsers__avatar-num {
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    background-color: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: .6rem;
-    font-weight: 700; }
-
-.interests {
-  display: flex;
-  justify-content: space-between;
-  width: 23rem;
-  margin-left: 3rem; }
-  .interests__box {
-    background-color: #f1f1f1;
-    font-size: .8rem;
-    font-weight: 300;
-    text-align: center;
-    padding: .25rem;
-    color: #333333; }
-
-.recommendations {
-  width: 100%;
-  height: 23rem;
-  background-color: white;
-  margin-top: 1.5rem; }
-  .recommendations__header {
-    display: flex;
-    align-items: center;
-    border-bottom: 0.01rem solid #e8f4fb;
-    justify-content: space-between; }
-  .recommendations__navarrows {
-    display: flex;
-    width: 4.25rem;
-    justify-content: space-between;
-    margin-right: 1rem; }
-    .recommendations__navarrows-icon {
-      font-size: 1.2rem; }
-    .recommendations__navarrows-left, .recommendations__navarrows-right {
-      height: 1.75rem;
-      width: 1.75rem;
-      border: solid 0.05rem #333333;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .recommendations__navarrows-right > .recommendations__navarrows-icon {
-      margin-left: .5rem; }
-  .recommendations__quote {
-    height: 12rem;
-    width: 11rem;
-    border: solid 0.05rem #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem; }
-    .recommendations__quote-content {
-      height: 9.75rem;
-      width: 8.75rem;
-      font-weight: 300;
-      font-size: .98rem; }
-    .recommendations__quote-alignment {
-      display: flex;
-      justify-content: space-evenly; }
-  .recommendations__user {
-    display: flex;
-    align-items: center; }
-    .recommendations__user-info {
-      margin-left: .5rem; }
-    .recommendations__user-name {
-      font-size: .9rem;
-      margin-bottom: .25rem; }
-    .recommendations__user-company {
-      color: #afaaaa;
-      font-weight: 300;
-      font-size: .8rem; }
-
-.following {
-  width: 100%;
-  height: 15rem;
-  background-color: white;
-  margin-top: 1.5rem; }
-  .following__content {
-    display: flex;
-    justify-content: space-evenly; }
-  .following__company {
-    font-weight: 300; }
-    .following__company-img {
-      position: relative;
-      height: 4.5rem;
-      width: 8rem;
-      border: solid 0.01rem #f1f1f1;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 68%; }
-  .following__add {
-    display: flex; }
-  .following__follow {
-    color: #69aced; }
-  .following__microsoft {
-    background-image: url("../img/logo-microsoft.png"); }
-  .following__amazon {
-    background-image: url("../img/logo-amazon.jpg"); }
-
-.plus {
-  border: solid .05rem black;
-  height: 1.25rem;
-  width: 1.25rem;
-  border-radius: 50%;
-  font-size: .9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.see-all {
-  color: #69aced;
-  width: 7.5rem;
-  height: 2rem;
-  border: solid .05rem;
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 300;
-  font-size: .9rem; }
-
-.right {
-  width: 10rem;
-  height: 40rem;
-  background-color: violet; }
-
-.arrow {
-  height: 1.9rem;
-  width: 2rem;
-  border-bottom: 0.01rem solid #efefef;
-  position: relative;
-  transform: rotate(90deg);
-  margin-top: -.1rem;
-  margin-bottom: .5rem; }
-  .arrow:before {
-    content: "";
-    position: absolute;
-    height: 2.57rem;
-    width: .05rem;
-    background-color: #efefef;
-    left: 1.01rem;
-    top: -.34rem;
-    transform: rotate(135deg); }
-  .arrow:after {
-    content: "";
-    height: 1.75rem;
-    width: 1rem;
-    background-color: white;
-    position: absolute;
-    right: 1.79rem;
-    top: .1rem; }
-
-html, body {
-  height: 100%;
-  min-width: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: Roboto, sans-serif;
-  background-color: #f6f8f9; }
-
-.body {
-  width: 65rem;
-  margin: 1rem auto 0; }
-  .body__content {
-    display: flex;
-    justify-content: space-around; }
-
-.footer {
-  height: 4rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: solid 0.01rem #dedede;
-  margin-top: 1.25rem;
-  font-weight: 300; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+right.scss:18
+main.scss:4
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:1203:in `tok!'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:677:in `block'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:697:in `block_child'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:689:in `block_contents'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:678:in `block'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:670:in `ruleset'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:696:in `block_child'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:689:in `block_contents'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/scss/parser.rb:41:in `parse'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/engine.rb:414:in `_to_tree'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/engine.rb:321:in `to_tree'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/stack.rb:88:in `block in with_import'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/stack.rb:88:in `with_import'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/Duckie/.rvm/gems/ruby-2.6.0-preview2/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"	&__\": expected \"{\", was \"}\"\A         on line 18 of right.scss\A         from line 4 of main.scss\A \A 13: 	&__user {\A 14: \A 15: 	}\A 16: \A 17: 	&__\A 18: }"; }
