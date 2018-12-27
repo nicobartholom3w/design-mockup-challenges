@@ -104,7 +104,8 @@
     border-radius: 1rem;
     height: 1.5rem;
     border: 0.05rem solid #dfdfdf;
-    width: 9.25rem; }
+    width: 8.5rem;
+    padding-left: .75rem; }
     .search-bar:focus {
       outline: none; }
   .search__icon {
@@ -249,10 +250,15 @@
 .articles {
   display: flex;
   width: 100%;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-top: 1rem; }
 
 .article {
   width: 11rem; }
+  .article:hover {
+    cursor: pointer; }
+    .article:hover .article__title {
+      text-decoration: underline; }
   .article__title {
     font-weight: 400;
     font-size: .95rem;
@@ -310,6 +316,8 @@
     text-decoration: none;
     font-weight: 300;
     font-size: .93rem; }
+    .background__company:hover {
+      text-decoration: underline; }
 
 .bottom-margin {
   margin-bottom: 1rem; }
@@ -454,7 +462,11 @@
       border-radius: 50%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      transition: background-color 0.3s ease; }
+      .recommendations__navarrows-left:hover, .recommendations__navarrows-right:hover {
+        cursor: pointer;
+        background-color: whitesmoke; }
     .recommendations__navarrows-right > .recommendations__navarrows-icon {
       margin-left: .5rem; }
   .recommendations__quote {
