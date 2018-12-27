@@ -395,17 +395,24 @@
 
 .following {
 	width: 100%;
-	height: 15rem;
+	height: 18rem;
 	background-color: white;
 	margin-top: 1.5rem;
+
 
 	&__content {
 		display: flex;
 		justify-content: space-evenly;
+		font-size: .9rem;
 	}
 	
 	&__company {
 		font-weight: 300;
+		margin-top: 1.25rem;
+
+		&-name {
+			margin-top: 1rem;
+		}
 
 		&-img {
 			position: relative;
@@ -420,6 +427,15 @@
 
 	&__add {
 		display: flex;
+		margin-top: .5rem;
+
+		&:hover {
+			cursor: pointer;
+
+			.following__follow {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&__follow {
@@ -445,6 +461,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: .5rem;
+	transition: background-color 0.5s ease;
+	
+	&:hover {
+		background-color: rgb(245, 245, 245);
+	}
 }
 
 .see-all {
@@ -458,4 +480,11 @@
 	justify-content: center;
 	font-weight: 300;
 	font-size: .9rem;
+	margin: 1.5rem 1rem;
+
+	&:hover {
+		cursor: pointer;
+		background-color: rgb(238, 248, 252);
+
+	}
 }
