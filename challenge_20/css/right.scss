@@ -1,17 +1,81 @@
 .right {
 	width: 10rem;
 	height: 40rem;
-	background-color: violet;
+	// background-color: violet;
 }
 
 .viewed {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: .9rem;
+
 
 	&__list {
-
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 11rem;
+		margin-top: 1rem;
+		margin-bottom: 2.5rem;
 	}
 
 	&__user {
-
+		display: flex;
+		align-items: center;
 	}
 
+	&__description {
+		margin-left: .5rem;
+	}
+	
+	&__name {
+		font-size: .9rem;
+	}
+
+	&__company {
+		font-size: .8rem;
+		font-weight: 300;
+		color: rgb(170, 170, 170);
+	}
+}
+
+.influencers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+
+	&__nav {
+		
+	}
+	
+	&__arrow {
+		font-size: 1.2rem;
+		// background-color: pink;
+		position: relative;
+		bottom: 1rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__img {
+		height: 6.5rem;
+		width: 6.5rem;
+		border-radius: 50%;
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: 1.15rem;
+		margin-top: .5rem;
+		margin-bottom: .25rem;
+	}
+
+	&__company {
+		font-weight: 300;
+		color: rgb(170, 170, 170);
+		font-size: .9rem;
+	}
 }

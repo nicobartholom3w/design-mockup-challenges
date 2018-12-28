@@ -566,8 +566,55 @@
 
 .right {
   width: 10rem;
-  height: 40rem;
-  background-color: violet; }
+  height: 40rem; }
+
+.viewed {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: .9rem; }
+  .viewed__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 11rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem; }
+  .viewed__user {
+    display: flex;
+    align-items: center; }
+  .viewed__description {
+    margin-left: .5rem; }
+  .viewed__name {
+    font-size: .9rem; }
+  .viewed__company {
+    font-size: .8rem;
+    font-weight: 300;
+    color: #aaaaaa; }
+
+.influencers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem; }
+  .influencers__arrow {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 1rem; }
+    .influencers__arrow:hover {
+      cursor: pointer; }
+  .influencers__img {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%; }
+  .influencers__name {
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin-top: .5rem;
+    margin-bottom: .25rem; }
+  .influencers__company {
+    font-weight: 300;
+    color: #aaaaaa;
+    font-size: .9rem; }
 
 .arrow {
   height: 1.9rem;
