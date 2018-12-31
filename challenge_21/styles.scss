@@ -9,3 +9,20 @@ body {
 	background-color: rgb(77, 38, 230);
 	font-family: Roboto, sans-serif;
 }
+
+.landing {
+	&__left {
+		background-color: rgb(226, 104, 150);
+		height: 30rem;
+		width: 20rem;
+		border-radius: .5rem;
+
+	}
+
+	&__right {
+		background-color: white;
+		height: 20rem;
+		width: 30rem;
+		border-radius: .5rem;
+	}
+}
