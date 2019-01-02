@@ -10,12 +10,18 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
-.landing {
+.layout {
+	margin: 2.5rem auto 0;
+	min-width: 60rem;
+	background-color: black;
+
 	&__left {
 		background-color: rgb(226, 104, 150);
-		height: 30rem;
-		width: 20rem;
+		height: 40rem;
+		width: 30rem;
 		border-radius: .5rem;
+		position: relative;
+		margin-left: 4rem;
 
 	}
 
@@ -24,6 +30,7 @@ body {
 		height: 20rem;
 		width: 30rem;
 		border-radius: .5rem;
+		float: right;
 	}
 }
 
@@ -31,6 +38,44 @@ body {
 	height: 1rem;
 	
 }
+
+.shoe-num {
+	// z-index: -1;
+	height: 20rem;
+	font-size: 20rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.2);
+
+}
+
 .product-img {
 	height: 28rem;
+	position: absolute;
+	top: 0;
+	left: -10rem;
+}
+
+.plus {
+	height: 2rem;
+	width: 2rem;
+	background-color: rgb(84, 41, 242);
+	border-radius: 50%;
+	text-align: center;
+	line-height: 2rem;
+	color: white;
+	position: absolute;
+}
+
+.loading {
+	width: 10rem;
+	height: 10rem;
+
+	&__dot {
+		height: 2rem;
+		width: 2rem;
+		background-color: rgba(255, 255, 255, 0.25);
+		// background-color: black;
+		border-radius: 50%;
+
+	}
 }

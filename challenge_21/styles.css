@@ -8,21 +8,56 @@ body {
   background-color: #4d26e6;
   font-family: Roboto, sans-serif; }
 
-.landing__left {
-  background-color: #e26896;
-  height: 30rem;
-  width: 20rem;
-  border-radius: .5rem; }
-.landing__right {
-  background-color: white;
-  height: 20rem;
-  width: 30rem;
-  border-radius: .5rem; }
+.layout {
+  margin: 2.5rem auto 0;
+  min-width: 60rem;
+  background-color: black; }
+  .layout__left {
+    background-color: #e26896;
+    height: 40rem;
+    width: 30rem;
+    border-radius: .5rem;
+    position: relative;
+    margin-left: 4rem; }
+  .layout__right {
+    background-color: white;
+    height: 20rem;
+    width: 30rem;
+    border-radius: .5rem;
+    float: right; }
 
 .nike-logo {
   height: 1rem; }
 
+.shoe-num {
+  height: 20rem;
+  font-size: 20rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.2); }
+
 .product-img {
-  height: 28rem; }
+  height: 28rem;
+  position: absolute;
+  top: 0;
+  left: -10rem; }
+
+.plus {
+  height: 2rem;
+  width: 2rem;
+  background-color: #5429f2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+  position: absolute; }
+
+.loading {
+  width: 10rem;
+  height: 10rem; }
+  .loading__dot {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
