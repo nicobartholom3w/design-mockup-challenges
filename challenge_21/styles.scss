@@ -11,26 +11,38 @@ body {
 }
 
 .layout {
-	margin: 2.5rem auto 0;
-	min-width: 60rem;
+	z-index: auto;
+	position: relative;
+	width: 64rem;
+	height: 40rem;
 	background-color: black;
+	// width: 27.75rem;
+	margin: 2.5rem auto 0;
+
 
 	&__left {
 		background-color: rgb(226, 104, 150);
 		height: 40rem;
-		width: 30rem;
+		width: 27.75rem;
 		border-radius: .5rem;
-		position: relative;
 		margin-left: 4rem;
-
+		position: relative;
+		z-index: 2;
+		// float: left;
+		display: inline;
+		float: left;
+		
 	}
 
 	&__right {
 		background-color: white;
-		height: 20rem;
-		width: 30rem;
-		border-radius: .5rem;
-		float: right;
+		height: 35.5rem;
+		width: 32rem;
+		border-radius: 0 .5rem .5rem 0;
+		margin-top: 2.25rem;
+		z-index: 1;
+		float: left;
+		display: inline;
 	}
 }
 
@@ -42,6 +54,8 @@ body {
 .shoe-num {
 	// z-index: -1;
 	height: 20rem;
+	width: 100%;
+	text-align: center;
 	font-size: 20rem;
 	font-weight: 500;
 	color: rgba(255, 255, 255, 0.2);
