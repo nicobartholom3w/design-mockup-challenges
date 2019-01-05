@@ -23,7 +23,6 @@ body {
     margin-left: 4rem;
     position: relative;
     z-index: 2;
-    display: inline;
     float: left; }
   .layout__right {
     background-color: white;
@@ -36,7 +35,8 @@ body {
     display: inline; }
 
 .nike-logo {
-  height: 1rem; }
+  height: 1rem;
+  margin: 1.25rem 0 0 1.25rem; }
 
 .shoe-num {
   height: 20rem;
@@ -44,13 +44,14 @@ body {
   text-align: center;
   font-size: 20rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.2); }
+  color: rgba(255, 255, 255, 0.2);
+  line-height: 18rem; }
 
 .product-img {
   height: 28rem;
   position: absolute;
-  top: 0;
-  left: -10rem; }
+  top: 10rem;
+  right: 4.5rem; }
 
 .plus {
   height: 2rem;
@@ -61,14 +62,30 @@ body {
   line-height: 2rem;
   color: white;
   position: absolute; }
+  .plus-1 {
+    top: 14.25rem;
+    left: 1rem; }
+  .plus-2 {
+    top: 23.75rem;
+    left: 6.5rem; }
+  .plus-3 {
+    top: 26.75rem;
+    left: 16.85rem; }
 
 .loading {
-  width: 10rem;
-  height: 10rem; }
+  width: 5.5rem;
+  height: 1rem;
+  display: flex;
+  position: absolute;
+  top: 37rem;
+  left: 11rem;
+  justify-content: space-between; }
   .loading__dot {
-    height: 2rem;
-    width: 2rem;
+    height: 1rem;
+    width: 1rem;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 50%; }
+    .loading__dot-active {
+      background-color: white; }
 
 /*# sourceMappingURL=styles.css.map */
