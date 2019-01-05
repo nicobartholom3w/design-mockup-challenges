@@ -15,7 +15,7 @@ body {
 	position: relative;
 	width: 64rem;
 	height: 40rem;
-	background-color: black;
+	// background-color: black;
 	// width: 27.75rem;
 	margin: 2.5rem auto 0;
 
@@ -26,9 +26,11 @@ body {
 		width: 27.75rem;
 		border-radius: .5rem;
 		margin-left: 4rem;
+		margin-bottom: 2.5rem;
 		position: relative;
 		z-index: 2;
 		float: left;
+		box-shadow: 0 .5rem 1.75rem .45rem rgba(0, 0, 0, .25)
 		
 	}
 
@@ -41,6 +43,12 @@ body {
 		z-index: 1;
 		float: left;
 		display: inline;
+		box-shadow: 0 .5rem 1.75rem .45rem rgba(0, 0, 0, .25);
+
+		&-content {
+			margin-left: 2.5rem;
+			margin-top: 4rem;
+		}
 	}
 }
 
@@ -77,6 +85,12 @@ body {
 	line-height: 2rem;
 	color: white;
 	position: absolute;
+	transform: opacity .2s;
+
+	&:hover {
+		cursor: pointer;
+		opacity: .85;
+	}
 
 	&-1 {
 		top: 14.25rem;
@@ -110,10 +124,120 @@ body {
 		background-color: rgba(255, 255, 255, 0.25);
 		// background-color: black;
 		border-radius: 50%;
+		transition: background-color .2s;
 
 		&-active{
 			background-color: white;
 		}
 
+		&:hover {
+			cursor: pointer;
+			background-color: white;
+		}
+
+	}
+}
+
+.title {
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+.price {
+	height: 1.5rem;
+	width: 8.75rem;
+	// background-color: pink;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin: .5rem 0;
+
+	&__main {
+		font-size: 1.25rem;
+	}
+
+	&__sub {
+		font-size: .9rem;
+		color: rgb(170, 170, 170);
+	}
+}
+
+.description {
+	font-weight: 300;
+	margin: 2.25rem 0;
+	width: 26.75rem;
+	line-height: 1.5rem;
+	// background-color: pink;
+	font-size: .95rem;
+}
+
+.select-line {
+	display: flex;
+	align-items: center;
+	color: rgb(170, 170, 170);
+	width: 26.75rem;
+	padding-bottom: 2rem;
+}
+
+.info {
+	font-size: 1.2rem;
+	width: 6rem;
+}
+
+.options {
+	display: flex;
+	align-items: center;
+	width: 20.75rem;
+
+	&__select {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+
+		&-size {
+			font-weight: 300;
+
+			&:hover {
+				cursor: pointer;
+				color: black;
+			}
+
+		}
+
+		&-amount {
+			color: black;
+		}
+	}
+}
+
+.size {
+	justify-content: space-around;
+}
+
+.arrow {
+	color: rgb(226, 104, 150);
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.button__buy {
+	width: 18.5rem;
+	height: 3.75rem;
+	background-color: rgb(230, 76, 60);
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 3.75rem;
+	font-size: 1.5rem;
+	border-radius: .25rem;
+	margin-top: 1rem;
+	box-shadow: 0 .5rem 1.85rem .25rem rgba(230, 76, 60, .5);
+	transition: margin-top .2s;
+
+	&:hover {
+		cursor: pointer;
+		margin-top: .85rem;
 	}
 }

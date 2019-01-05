@@ -13,7 +13,6 @@ body {
   position: relative;
   width: 64rem;
   height: 40rem;
-  background-color: black;
   margin: 2.5rem auto 0; }
   .layout__left {
     background-color: #e26896;
@@ -21,9 +20,11 @@ body {
     width: 27.75rem;
     border-radius: .5rem;
     margin-left: 4rem;
+    margin-bottom: 2.5rem;
     position: relative;
     z-index: 2;
-    float: left; }
+    float: left;
+    box-shadow: 0 0.5rem 1.75rem 0.45rem rgba(0, 0, 0, 0.25); }
   .layout__right {
     background-color: white;
     height: 35.5rem;
@@ -32,7 +33,11 @@ body {
     margin-top: 2.25rem;
     z-index: 1;
     float: left;
-    display: inline; }
+    display: inline;
+    box-shadow: 0 0.5rem 1.75rem 0.45rem rgba(0, 0, 0, 0.25); }
+    .layout__right-content {
+      margin-left: 2.5rem;
+      margin-top: 4rem; }
 
 .nike-logo {
   height: 1rem;
@@ -61,7 +66,11 @@ body {
   text-align: center;
   line-height: 2rem;
   color: white;
-  position: absolute; }
+  position: absolute;
+  transform: opacity .2s; }
+  .plus:hover {
+    cursor: pointer;
+    opacity: .85; }
   .plus-1 {
     top: 14.25rem;
     left: 1rem; }
@@ -84,8 +93,88 @@ body {
     height: 1rem;
     width: 1rem;
     background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 50%; }
+    border-radius: 50%;
+    transition: background-color .2s; }
     .loading__dot-active {
       background-color: white; }
+    .loading__dot:hover {
+      cursor: pointer;
+      background-color: white; }
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem; }
+
+.price {
+  height: 1.5rem;
+  width: 8.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: .5rem 0; }
+  .price__main {
+    font-size: 1.25rem; }
+  .price__sub {
+    font-size: .9rem;
+    color: #aaaaaa; }
+
+.description {
+  font-weight: 300;
+  margin: 2.25rem 0;
+  width: 26.75rem;
+  line-height: 1.5rem;
+  font-size: .95rem; }
+
+.select-line {
+  display: flex;
+  align-items: center;
+  color: #aaaaaa;
+  width: 26.75rem;
+  padding-bottom: 2rem; }
+
+.info {
+  font-size: 1.2rem;
+  width: 6rem; }
+
+.options {
+  display: flex;
+  align-items: center;
+  width: 20.75rem; }
+  .options__select {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+    .options__select-size {
+      font-weight: 300; }
+      .options__select-size:hover {
+        cursor: pointer;
+        color: black; }
+    .options__select-amount {
+      color: black; }
+
+.size {
+  justify-content: space-around; }
+
+.arrow {
+  color: #e26896; }
+  .arrow:hover {
+    cursor: pointer; }
+
+.button__buy {
+  width: 18.5rem;
+  height: 3.75rem;
+  background-color: #e64c3c;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3.75rem;
+  font-size: 1.5rem;
+  border-radius: .25rem;
+  margin-top: 1rem;
+  box-shadow: 0 0.5rem 1.85rem 0.25rem rgba(230, 76, 60, 0.5);
+  transition: margin-top .2s; }
+  .button__buy:hover {
+    cursor: pointer;
+    margin-top: .85rem; }
 
 /*# sourceMappingURL=styles.css.map */
