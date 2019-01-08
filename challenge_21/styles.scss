@@ -140,7 +140,7 @@ body {
 
 .title {
 	font-weight: 700;
-	font-size: 2.5rem;
+	font-size: 2.75rem;
 }
 
 .price {
@@ -148,7 +148,7 @@ body {
 	width: 8.75rem;
 	// background-color: pink;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
 	margin: .5rem 0;
 
@@ -239,5 +239,43 @@ body {
 	&:hover {
 		cursor: pointer;
 		margin-top: .85rem;
+	}
+}
+
+.form__size {
+	display: flex;
+	align-items: center;
+}
+
+.radio {
+	position: relative;
+	
+	&__item {
+		height: 2.5rem;
+		width: 2.5rem;
+		border-radius: 50%;
+		background-color: pink;
+		transition: border .2s ease-in;
+
+		&:checked {
+			border: solid black;
+		}
+	}
+
+	&__field {
+		position: absolute;
+		visibility: hidden;
+	}
+
+	&__label {
+		text-align: center;
+		line-height: 2.5rem;
+		height: 2.5rem;
+		width: 2.5rem;
+		border-radius: 50%;
+		// background-color: purple;
+		
+		
+		
 	}
 }
