@@ -92,17 +92,18 @@ body {
 	width: 44.25rem;
 
 	&__content {
-		margin: 2rem;
+		margin: 2rem 2.5rem;
 	}
 
 	&__header {
 		color: rgb(170, 170, 170);
-		margin-bottom: 1.25rem;
+		margin-bottom: 1.15rem;
 	}
 
 	&__title {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 1.75rem;
 
 		&-name {
 			font-size: 3.65rem;
@@ -134,12 +135,117 @@ body {
 }
 
 .gallery {
+	height: 26.25rem;
+	width: 100%;
+	// background-color: aqua;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	&__row1 {
-
+		height: 12.5rem;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		// background-color: purple;
 	}
 
 	&__row2 {
+		display: flex;
+		justify-content: space-between;
+		height: 12.55rem;
 
+	}
+
+	
+}
+
+.thumbnail {
+	position: relative;
+	height: 12.5rem;
+	width: 12.25rem;
+	overflow: hidden;
+
+	&__wide {
+		width: 25.75rem;
+	}
+
+	&__img {
+		position: absolute;
+		height: 100%;
+		width: auto;
+
+		&-1 {
+			right: -5rem;
+		}
+
+		&-2 {
+			width: 100%;
+			height: auto;
+			bottom: -2.35rem;
+		}
+
+		&-3 {
+			left: -3rem;
+		}
+
+		&-4 {
+			left: -4.35rem;
+		}
+
+		&-5 {
+			left: -2rem;
+		}
+	}
+}
+
+.hover {
+	height: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	
+	&__layer {
+		content: "";
+		height: 12.5rem;
+		width: 12.25rem;
+		background: rgba(47, 70, 120, 0);
+		position: absolute;
+		z-index: 10;
+		transition: background .2s ease;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		&:hover {
+			background: rgba(47, 70, 120, .5);
+
+			.hover__icon-single {
+				fill: rgba(255, 255, 255, .5);
+			}
+		} 
+
+		&-wide {
+			width: 25.75rem;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		width: 6.75rem;
+		
+		&-single {
+			height: 2rem;
+			fill: rgba(255, 255, 255, 0);
+			transition: fill .2s ease, opacity .2s ease;
+
+			&:hover {
+				cursor: pointer;
+				fill: rgba(255, 255, 255, 1);
+				opacity: 0;
+			}
+		}
 	}
 }
