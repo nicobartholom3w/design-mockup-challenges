@@ -1,5 +1,62 @@
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif; }
+
+body {
+  background-color: #273146; }
+
 .icon-sprite {
-  width: 0;
-  height: 0;
-  display: none;
-}
+  position: absolute; }
+
+.card {
+  margin: 6.25rem auto 0;
+  height: 38rem;
+  width: 50.75rem;
+  background-color: white;
+  border-radius: .25rem; }
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 6rem;
+  height: 36rem; }
+  .navigation__content {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 23rem;
+    width: 100%;
+    border-right: solid 0.05rem #dedede; }
+  .navigation__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+    width: 100%; }
+  .navigation__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 13rem;
+    width: 100%; }
+
+.icon {
+  fill: #d0d0d0;
+  height: 2rem; }
+  .icon__logo {
+    fill: #648df7; }
+  .icon__selected {
+    fill: #648df7;
+    border-right: solid 0.1rem #648df7; }
+
+.avatar {
+  height: 2.5rem;
+  border: solid 0.1rem #648df7;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=styles.css.map */

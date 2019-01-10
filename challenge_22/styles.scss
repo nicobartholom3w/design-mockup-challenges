@@ -11,15 +11,78 @@ body {
 
 }
 
+.icon-sprite {
+	position: absolute;
+}
+
 .card {
-	height: 20rem;
-	width: 40rem;
+	margin: 6.25rem auto 0;
+	height: 38rem;
+	width: 50.75rem;
 	background-color: white;
+	border-radius: .25rem;
 }
 
 .navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 6rem;
+	height: 36rem;
+	// background-color: aqua;
+	
+	&__content {
+		margin: 2rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: space-between;
+		// background-color: purple;
+		height: 23rem;
+		width: 100%;
+		border-right: solid .05rem rgb(222, 222, 222);
 
-	&__icon {
+	}
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3.5rem;
+		width: 100%
+	}
+
+	&__middle {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 13rem;
+		// background-color: aqua;
+		width: 100%;
+	}
+
+	&__bottom {
 		
 	}
+}
+
+.icon {
+	fill: rgb(208, 208, 208);
+	height: 2rem;
+	// margin: 2rem 0;
+	
+	&__logo {
+		fill: rgb(100, 141, 247);
+	}
+	
+	&__selected {
+		fill: rgb(100, 141, 247);
+		border-right: solid .1rem rgb(100, 141, 247);
+	}
+}
+
+.avatar {
+	height: 2.5rem;
+	border: solid .1rem rgb(100, 141, 247);
+	border-radius: 50%;
 }
