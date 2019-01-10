@@ -16,7 +16,8 @@ body {
   height: 38rem;
   width: 50.75rem;
   background-color: white;
-  border-radius: .25rem; }
+  border-radius: .25rem;
+  display: flex; }
 
 .navigation {
   display: flex;
@@ -58,5 +59,35 @@ body {
   height: 2.5rem;
   border: solid 0.1rem #648df7;
   border-radius: 50%; }
+
+.main {
+  width: 44.25rem; }
+  .main__content {
+    margin: 2rem; }
+  .main__header {
+    color: #aaaaaa;
+    margin-bottom: 1.25rem; }
+  .main__title {
+    display: flex;
+    justify-content: space-between; }
+    .main__title-name {
+      font-size: 3.65rem;
+      font-weight: 700; }
+    .main__title-button {
+      color: #648df7;
+      border: solid 0.01rem #aec6fb;
+      line-height: 2.5rem;
+      height: 2.5rem;
+      font-size: .75rem;
+      font-weight: 500;
+      padding: 0 2.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      transition: border-color .2s ease, margin-top .1s ease; }
+      .main__title-button:hover {
+        border-color: #648df7;
+        cursor: pointer; }
+      .main__title-button:active {
+        margin-top: .1rem; }
 
 /*# sourceMappingURL=styles.css.map */

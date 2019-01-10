@@ -21,6 +21,7 @@ body {
 	width: 50.75rem;
 	background-color: white;
 	border-radius: .25rem;
+	display: flex;
 }
 
 .navigation {
@@ -74,7 +75,7 @@ body {
 	&__logo {
 		fill: rgb(100, 141, 247);
 	}
-	
+
 	&__selected {
 		fill: rgb(100, 141, 247);
 		border-right: solid .1rem rgb(100, 141, 247);
@@ -85,4 +86,60 @@ body {
 	height: 2.5rem;
 	border: solid .1rem rgb(100, 141, 247);
 	border-radius: 50%;
+}
+
+.main {
+	width: 44.25rem;
+
+	&__content {
+		margin: 2rem;
+	}
+
+	&__header {
+		color: rgb(170, 170, 170);
+		margin-bottom: 1.25rem;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+
+		&-name {
+			font-size: 3.65rem;
+			font-weight: 700;
+		}
+
+		&-button {
+			color: rgb(100, 141, 247);
+			border: solid .01rem rgb(174, 198, 251);
+			line-height: 2.5rem;
+			height: 2.5rem;
+			font-size: .75rem;
+			font-weight: 500;
+			padding: 0 2.5rem;
+			text-align: center;
+			text-transform: uppercase;
+			transition: border-color .2s ease, margin-top .1s ease;
+
+			&:hover {
+				border-color: rgb(100, 141, 247);
+				cursor: pointer;
+			}
+
+			&:active {
+				margin-top: .1rem;
+			}
+		}
+	}
+}
+
+.gallery {
+
+	&__row1 {
+
+	}
+
+	&__row2 {
+
+	}
 }
