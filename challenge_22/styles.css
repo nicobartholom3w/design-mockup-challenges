@@ -37,18 +37,27 @@ body {
   .navigation__top {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     width: 100%; }
   .navigation__middle {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 13rem;
-    width: 100%; }
+    width: 100%;
+    padding-top: .5rem; }
 
 .icon {
   fill: #d0d0d0;
   height: 2rem; }
+  .icon-search {
+    height: 2rem; }
+  .icon-nav {
+    transition: fill .2s ease, border-right .2s ease; }
+    .icon-nav:hover {
+      cursor: pointer;
+      fill: #648df7;
+      border-right: solid 0.1rem #648df7; }
   .icon__logo {
     fill: #648df7; }
   .icon__selected {
@@ -66,14 +75,16 @@ body {
     margin: 2rem 2.5rem; }
   .main__header {
     color: #aaaaaa;
-    margin-bottom: 1.15rem; }
+    margin-bottom: 1.15rem;
+    z-index: 20; }
   .main__title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.75rem; }
     .main__title-name {
       font-size: 3.65rem;
-      font-weight: 700; }
+      font-weight: 700;
+      z-index: 15; }
     .main__title-button {
       color: #648df7;
       border: solid 0.01rem #aec6fb;
@@ -164,7 +175,6 @@ body {
       transition: fill .2s ease, opacity .2s ease; }
       .hover__icon-single:hover {
         cursor: pointer;
-        fill: white;
-        opacity: 0; }
+        fill: white; }
 
 /*# sourceMappingURL=styles.css.map */
