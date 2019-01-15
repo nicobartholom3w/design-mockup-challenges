@@ -8,22 +8,116 @@ html, body {
 
 .container {
   width: 53.5rem;
-  margin: 6.5rem auto 0;
+  margin: 7.25rem auto 0;
   display: flex;
   justify-content: center; }
   .container .container__videos {
-    width: 34rem;
+    width: 35.5rem;
     display: flex;
     justify-content: space-between; }
-  .container .video {
+
+.card {
+  position: relative;
+  width: 17rem;
+  height: 33rem; }
+
+.video {
+  height: 21.5rem;
+  width: 14.5rem; }
+  .video__container {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 12.5rem;
+    box-shadow: 0 1rem 1.5rem -0.75rem #2d2d2d;
     height: 21.5rem;
-    width: 14.5rem; }
+    width: 14.5rem;
+    z-index: 5; }
+    .video__container:hover + .popup {
+      transform: scale(1);
+      animation-name: bounce;
+      animation-duration: .3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1; }
 
 .popup {
+  width: 17rem;
+  height: 33rem;
+  transform: scale(0);
+  overflow: hidden;
+  border-radius: .25rem;
+  background-color: white;
   display: flex;
   justify-content: center;
-  width: 15rem;
-  height: 30rem;
-  background-color: white; }
+  align-items: flex-end;
+  box-shadow: 0 1.25rem 1.25rem -0.75rem #224762;
+  transition: all .2s ease-in; }
+  .popup__content {
+    height: 11rem;
+    width: 100%;
+    border-radius: .25rem; }
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3rem; }
+  .title__main {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700; }
+  .title__sub {
+    font-size: .8rem;
+    color: #ada9aa;
+    margin-top: .25rem; }
+
+.price {
+  width: 100%;
+  height: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem; }
+  .price__sale {
+    color: #46c87c;
+    font-weight: 300;
+    font-size: 1.1rem; }
+  .price__old {
+    color: #ada9aa;
+    font-size: .9rem;
+    text-decoration: line-through; }
+
+.button {
+  width: 100%;
+  height: 3rem;
+  background-color: #2f2f2e;
+  color: white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+  transition: margin-top .1s ease, height .1s ease;
+  border-radius: 0 0 .25rem .25rem; }
+  .button:hover {
+    cursor: pointer; }
+  .button:active {
+    margin-top: 1.45rem;
+    height: 2.8rem; }
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.5); }
+  25% {
+    transform: scale(0.75); }
+  50% {
+    transform: scale(1); }
+  75% {
+    transform: scale(0.99); }
+  100% {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=styles.css.map */
