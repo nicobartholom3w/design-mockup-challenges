@@ -1,0 +1,36 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	min-width: 100%;
+	font-family: Roboto, sans-serif;
+	background-color: rgb(41, 128, 185);
+}
+
+
+.container {
+	width: 53.5rem;
+	margin: 6.5rem auto 0;
+	display: flex;
+	justify-content: center;
+
+	.container__videos {
+		width: 34rem;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
+	.video {
+		height: 21.5rem;
+		width: 14.5rem;
+	}
+}
+
+.popup {
+	display: flex;
+	justify-content: center;
+	width: 15rem;
+	height: 30rem;
+	background-color: white;
+}
