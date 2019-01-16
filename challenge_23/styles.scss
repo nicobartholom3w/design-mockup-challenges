@@ -65,6 +65,10 @@ html, body {
 	box-shadow: 0 1.25rem 1.25rem -.75rem rgb(34, 71, 98);
 	transition: all .2s ease-in;
 
+	&:hover {
+		transform: scale(1);
+	}
+
 	&__content {
 		height: 11rem;
 		width: 100%;
