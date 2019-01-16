@@ -11,13 +11,21 @@ html {
 	background-size: cover;
 }
 
-.scene {
+.main {
 	margin: 4.5rem auto 0;
 	width: 25rem;
 	height: 25rem;
-	perspective: 100rem;
-
+	box-shadow: 0 1rem 1.25rem -1rem;
 }
+
+.scene {
+	// margin: 4.5rem auto 0;
+	width: 25rem;
+	height: 25rem;
+	perspective: 100rem;
+	// box-shadow: 0 1rem 1.25rem -1rem;
+}
+
 .card {
 	height: 100%;
 	width: 100%;
@@ -26,6 +34,7 @@ html {
 	border-radius: .25rem;
 	// -webkit-backface-visibility: hidden;
 	-webkit-transform-style: preserve-3d;
+	// box-shadow: 0 1rem 1.25rem -1rem;
 	
 	&__line {
 		content: "";
@@ -37,18 +46,22 @@ html {
 		position: absolute;
 		z-index: 22;
 		-webkit-transform-style: preserve-3d;
-		transition: all .3s;
+		transition: opacity .3s ease-in-out;
+
 	}
 
 	&:hover {
 
 		.card__cover {
 			
-			-webkit-backface-visibility: hidden;
-			-webkit-transform-style: preserve-3d;
+			// -webkit-backface-visibility: hidden;
+			// -webkit-transform-style: preserve-3d;
 			transform: rotateY(-50deg);
-			box-shadow: 1.25rem 0 1.25rem -1rem darkgrey;
+			box-shadow: 1.25rem 0 1.25rem -1rem darkgrey,
+						0 1rem 1.25rem -1rem;
 			// -webkit-transform: translate3d(0, 0, 0);
+			// box-shadow: 0 1rem 1.25rem -1rem;
+	
 		}
 
 		.card__line {
@@ -65,12 +78,15 @@ html {
 		border-radius: .25rem;
 		-webkit-transform-style: preserve-3d;
 		-webkit-backface-visibility: hidden;
-		transition: all .3s;
+		transition: all .3s ease-in-out;
 		// transform: translateZ(0);
 		margin: 0;
 		padding: 0;
 		// -webkit-transform: translate3d(0, 0, 0);
 		z-index: 20;
+		// box-shadow: 0 1.25rem 1.25rem -1rem;
+	
+
 
 		
 		&-extra {
