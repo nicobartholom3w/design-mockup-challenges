@@ -1,0 +1,85 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  font-family: Roboto, sans-serif; }
+
+html {
+  background: url("img/background.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.scene {
+  margin: 4.5rem auto 0;
+  width: 25rem;
+  height: 25rem;
+  perspective: 100rem; }
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  border-radius: .25rem;
+  -webkit-transform-style: preserve-3d; }
+  .card__line {
+    content: "";
+    opacity: 0;
+    height: 25rem;
+    width: .1rem;
+    background-color: white;
+    left: 12.5rem;
+    position: absolute;
+    z-index: 22;
+    -webkit-transform-style: preserve-3d;
+    transition: all .3s; }
+  .card:hover .card__cover {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(-50deg);
+    box-shadow: 1.25rem 0 1.25rem -1rem darkgrey; }
+  .card:hover .card__line {
+    opacity: .25; }
+  .card__cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("img/kyary.jpg") no-repeat;
+    background-size: cover;
+    border-radius: .25rem;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    transition: all .3s;
+    margin: 0;
+    padding: 0;
+    z-index: 20; }
+    .card__cover-extra {
+      position: absolute;
+      height: 100%;
+      width: 51%;
+      background: url("img/kyary.jpg") no-repeat;
+      background-size: 25rem;
+      border-radius: .25rem;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem; }
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: purple !important;
+  fill: pink !important;
+  color: blue;
+  opacity: .5; }
+  .icon:hover {
+    opacity: 1;
+    cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
