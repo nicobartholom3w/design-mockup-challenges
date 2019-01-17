@@ -239,6 +239,10 @@ body {
 
 			.hover__icon-single {
 				fill: rgba(255, 255, 255, .5);
+
+				&:hover {
+					fill: rgba(255, 255, 255, 1);
+				}
 			}
 		} 
 
@@ -260,7 +264,7 @@ body {
 			&:hover {
 				cursor: pointer;
 				fill: rgba(255, 255, 255, 1);
-				// opacity: 1;
+				opacity: 1;
 			}
 		}
 	}

@@ -163,6 +163,8 @@ body {
       background: rgba(47, 70, 120, 0.5); }
       .hover__layer:hover .hover__icon-single {
         fill: rgba(255, 255, 255, 0.5); }
+        .hover__layer:hover .hover__icon-single:hover {
+          fill: white; }
     .hover__layer-wide {
       width: 25.75rem; }
   .hover__icon {
@@ -175,6 +177,7 @@ body {
       transition: fill .2s ease, opacity .2s ease; }
       .hover__icon-single:hover {
         cursor: pointer;
-        fill: white; }
+        fill: white;
+        opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
