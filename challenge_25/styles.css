@@ -3,7 +3,61 @@ html, body {
   margin: 0;
   min-height: 100%;
   min-width: 100%;
-  background-color: #424d84;
   font-family: Roboto, sans-serif; }
+
+.card {
+  height: 22rem;
+  width: 30rem;
+  background-color: #424d84;
+  margin: 9.25rem auto 0;
+  border-radius: .25rem;
+  box-shadow: 0 .25rem 1rem 0rem darkgrey;
+  position: relative;
+  overflow: hidden; }
+
+.chart {
+  height: 10.5rem;
+  width: 31.25rem;
+  position: absolute;
+  left: -.5rem; }
+  .chart__bar {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%; }
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; }
+  .bar__line {
+    width: 1.4rem;
+    background-color: #a9afc7;
+    border-radius: .25rem; }
+    .bar__line-1 {
+      height: 7rem; }
+    .bar__line-2 {
+      height: 9rem; }
+    .bar__line-3 {
+      height: 7rem; }
+    .bar__line-4 {
+      height: 7rem; }
+    .bar__line-5 {
+      height: 7rem; }
+    .bar__line-6 {
+      height: 7rem; }
+    .bar__line-7 {
+      height: 7rem; }
+    .bar__line-8 {
+      height: 7rem; }
+    .bar__line-9 {
+      height: 7rem; }
+    .bar__line-10 {
+      height: 7rem; }
+  .bar__month {
+    margin-top: .5rem;
+    color: #a9afc7;
+    font-size: .9rem; }
 
 /*# sourceMappingURL=styles.css.map */
