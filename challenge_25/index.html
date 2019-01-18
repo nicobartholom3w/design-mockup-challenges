@@ -43,8 +43,8 @@
           <div class="bar__month">Oct</div>
         </div>
         <div class="bar">
-          <div class="bar__line bar__line-6"></div>
-          <div class="bar__month">Nov</div>
+          <div class="bar__line bar__line-6 bar__line-active"></div>
+          <div class="bar__month bar__month-active">Nov</div>
         </div>
         <div class="bar">
           <div class="bar__line bar__line-7"></div>
@@ -64,25 +64,46 @@
         </div>
       </div>
     </div>
-    <div class="chart__circle">
-      <div class="chart__circle-info">
-        <div class="spent"></div>
-        <div class="spent__amt"></div>
-      </div>
-    </div>
 
-    <div class="info">
-      <div class="info__title"></div>
-      <div class="info__data"></div>
-    </div>
-    <div class="info">
-      <div class="info__title"></div>
-      <div class="info__data"></div>
-    </div>
-    <div class="info">
-      <div class="info__title"></div>
-      <div class="info__data"></div>
-    </div>
+
+    <div class="bottom-info">
+
+      <div class="circle">
+      <svg
+        class="donut"
+        width="135"
+        height="135"
+        viewBox="0 0 42 42">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="rgb(66, 77, 132)" stroke="#d2d3d4" stroke-width="3"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgb(52, 152, 219" stroke-width="3" stroke-dasharray="35 65" stroke-dashoffset="0"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgb(243, 156, 18" stroke-width="3" stroke-dasharray="23 77" stroke-dashoffset="65"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgb(155, 89, 182" stroke-width="3" stroke-dasharray="10 90" stroke-dashoffset="42"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgb(46, 204, 113" stroke-width="3" stroke-dasharray="32 68" stroke-dashoffset="32"></circle>
+      </svg>
+
+      
+          <div class="circle__chart-info">
+            <div class="circle__spent">Total spent:</div>
+            <div class="circle__spent-amt">$2076</div>
+          </div>
+        </div>
+    
+        <div class="info">
+          <div class="info__title-top">
+            <div class="info__title">Most expensive category</div>
+            <div class="info__data">Restaurants & Dining</div>
+          </div>
+          <div class="info__section">
+            <div class="info__title">Updated categories</div>
+            <div class="info__data">2</div>
+          </div>
+          <div class="info__section">
+            <div class="info__title">Bonus payments</div>
+            <div class="info__data">$92</div>
+          </div>
+        </div>
+      </div>
 
   </div>
 </body>

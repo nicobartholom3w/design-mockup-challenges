@@ -8,7 +8,7 @@ html, body {
 
 .card {
 	height: 22rem;
-	width: 30rem;
+	width: 27rem;
 	background-color: rgb(66, 77, 132);
 	margin: 9.25rem auto 0;
 	border-radius: .25rem;
@@ -38,38 +38,43 @@ html, body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
+	
 
 	&__line {
-		width: 1.4rem;
+		width: 1.25rem;
 		background-color: rgb(169, 175, 199);
 		border-radius: .25rem;
 
+		&-active {
+			background-color: rgb(52, 152, 219);
+		}
+
 		&-1 {
-			height: 7rem;
+			height: 6rem;
 		}
 
 		&-2 {
-			height: 9rem;
+			height: 7.5rem;
 		}
 
 		&-3 {
-			height: 7rem;
+			height: 4rem;
 		}
 
 		&-4 {
-			height: 7rem;
+			height: 2.5rem;
 		}
 
 		&-5 {
-			height: 7rem;
+			height: 4.5rem;
 		}
 
 		&-6 {
-			height: 7rem;
+			height: 5.5rem;
 		}
 
 		&-7 {
-			height: 7rem;
+			height: 2.5rem;
 		}
 
 		&-8 {
@@ -77,19 +82,87 @@ html, body {
 		}
 
 		&-9 {
-			height: 7rem;
+			height: 4.5rem;
 		}
 
 		&-10 {
-			height: 7rem;
+			height: 5.5rem;
 		}
 	}
 
 	&__month {
-		margin-top: .5rem;
+		margin-top: .75rem;
 		color: rgb(169, 175, 199);
 		font-size: .9rem;
+
+		&-active {
+			color: white;
+		}
+	}
+}
+
+.bottom-info {
+	height: 10rem;
+	width: 100%;
+	padding: 0 .5rem;
+	background-color: rgb(66, 77, 132);
+	margin-top: 12rem;
+	display: flex;
+	align-items: center;
+}
+
+.circle {
+	position: relative;
+
+	&__chart-info {
+		position: absolute;	
+		top: 3.25rem;
+		left: 2.25rem;
+		font-size: .75rem;
+		font-weight: 300;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
 	}
 
+	&__spent {
 
+	}
+
+	&__spent-amt {
+		margin-top: .25rem;
+	}
+}
+
+.info {
+	font-size: .95rem;
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	// background-color: pink;
+	height: 7.25rem;
+
+	&__section {
+		display: flex;
+		align-items: flex-end;
+		height: 2.5rem;
+	}
+
+	&__title {
+		color: rgb(196, 199, 216);
+		margin-right: 1rem;
+
+		&-top {
+			height: 2.5rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
+	&__data {
+		color: white;
+	}
 }
