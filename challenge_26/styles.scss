@@ -52,6 +52,25 @@ html, body {
 
 // Media Query Start
 // 
+
+@media (min-width: 34rem){
+	.payment__form {
+
+		// &-bottom3 {
+		// 	display: flex;
+		// 	flex-direction: row;
+		// 	background-color: blue;
+		// 	width: 100%;
+		// }
+
+		// &-bottom2 {
+		// 	width: 30%;
+		// }
+	}
+
+	
+}
+
 @media (min-width: 54rem){
 	.main__cards {
 		display: flex;
@@ -182,4 +201,71 @@ html, body {
 		font-size: 1.1rem;
 		font-weight: 500;
 	}
+}
+
+.form__title {
+	font-size: 1.75rem;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+	margin-top: .5rem;
+}
+
+.payment {
+
+	&__title {
+		text-transform: uppercase;
+		font-size: .8rem;
+		color: rgb(170, 170, 170);
+		font-weight: 700;
+		margin-bottom: .5rem;
+		margin-top: .75rem;
+	}
+	
+	&__input {
+		line-height: 2.25rem;
+		font-size: .9rem;
+		font-weight: 500;
+		padding-left: .5rem;
+		box-shadow: none;
+		outline: none;
+		border: solid .1rem rgb(222, 222, 222);
+		border-radius: .25rem;
+		margin-bottom: .5rem;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		
+		&-flex{
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-bottom3 {
+			// display: flex;
+			// flex-direction: column;
+		}
+
+		&-bottom2 {
+			display: flex;
+
+			
+		} 
+	}
+
+}
+
+#expdate, #cvc {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.form__expdate {
+	margin-right: 1.25rem;
+	width: 100%;
+}
+
+.form__cvc {
+	width: 100%;
 }
