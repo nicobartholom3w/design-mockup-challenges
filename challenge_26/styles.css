@@ -28,7 +28,7 @@ html, body {
     margin-top: .25rem; }
 
 .card {
-  max-width: 48rem;
+  max-width: 41rem;
   min-width: 15rem;
   margin-top: 2rem;
   padding: 1.5rem;
@@ -37,6 +37,19 @@ html, body {
   flex-direction: column;
   box-shadow: 0 0.25rem 1.25rem 0rem #e1e1e1; }
 
+@media (min-width: 32.25rem) {
+  .payment__form-bottom3 {
+    display: flex;
+    flex-direction: row; }
+
+  .form__expdate, .form__cvc {
+    max-width: 7rem; }
+
+  .form__ccholder {
+    min-width: 15.25rem;
+    margin-right: 1.5rem;
+    max-width: 25rem;
+    width: 85%; } }
 @media (min-width: 54rem) {
   .main__cards {
     display: flex; }

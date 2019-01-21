@@ -39,7 +39,7 @@ html, body {
 }
 
 .card {
-	max-width: 48rem;
+	max-width: 41rem;
 	min-width: 15rem;
 	margin-top: 2rem;
 	padding: 1.5rem;
@@ -53,22 +53,25 @@ html, body {
 // Media Query Start
 // 
 
-@media (min-width: 34rem){
+@media (min-width: 32.25rem){
 	.payment__form {
 
-		// &-bottom3 {
-		// 	display: flex;
-		// 	flex-direction: row;
-		// 	background-color: blue;
-		// 	width: 100%;
-		// }
-
-		// &-bottom2 {
-		// 	width: 30%;
-		// }
+		&-bottom3 {
+			display: flex;
+			flex-direction: row;			
+		}
+	}
+	
+	.form__expdate, .form__cvc {
+		max-width: 7rem;
+	}
+	.form__ccholder {
+		min-width: 15.25rem;
+		margin-right: 1.5rem;
+		max-width: 25rem;
+		width: 85%;
 	}
 
-	
 }
 
 @media (min-width: 54rem){
