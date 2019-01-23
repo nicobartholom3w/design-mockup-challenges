@@ -88,7 +88,21 @@
 		
 			<div class=card__billing>
 				<div class="card card__billing-content">
-						billing
+					<div class="form__title">Billing address</div>
+					<div class="radio__line">
+						<label for="samebilling">
+							<input type="radio" id="samebilling" class="radio__input" name="billing" value="samebilling">
+						<span class="radio__label">Same as the shipping address</span>
+					</label>
+					</div>
+
+					<div class="hr"></div>
+					<div class="radio__line">
+						<label for="differentbilling">
+							<input type="radio" class="radio__input" id="differentbilling" name="billing" value="differentbilling">
+						<span class="radio__label">Use a different billing address</span>
+					</label>
+					</div>
 				</div>
 				<div class="card card__billing-emptydiv"></div>
 			</div>

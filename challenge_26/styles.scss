@@ -272,3 +272,59 @@ html, body {
 .form__cvc {
 	width: 100%;
 }
+
+.radio__input{
+	height: 1rem;
+	width: 1rem;
+	display: inline-block;
+	appearance: none;
+	position: relative;
+	border: 0;
+	cursor: pointer;
+	border-radius: 50%;
+	opacity: 0;
+	// margin-right: 1rem;
+
+	
+}
+
+.radio__label {
+	position: relative;
+
+	&:hover {
+		cursor: pointer;
+	}
+	
+		&:before {
+			content: "";
+			height: 1.25rem;
+			width: 1.25rem;
+			border-radius: 50%;
+			background-color: white;
+			border: solid .1rem rgb(222, 222, 222);
+			position: absolute;
+			right: 14rem;
+			top: -.25rem;
+		}
+
+		&:after {
+		content: "";
+		height: .6rem;
+		width: .6rem;
+		border-radius: 10rem;
+		background-color: rgb(95, 135, 236);
+		position: absolute;
+		right: 14.4rem;
+		top: .2rem;
+		opacity: 0;
+	}
+	
+	// &:hover:after, &:hover:before{
+	// 	cursor: pointer;
+	// }
+}
+
+.radio__input:checked + .radio__label:after {
+	opacity: 1;
+}
+
