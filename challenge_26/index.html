@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-
+<span id="top"></span>
 <div class="content">
 
 	<div class="header">
@@ -88,32 +88,32 @@
 		
 			<div class=card__billing>
 				<div class="card card__billing-content">
-					<div class="form__title">Billing address</div>
+					<div class="form__title billing">Billing address</div>
 					<div class="radio__line">
-						<label for="samebilling">
+						<label class="radio" for="samebilling">
 							<input type="radio" id="samebilling" class="radio__input" name="billing" value="samebilling">
 						<span class="radio__label">Same as the shipping address</span>
 					</label>
 					</div>
 
 					<div class="hr"></div>
-					<div class="radio__line">
-						<label for="differentbilling">
+					<div class="radio__line radio__line-padding">
+						<label class="radio" for="differentbilling">
 							<input type="radio" class="radio__input" id="differentbilling" name="billing" value="differentbilling">
 						<span class="radio__label">Use a different billing address</span>
 					</label>
 					</div>
 				</div>
-				<div class="card card__billing-emptydiv"></div>
+				<div class=" card__billing-emptydiv"></div>
 			</div>
-		
+		</form>
 
 
 		<div class="footer">
-			<a href="#top" class="return"></a>
-			<input type="button" type="submit" class="complete">
+			<a href="#top" class="return">Return to shipping method</a>
+			<a href="#top"><button class="button__submit" type="submit" form="form" value="submit">Complete order</button></a>
 		</div>
-	</form>
+	
 </div>
 </form>
 </body>
