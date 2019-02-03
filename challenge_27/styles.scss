@@ -1,0 +1,26 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	min-width: 100%;
+	background-color: rgb(43, 62, 80);
+	font-family: Roboto, sans-serif;
+}
+
+
+.card {
+	height: 30rem;
+	width: 40rem;
+	background-color: rgb(36, 38, 42);
+	margin: 3.25rem auto 0;
+
+	&__content {
+		color: white;
+		padding: 1rem;
+	}
+}
+
+.title {
+	font-size: 1.65rem;
+	font-weight: 500;
+}
