@@ -9,10 +9,12 @@ html, body {
 
 
 .card {
-	height: 30rem;
-	width: 40rem;
+	height: 36.5rem;
+	width: 50rem;
 	background-color: rgb(36, 38, 42);
 	margin: 3.25rem auto 0;
+	border-radius: .25rem;
+	box-shadow: 0 .6rem 1.5rem 0rem rgb(30, 41, 52);
 
 	&__content {
 		color: white;
@@ -20,7 +22,34 @@ html, body {
 	}
 }
 
-.title {
-	font-size: 1.65rem;
-	font-weight: 500;
+.movie {
+	display: flex;
+	align-items: center;
+
+	&__title {
+		font-size: 1.65rem;
+		font-weight: 500;
+		margin-right: .75rem;
+	}
+
+	&__info {
+		font-size: .65rem;
+		text-transform: uppercase;
+		font-weight: 500;
+		background-color: rgb(80, 81, 85);
+		padding: .25rem;
+		margin-right: .5rem;
+		border-radius: .1rem;
+	}
+}
+
+.theater {
+	color: rgb(170, 170, 170);
+	font-size: .95rem;
+	margin-top: .5rem;
+}
+
+.date {
+	margin: 1rem 0;
+	font-size: 1.1rem;
 }
