@@ -146,3 +146,52 @@ html, body {
 .green {
 	background-color: rgb(103, 210, 90);
 }
+
+.one, .two, .three, .four {
+	position: relative;
+	
+	&:before {
+		left: -2.5rem;
+		top: 1rem;
+	}
+
+	&:after {
+		right: -2.5rem;
+		top: 1rem;
+	}
+
+	&:before, &:after {
+		color: rgb(162, 162, 162);
+		position: absolute;
+		font-size: .75rem;
+	}
+}
+.one {
+
+	&:before, &:after {
+		content: "1";
+	}
+}
+
+.two {
+	&:before, &:after {
+		content: "2";
+
+		
+	}
+}
+
+.three {
+
+	&:before, &:after {
+		content: "3";
+		
+	}
+}
+
+.four {
+	&:before, &:after {
+		content: "4";
+		
+	}
+}
