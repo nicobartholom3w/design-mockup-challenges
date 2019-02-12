@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-
+<span id="top"></span>
 <div class="content">
 
 	<div class="header">
@@ -21,63 +21,100 @@
 		<div class="header__dash">-</div>
 		<div class="header__option header__option-current">Payment Method</div>
 	</div>
+	<form action="">
+		<div class="main__cards">
 
-	<div class="main__cards">
-
-		<div class="card main__cards-item">
-			<div class="item ">
-				<div class="item__left">
-					<div class="item__img"><img class="item__img-img" src="img/order.jpg" alt=""></div>
-					<div class="item__name">Chocolate bar</div>
+			<div class="card main__cards-item">
+				<div class="item ">
+					<div class="item__left">
+						<div class="item__img"><img class="item__img-img" src="img/order.jpg" alt=""></div>
+						<div class="item__name">Chocolate bar</div>
+					</div>
+					<div class="item__price">$2.49</div>
 				</div>
-				<div class="item__price">$2.49</div>
+
+				<div class="hr"></div>
+
+				<div class="cost">
+					<div class="cost__line ">
+						<div class="cost__line-item bottom-padding">Subtotal</div>
+						<div class="cost__line-item">$4.98</div>
+					</div>
+					<div class="cost__line ">
+						<div class="cost__line-item">Shipping</div>
+						<div class="cost__line-item">$3.00</div>
+					</div>
+				</div>
+
+				<div class="hr"></div>
+				<div class="total">
+					<div class="total__item">Total</div>
+					<div class="total__price">$7.98</div>
+				</div>
 			</div>
+		
+		
+			
+			<div class="card main__cards-payment">
+				<div class="form__title">Payment information</div>
+				<div class="payment__form">
+					<div class="form__ccnum payment__form-flex">
+						<label class="payment__title" for="ccnum">Card Number</label>
+						<input type="tel" id="ccnum" name="ccnum" class="payment__input" requiredpattern="\d*" maxlength="19" autocomplete="cc-number" placeholder="**** **** **** ****">
+					</div>
+					
+					<div class="payment__form-bottom3">
+						<div class="form__ccholder payment__form-flex">
+							<label class="payment__title" for="ccholder">Card Holder</label>
+							<input type="text" id="ccholder" name="ccholder" class="payment__input" placeholder="Michael Jordan">
+						</div>
 
-			<div class="hr"></div>
-
-			<div class="cost">
-				<div class="cost__line ">
-					<div class="cost__line-item bottom-padding">Subtotal</div>
-					<div class="cost__line-item">$4.98</div>
+						<div class="payment__form-bottom2">
+							<div class="form__expdate payment__form-flex">
+								<label class="payment__title" for="ccexpdate">Exp.Date</label>
+								<input type="text" id="expdate" name="ccexpdate" class="payment__input" placeholder="03/19">
+							</div>
+		
+							<div class="form__cvc payment__form-flex">
+								<label class="payment__title" for="cvc">CVC</label>
+								<input type="text" id="cvc" name="cvc" class="payment__input" placeholder="***">
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="cost__line ">
-					<div class="cost__line-item">Shipping</div>
-					<div class="cost__line-item">$3.00</div>
-				</div>
-			</div>
-
-			<div class="hr"></div>
-			<div class="total">
-				<div class="total__item">Total</div>
-				<div class="total__price">$7.98</div>
 			</div>
 		</div>
-	
-	
-	
-		<div class="card main__cards-payment">
-			<form action="">
-				<div class="form-title"></div>
-				payment
-			</form>
-		</div>
-	</div>
-	
-	
-		<div class=card__billing>
-			<div class="card card__billing-content">
-					billing
+		
+		
+			<div class=card__billing>
+				<div class="card card__billing-content">
+					<div class="form__title billing">Billing address</div>
+					<div class="radio__line">
+						<label class="radio" for="samebilling">
+							<input type="radio" id="samebilling" class="radio__input" name="billing" value="samebilling">
+						<span class="radio__label">Same as the shipping address</span>
+					</label>
+					</div>
+
+					<div class="hr"></div>
+					<div class="radio__line radio__line-padding">
+						<label class="radio" for="differentbilling">
+							<input type="radio" class="radio__input" id="differentbilling" name="billing" value="differentbilling">
+						<span class="radio__label">Use a different billing address</span>
+					</label>
+					</div>
+				</div>
+				<div class=" card__billing-emptydiv"></div>
 			</div>
-			<div class="card card__billing-emptydiv"></div>
+		</form>
+
+
+		<div class="footer">
+			<a href="#top" class="return">Return to shipping method</a>
+			<a href="#top"><button class="button__submit" type="submit" form="form" value="submit">Complete order</button></a>
 		</div>
 	
-
-
-	<div class="footer">
-		<a href="#top" class="return"></a>
-		<button type="submit" class="complete"></button>
-	</div>
 </div>
-
+</form>
 </body>
 </html>
