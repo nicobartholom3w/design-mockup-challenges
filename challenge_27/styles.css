@@ -106,6 +106,10 @@ html, body {
   height: 1.35rem;
   width: 1.35rem;
   border-radius: 50%; }
+  .dot__small {
+    height: .65rem;
+    width: .65rem;
+    border-radius: 50%; }
 
 .blue {
   background-color: #4eaaff; }
@@ -137,5 +141,42 @@ html, body {
 
 .four:before, .four:after {
   content: "4"; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.75rem; }
+
+.price {
+  font-size: .75rem;
+  color: #aaaaaa;
+  padding: 0 1.5rem 0 .5rem; }
+  .price-info {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+
+.button {
+  display: flex;
+  align-items: center; }
+
+.submit {
+  height: 2.5rem;
+  width: 9rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: #3498db;
+  outline: none;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  transform: margin-top; }
+  .submit:hover {
+    background-color: #308dca; }
+  .submit:active {
+    margin-top: .15rem; }
 
 /*# sourceMappingURL=styles.css.map */
