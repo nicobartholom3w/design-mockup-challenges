@@ -137,6 +137,73 @@ html, body {
 	width: 1.35rem;
 	border-radius: 50%;
 	
+	&__one {
+		position: relative;
+		&:before {
+			content: "1";
+			height: 1.35rem;
+			width: 1.35rem;
+			border-radius: 50%;
+			font-size: .9rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+		}
+
+		&:after {
+			content: "";
+			height: 1.75rem;
+			width: 1.75rem;
+			border-radius: 50%;
+			border: solid .05rem rgb(78, 170, 255);
+			position: absolute;
+			left: -.25rem;
+			top: -.25rem;
+		}
+	}
+
+	&__two {
+
+	}
+
+	&__three {
+
+	}
+
+	&__four {
+
+	}
+
+	&__five {
+		&-blue {
+
+		}
+
+		&-green {
+
+		}
+	}
+
+	&__six {
+
+	}
+
+	&__seven {
+
+	}
+
+	&__eight {
+
+	}
+
+	&__nine {
+
+	}
+
+	&__ten {
+
+	}
 	&__small {
 		height: .65rem;
 		width: .65rem;
