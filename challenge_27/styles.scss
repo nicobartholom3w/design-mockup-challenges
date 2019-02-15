@@ -137,8 +137,9 @@ html, body {
 	width: 1.35rem;
 	border-radius: 50%;
 	
-	&__one {
+	&__one, &__two, &__three, &__four, &__five-blue, &__five-green, &__six-blue, &__six-green, &__seven, &__eight, &__nine, &__ten {
 		position: relative;
+		cursor: pointer;
 		&:before {
 			content: "1";
 			height: 1.35rem;
@@ -149,6 +150,7 @@ html, body {
 			align-items: center;
 			justify-content: center;
 			position: absolute;
+			opacity: 0;
 		}
 
 		&:after {
@@ -160,49 +162,90 @@ html, body {
 			position: absolute;
 			left: -.25rem;
 			top: -.25rem;
+			transform: scale(0);
+			transition: all .1s;
+		}
+
+		&:hover:after, &:hover:before{
+			opacity: 1;
+			transform: scale(1);
 		}
 	}
 
 	&__two {
-
+		&:before{
+			content: "2";
+		}
 	}
 
 	&__three {
-
+		&:before{
+			content: "3";
+		}
 	}
 
 	&__four {
-
+		&:before{
+			content: "4";
+		}
 	}
 
 	&__five {
 		&-blue {
-
+			&:before {
+				content: "5";
+			}
 		}
 
 		&-green {
-
+			&:before {
+				content: "5";
+			}
+			&:after {
+				border-color: rgb(103, 210, 90);
+			}
 		}
 	}
 
 	&__six {
+		&-blue {
+			&:before {
+				content: "6";
+			}
+		}
+		&-green {
+			&:before {
+				content: "6";
+			}
 
+			&:after {
+				border-color: rgb(103, 210, 90);
+			}
+		}
 	}
 
 	&__seven {
-
+		&:before{
+			content: "7";
+		}
 	}
 
 	&__eight {
-
+		&:before{
+			content: "8";
+		}
 	}
 
 	&__nine {
-
+		&:before{
+			content: "9";
+		}
 	}
 
 	&__ten {
-
+		&:before{
+			content: "10";
+		}
 	}
 	&__small {
 		height: .65rem;

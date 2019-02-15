@@ -106,9 +106,10 @@ html, body {
   height: 1.35rem;
   width: 1.35rem;
   border-radius: 50%; }
-  .dot__one {
-    position: relative; }
-    .dot__one:before {
+  .dot__one, .dot__two, .dot__three, .dot__four, .dot__five-blue, .dot__five-green, .dot__six-blue, .dot__six-green, .dot__seven, .dot__eight, .dot__nine, .dot__ten {
+    position: relative;
+    cursor: pointer; }
+    .dot__one:before, .dot__two:before, .dot__three:before, .dot__four:before, .dot__five-blue:before, .dot__five-green:before, .dot__six-blue:before, .dot__six-green:before, .dot__seven:before, .dot__eight:before, .dot__nine:before, .dot__ten:before {
       content: "1";
       height: 1.35rem;
       width: 1.35rem;
@@ -117,8 +118,9 @@ html, body {
       display: flex;
       align-items: center;
       justify-content: center;
-      position: absolute; }
-    .dot__one:after {
+      position: absolute;
+      opacity: 0; }
+    .dot__one:after, .dot__two:after, .dot__three:after, .dot__four:after, .dot__five-blue:after, .dot__five-green:after, .dot__six-blue:after, .dot__six-green:after, .dot__seven:after, .dot__eight:after, .dot__nine:after, .dot__ten:after {
       content: "";
       height: 1.75rem;
       width: 1.75rem;
@@ -126,7 +128,38 @@ html, body {
       border: solid 0.05rem #4eaaff;
       position: absolute;
       left: -.25rem;
-      top: -.25rem; }
+      top: -.25rem;
+      transform: scale(0);
+      transition: all .1s; }
+    .dot__one:hover:after, .dot__one:hover:before, .dot__two:hover:after, .dot__two:hover:before, .dot__three:hover:after, .dot__three:hover:before, .dot__four:hover:after, .dot__four:hover:before, .dot__five-blue:hover:after, .dot__five-blue:hover:before, .dot__five-green:hover:after, .dot__five-green:hover:before, .dot__six-blue:hover:after, .dot__six-blue:hover:before, .dot__six-green:hover:after, .dot__six-green:hover:before, .dot__seven:hover:after, .dot__seven:hover:before, .dot__eight:hover:after, .dot__eight:hover:before, .dot__nine:hover:after, .dot__nine:hover:before, .dot__ten:hover:after, .dot__ten:hover:before {
+      opacity: 1;
+      transform: scale(1); }
+  .dot__two:before {
+    content: "2"; }
+  .dot__three:before {
+    content: "3"; }
+  .dot__four:before {
+    content: "4"; }
+  .dot__five-blue:before {
+    content: "5"; }
+  .dot__five-green:before {
+    content: "5"; }
+  .dot__five-green:after {
+    border-color: #67d25a; }
+  .dot__six-blue:before {
+    content: "6"; }
+  .dot__six-green:before {
+    content: "6"; }
+  .dot__six-green:after {
+    border-color: #67d25a; }
+  .dot__seven:before {
+    content: "7"; }
+  .dot__eight:before {
+    content: "8"; }
+  .dot__nine:before {
+    content: "9"; }
+  .dot__ten:before {
+    content: "10"; }
   .dot__small {
     height: .65rem;
     width: .65rem;
