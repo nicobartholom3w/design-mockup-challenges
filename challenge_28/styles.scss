@@ -1,0 +1,49 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-color: rgb(194, 175, 249);
+	font-family: Roboto, sans-serif;
+}
+
+.card {
+	height: 37.5rem;
+	width: 50rem;
+	background-color: rgb(83,87, 116);
+	margin: 3.25rem auto 0;
+	border-radius: .25rem;
+	position: relative;
+
+	&__main {
+		padding: 2.5rem 2rem;
+	}
+
+	&__nav {
+		position: absolute;
+		background-color: rgb(61, 63, 92);
+		height: 4.5rem;
+		width: 100%;
+		bottom: 0;
+		border-radius: 0 0 .25rem .25rem;
+	}
+}
+
+.title {
+
+	&__page {
+		color: rgb(239, 139, 167);
+		font-size: 3.2rem;
+		text-transform: uppercase;
+		font-weight: 900;
+
+		&-sub {
+			text-transform: uppercase;
+			font-size: .75rem;
+			color: rgb(208, 208, 208);
+			font-weight: 500;
+		}
+	}
+
+
+}

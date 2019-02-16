@@ -1,23 +1,37 @@
-.icon {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  line-height: inherit;
-  display: inline-block;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #c2aff9;
+  font-family: Roboto, sans-serif; }
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+.card {
+  height: 37.5rem;
+  width: 50rem;
+  background-color: #535774;
+  margin: 3.25rem auto 0;
+  border-radius: .25rem;
+  position: relative; }
+  .card__main {
+    padding: 2.5rem 2rem; }
+  .card__nav {
+    position: absolute;
+    background-color: #3d3f5c;
+    height: 4.5rem;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0 0 .25rem .25rem; }
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+.title__page {
+  color: #ef8ba7;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 900; }
+  .title__page-sub {
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: #d0d0d0;
+    font-weight: 500; }
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
+/*# sourceMappingURL=styles.css.map */
