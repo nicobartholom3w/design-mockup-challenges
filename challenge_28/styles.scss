@@ -52,7 +52,7 @@ html, body {
 	}
 }
 
-.follow-button {
+.button {
 	color: white;
 	padding: .75rem 1.85rem;
 	border: solid .05rem white;
@@ -64,6 +64,26 @@ html, body {
 
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	&__more {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+.content {
+	
+	&__main {
+		display: flex;
+		background-color: pink;
+		margin-top: 1.75rem;
+	}
+
+	&__sub {
+
 	}
 }
 
@@ -79,7 +99,7 @@ html, body {
 	box-shadow: inset 0rem -4rem 8rem .5rem rgba(30, 30, 50, .95),
 				0rem 1.25rem 1.75rem -.5rem rgba(30, 30, 40, .95);
 
-	margin-top: 1.75rem;
+	
 
 	&:before {
 		// content: "";
@@ -105,5 +125,23 @@ html, body {
 		&:hover {
 			background-color: rgba(255, 255, 255, 0.1);
 		}
+	}
+}
+
+.article {
+	width: 25rem;
+	height: 10rem;
+	background-color: rgb(75, 79, 104);
+	padding: 1rem;
+
+	&__title {
+
+		&-sub {
+
+		}
+	}
+
+	&__content {
+		
 	}
 }
