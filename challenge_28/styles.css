@@ -14,7 +14,7 @@ html, body {
   border-radius: .25rem;
   position: relative; }
   .card__main {
-    padding: 2.5rem 2rem; }
+    padding: 2.5rem; }
   .card__header {
     display: flex;
     align-items: flex-start;
@@ -52,12 +52,19 @@ html, body {
   .button__more {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    width: 19rem;
+    align-self: center; }
 
 .content__main {
   display: flex;
+  justify-content: space-between;
   background-color: pink;
   margin-top: 1.75rem; }
+.content__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .video {
   background-image: url("img/screenshot.jpg");
@@ -86,8 +93,23 @@ html, body {
 
 .article {
   width: 25rem;
-  height: 10rem;
+  height: 9rem;
   background-color: #4b4f68;
-  padding: 1rem; }
+  padding: 1rem 2rem 0rem 1rem;
+  box-sizing: border-box; }
+  .article__title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700; }
+    .article__title-sub {
+      color: #aaaaaa;
+      font-size: .9rem;
+      font-weight: 500;
+      margin-top: .25rem; }
+  .article__content {
+    margin-top: .5rem;
+    color: white;
+    font-size: .8rem;
+    line-height: 1.5rem; }
 
 /*# sourceMappingURL=styles.css.map */
