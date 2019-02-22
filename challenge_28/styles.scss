@@ -94,6 +94,10 @@ html, body {
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
+	&__nav {
+
+	}
 }
 
 .video {
@@ -153,5 +157,12 @@ html, body {
 		color: white;
 		font-size: .8rem;
 		line-height: 1.5rem;
+	}
+}
+
+.dot {
+
+	&-container {
+		
 	}
 }
