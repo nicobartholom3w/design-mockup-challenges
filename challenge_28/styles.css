@@ -65,6 +65,11 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+.content__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5.75rem; }
 
 .video {
   background-image: url("img/screenshot.jpg");
@@ -111,5 +116,24 @@ html, body {
     color: white;
     font-size: .8rem;
     line-height: 1.5rem; }
+
+.dot {
+  height: .25rem;
+  width: .25rem;
+  border-radius: 50%;
+  background-color: #aaaaaa; }
+  .dot__active {
+    height: .5rem;
+    width: .5rem;
+    background-color: #ef8ba7; }
+  .dot-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 3rem; }
+
+.chevron {
+  color: #ef8ba7;
+  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
