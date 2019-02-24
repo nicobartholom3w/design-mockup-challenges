@@ -154,6 +154,13 @@ html, body {
 			font-weight: 500;
 			margin-top: .25rem;
 		}
+
+		&-other {
+			padding-top: .25rem;
+			font-size: 1.65rem;
+			font-weight: 700;
+			color: rgb(174, 176, 183);
+		}
 	}
 
 	&__content {
@@ -188,4 +195,42 @@ html, body {
 .chevron {
 	color: rgb(239, 139, 167);
 	cursor: pointer;
+}
+
+.line {
+	height: 1px;
+	width: 100%;
+	background-color: rgb(117, 121, 144);
+}
+
+.sort {
+	display: flex;
+	margin: 1.75rem 0;
+	color: rgb(169, 171, 186);
+	text-transform: uppercase;
+	font-size: .8rem;
+	font-weight: 500;
+	cursor: pointer;
+
+	&__option {
+		margin-right: 2rem;
+		
+		&-active {
+			color: white;
+			position: relative;
+
+			&:after {
+				content: "";
+				width: 1.85rem;
+				height: .2rem;
+				background-color: rgb(239, 139, 167);
+				position: absolute;
+				left: 0rem;
+				top: 1.35rem;
+			}
+		}
+		&:hover {
+			color: white;
+		}
+	}
 }

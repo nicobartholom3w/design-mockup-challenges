@@ -111,6 +111,11 @@ html, body {
       font-size: .9rem;
       font-weight: 500;
       margin-top: .25rem; }
+    .article__title-other {
+      padding-top: .25rem;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #aeb0b7; }
   .article__content {
     margin-top: .5rem;
     color: white;
@@ -135,5 +140,34 @@ html, body {
 .chevron {
   color: #ef8ba7;
   cursor: pointer; }
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #757990; }
+
+.sort {
+  display: flex;
+  margin: 1.75rem 0;
+  color: #a9abba;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 500;
+  cursor: pointer; }
+  .sort__option {
+    margin-right: 2rem; }
+    .sort__option-active {
+      color: white;
+      position: relative; }
+      .sort__option-active:after {
+        content: "";
+        width: 1.85rem;
+        height: .2rem;
+        background-color: #ef8ba7;
+        position: absolute;
+        left: 0rem;
+        top: 1.35rem; }
+    .sort__option:hover {
+      color: white; }
 
 /*# sourceMappingURL=styles.css.map */
