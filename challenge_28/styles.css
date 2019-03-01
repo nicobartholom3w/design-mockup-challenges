@@ -25,7 +25,10 @@ html, body {
     height: 4.5rem;
     width: 100%;
     bottom: 0;
-    border-radius: 0 0 .25rem .25rem; }
+    border-radius: 0 0 .25rem .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 .title__page {
   color: #ef8ba7;
@@ -185,5 +188,12 @@ html, body {
     background-color: #51536d; }
   .nav:hover {
     background-color: #474964; }
+
+.search-bar {
+  border-radius: 2rem;
+  background-color: #3d3f5c;
+  padding: .75rem 1.5rem;
+  margin-right: 2.5rem;
+  border: 0.05rem solid #484a66; }
 
 /*# sourceMappingURL=styles.css.map */
