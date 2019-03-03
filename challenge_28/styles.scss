@@ -75,6 +75,7 @@ html, body {
 		justify-content: center;
 		width: 19rem;
 		align-self: center;
+		border-color: rgb(117, 121, 144);
 	}
 }
 
@@ -84,7 +85,6 @@ html, body {
 	&__main {
 		display: flex;
 		justify-content: space-between;
-		background-color: pink;
 		margin-top: 1.75rem;
 	}
 
@@ -145,7 +145,20 @@ html, body {
 	background-color: rgb(75, 79, 104);
 	padding: 1rem 2rem 0rem 1rem;
 	box-sizing: border-box;
-	box-shadow: inset -1rem -3rem 1rem 1rem rgb(83, 87, 116);
+	position: relative;
+	// box-shadow: inset -1rem -3rem 1rem 1rem rgb(83, 87, 116);
+	// 
+	
+	&:after {
+		content:"";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: linear-gradient(transparent, 6.75rem, rgb(83, 87, 116));
+	}
+	// background: linear-gradient(transparent 2rem white);
 
 	&__title {
 		color: white;
@@ -172,6 +185,7 @@ html, body {
 		color: white;
 		font-size: .8rem;
 		line-height: 1.5rem;
+
 	}
 }
 
@@ -262,10 +276,18 @@ html, body {
 .search {
 
 	&-bar {
+		font-size: .75rem;
 		border-radius: 2rem;
 		background-color: rgb(61, 63, 92);
 		padding: .75rem 1.5rem;
 		margin-right: 2.5rem;
 		border: .05rem solid rgb(72, 74, 102);
+		width: 9rem;
+		caret-color: white;
+
+		&:focus {
+			outline: none;
+			border-color: rgb(120, 122, 142);
+		}
 	}
 }
