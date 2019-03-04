@@ -1,0 +1,51 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	min-width: 100%;
+	background-color: rgb(163, 197, 243);
+	font-family: Roboto, sans-serif;
+}
+
+.card {
+	margin: 3.2rem auto 0;
+	height: 38.85rem;
+	width: 50rem;
+	background-color: white;
+}
+
+.weather {
+	width: 52.63rem;
+	height: 10rem;
+	background-image: url("img/background.jpg");
+	background-size: 95%;
+	background-position: left center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 0;
+
+	&-filter {
+		content: "";
+		height: 10rem;
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.5);
+	}	
+
+	&__forcast {
+		height: 100%;
+		width: 100%;
+		z-index: 10;
+		color: white;
+
+		&-today {
+
+		}
+	}
+}
+
+.sunny {
+	// color: white;
+	// z-index: 1;
+}
