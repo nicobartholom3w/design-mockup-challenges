@@ -14,7 +14,7 @@ html, body {
 
 .weather {
   width: 52.63rem;
-  height: 10rem;
+  height: 10.55rem;
   background-image: url("img/background.jpg");
   background-size: 95%;
   background-position: left center;
@@ -23,8 +23,8 @@ html, body {
   z-index: 0; }
   .weather-filter {
     content: "";
-    height: 10rem;
-    width: 100%;
+    height: 10.55rem;
+    width: 50rem;
     position: absolute;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5); }
@@ -32,6 +32,13 @@ html, body {
     height: 100%;
     width: 100%;
     z-index: 10;
-    color: white; }
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.just-weather {
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=styles.css.map */
