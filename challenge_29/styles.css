@@ -41,4 +41,7 @@ html, body {
   display: flex;
   align-items: center; }
 
+.video__icon {
+  color: lightblue; }
+
 /*# sourceMappingURL=styles.css.map */
