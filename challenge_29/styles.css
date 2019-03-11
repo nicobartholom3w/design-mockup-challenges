@@ -87,8 +87,13 @@ html, body {
       font-weight: 500;
       padding-left: .75rem; }
 
-.video__icon {
+.media__icon {
   color: lightblue; }
+
+.video {
+  display: flex; }
+  .video__channel {
+    display: flex; }
 
 .music {
   background-color: pink; }
