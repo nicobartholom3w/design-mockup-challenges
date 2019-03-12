@@ -126,6 +126,8 @@ html, body {
 
 .media__icon {
 	color: lightblue;
+	padding: 7.25rem 3rem;
+	text-align: center;
 }
 
 
@@ -143,19 +145,55 @@ html, body {
 	}
 
 	&__info {
+		display: flex;
 		
-		&-text {
+		&-section {
+			display: flex;
+			flex-direction: column;
+		}
 
+		&-text {
+			
 		}
 
 		&-time {
-
+			font-size: .8rem;
+			color: rgb(170, 170, 170);
 		}
 	}
 
 	&__img {
+		height: 5rem;
+		width: 9rem;
+		background-size: 100%;
+		background-position: center;
+		display: flex;
+		// flex-direction: column
 
+		&-local {
+			background-image: url("img/video-local-programming.jpg");
+		}
+
+		&-famguy {
+			background-image: url("img/video-family-guy.jpg");
+		}
+
+		&-simpsons {
+			background-image: url("img/video-simpsons.jpg");
+		}
+
+		&-futurama {
+			background-image: url("img/video-futurama.jpg");
+		}
+
+		&-american {
+			background-image: url("img/video-american-dad.jpg");
+		}
 	}
+
+}
+
+.line-br {
 
 }
 

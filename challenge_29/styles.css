@@ -88,12 +88,38 @@ html, body {
       padding-left: .75rem; }
 
 .media__icon {
-  color: lightblue; }
+  color: lightblue;
+  padding: 7.25rem 3rem;
+  text-align: center; }
 
 .video {
   display: flex; }
   .video__channel {
     display: flex; }
+  .video__info {
+    display: flex; }
+    .video__info-section {
+      display: flex;
+      flex-direction: column; }
+    .video__info-time {
+      font-size: .8rem;
+      color: #aaaaaa; }
+  .video__img {
+    height: 5rem;
+    width: 9rem;
+    background-size: 100%;
+    background-position: center;
+    display: flex; }
+    .video__img-local {
+      background-image: url("img/video-local-programming.jpg"); }
+    .video__img-famguy {
+      background-image: url("img/video-family-guy.jpg"); }
+    .video__img-simpsons {
+      background-image: url("img/video-simpsons.jpg"); }
+    .video__img-futurama {
+      background-image: url("img/video-futurama.jpg"); }
+    .video__img-american {
+      background-image: url("img/video-american-dad.jpg"); }
 
 .music {
   background-color: pink; }
