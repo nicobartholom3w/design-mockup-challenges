@@ -10,7 +10,8 @@ html, body {
   margin: 3.2rem auto 0;
   height: 38.85rem;
   width: 50rem;
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
 
 .weather {
   width: 52.63rem;
@@ -95,7 +96,16 @@ html, body {
 .video {
   display: flex; }
   .video__channel {
-    display: flex; }
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem 0; }
+    .video__channel-name {
+      color: #b2b2b2;
+      font-size: .9rem; }
+    .video__channel-active {
+      color: black;
+      font-size: 1.25rem;
+      font-weight: 700; }
   .video__info {
     display: flex; }
     .video__info-section {
@@ -105,19 +115,27 @@ html, body {
       font-size: .8rem;
       color: #aaaaaa; }
   .video__img {
-    height: 5rem;
-    width: 9rem;
+    height: 5.5rem;
+    width: 9.5rem;
     background-size: 100%;
     background-position: center;
-    display: flex; }
+    display: flex;
+    box-shadow: 0 1rem 2rem -1rem;
+    margin: 1rem 0; }
     .video__img-local {
       background-image: url("img/video-local-programming.jpg"); }
     .video__img-famguy {
       background-image: url("img/video-family-guy.jpg"); }
     .video__img-simpsons {
-      background-image: url("img/video-simpsons.jpg"); }
+      background-image: url("img/video-simpsons.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      height: 6.5rem;
+      width: 10.5rem; }
     .video__img-futurama {
-      background-image: url("img/video-futurama.jpg"); }
+      background-image: url("img/video-futurama.jpg");
+      margin-left: 5.5rem; }
     .video__img-american {
       background-image: url("img/video-american-dad.jpg"); }
 

@@ -12,6 +12,7 @@ html, body {
 	height: 38.85rem;
 	width: 50rem;
 	background-color: white;
+	overflow: hidden;
 }
 
 .weather {
@@ -141,7 +142,18 @@ html, body {
 
 	&__channel {
 		display: flex;
+		align-items: flex-end;
+		padding: 1rem 0;
 
+		&-name {
+			color: rgb(178, 178, 178);
+			font-size: .9rem;
+		}
+		&-active {
+			color: black;
+			font-size: 1.25rem;
+			font-weight: 700;
+		}
 	}
 
 	&__info {
@@ -163,12 +175,13 @@ html, body {
 	}
 
 	&__img {
-		height: 5rem;
-		width: 9rem;
+		height: 5.5rem;
+		width: 9.5rem;
 		background-size: 100%;
 		background-position: center;
 		display: flex;
-		// flex-direction: column
+		box-shadow: 0 1rem 2rem -1rem;
+		margin: 1rem 0;
 
 		&-local {
 			background-image: url("img/video-local-programming.jpg");
@@ -176,14 +189,21 @@ html, body {
 
 		&-famguy {
 			background-image: url("img/video-family-guy.jpg");
+
 		}
 
 		&-simpsons {
 			background-image: url("img/video-simpsons.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			height: 6.5rem;
+			width: 10.5rem;
 		}
 
 		&-futurama {
 			background-image: url("img/video-futurama.jpg");
+			margin-left: 5.5rem;
 		}
 
 		&-american {
