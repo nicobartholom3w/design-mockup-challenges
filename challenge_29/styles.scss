@@ -134,6 +134,7 @@ html, body {
 
 .video {
 	display: flex;
+	
 
 
 	&__content {
@@ -187,7 +188,15 @@ html, body {
 		}
 	}
 
+	&-filter {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, .4);
+	}
+
 	&__img {
+		position: relative;
 		height: 5.5rem;
 		width: 9.5rem;
 		background-size: 100%;
