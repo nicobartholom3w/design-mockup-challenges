@@ -4,5 +4,15 @@ body, html {
 	min-height: 100%;
 	max-height: 100%;
 	font-family: Roboto, sans-serif;
-	
+}
+
+.header {
+	width: 100%;
+	display: flex;
+
+	&__options {
+		display: flex;
+		flex-direction: row;
+		background-color: purple;
+	}	
 }
