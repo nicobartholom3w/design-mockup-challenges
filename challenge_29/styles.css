@@ -169,6 +169,13 @@ html, body {
     border-radius: 1rem; }
 
 .music {
+  display: flex;
+  width: 100%;
   background-color: pink; }
+  .music__playing-img {
+    height: 3rem; }
+  .music__playing-artist {
+    font-size: .8rem;
+    color: #afafaf; }
 
 /*# sourceMappingURL=styles.css.map */
