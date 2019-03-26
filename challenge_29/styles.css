@@ -89,9 +89,12 @@ html, body {
       padding-left: .75rem; }
 
 .media__icon {
-  color: lightblue;
   padding: 7.25rem 3rem;
   text-align: center; }
+
+.material-icons {
+  font-size: 1.75rem;
+  color: #b3cdf1; }
 
 .video {
   display: flex; }
@@ -177,5 +180,20 @@ html, body {
   .music__playing-artist {
     font-size: .8rem;
     color: #afafaf; }
+  .music__playlist {
+    display: flex; }
+
+.song__img {
+  height: 5rem;
+  width: 5rem;
+  box-shadow: 0 .75rem 2rem -1.5rem; }
+  .song__img-a {
+    background-image: url("img/music-with-you.jpg"); }
+  .song__img-b {
+    background-image: url("img/music-butter.jpg"); }
+  .song__img-c {
+    background-image: url("img/music-back-together.jpg"); }
+  .song__img-d {
+    background-image: url("img/music-unwind.jpg"); }
 
 /*# sourceMappingURL=styles.css.map */
