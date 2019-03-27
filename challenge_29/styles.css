@@ -98,6 +98,8 @@ html, body {
 
 .video {
   display: flex; }
+  .video__right-side {
+    margin-left: 4.25rem; }
   .video__channel {
     width: 25rem;
     display: flex;
@@ -112,20 +114,22 @@ html, body {
       font-size: 1.25rem;
       font-weight: 700; }
   .video__info {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .video__info-section {
       display: flex;
       flex-direction: column;
-      width: 9.5rem;
-      background-color: blue; }
+      width: 9.5rem; }
       .video__info-section-active {
         margin-right: -5rem;
         margin-left: -1rem;
         z-index: 1;
-        background-color: purple; }
+        width: 10.5rem; }
     .video__info-time {
-      font-size: .8rem;
+      font-size: .75rem;
       color: #aaaaaa; }
+    .video__info-title {
+      font-size: .95rem; }
   .video-filter {
     position: absolute;
     height: 100%;
@@ -151,8 +155,7 @@ html, body {
       height: 6.5rem;
       width: 10.5rem; }
     .video__img-futurama {
-      background-image: url("img/video-futurama.jpg");
-      margin-left: 5.5rem; }
+      background-image: url("img/video-futurama.jpg"); }
     .video__img-american {
       background-image: url("img/video-american-dad.jpg"); }
 

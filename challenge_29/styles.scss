@@ -136,9 +136,9 @@ html, body {
 }
 .video {
 	display: flex;
-	
-
-
+	&__right-side {
+		margin-left: 4.25rem;
+	}
 	&__content {
 
 	}
@@ -164,19 +164,18 @@ html, body {
 
 	&__info {
 		display: flex;
+		align-items: center;
 		
 		&-section {
 			display: flex;
 			flex-direction: column;
 			width: 9.5rem;
-			background-color: blue;
-
 
 			&-active {
 				margin-right: -5rem;
 				margin-left: -1rem;
 				z-index: 1;
-				background-color: purple;
+				width: 10.5rem;
 			}
 		}
 
@@ -185,8 +184,12 @@ html, body {
 		}
 
 		&-time {
-			font-size: .8rem;
+			font-size: .75rem;
 			color: rgb(170, 170, 170);
+		}
+
+		&-title {
+			font-size: .95rem;
 		}
 	}
 
@@ -196,6 +199,8 @@ html, body {
 		width: 100%;
 		background-color: rgba(0, 0, 0, .4);
 	}
+	
+	
 
 	&__img {
 		position: relative;
@@ -227,11 +232,12 @@ html, body {
 
 		&-futurama {
 			background-image: url("img/video-futurama.jpg");
-			margin-left: 5.5rem;
 		}
 
 		&-american {
 			background-image: url("img/video-american-dad.jpg");
+
+
 		}
 	}
 
@@ -290,6 +296,7 @@ html, body {
 		height: 5rem;
 		width: 5rem;
 		box-shadow: 0 .75rem 2rem -1.5rem;
+		
 		&-a {
 			background-image: url("img/music-with-you.jpg");
 		}
