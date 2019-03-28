@@ -13,6 +13,8 @@ html, body {
 	width: 50rem;
 	background-color: white;
 	overflow: hidden;
+	margin-bottom: 3rem;
+	box-shadow: 0 .25rem 2rem -1rem;
 }
 
 .weather {
@@ -26,7 +28,6 @@ html, body {
 	z-index: 0;
 
 	&-filter {
-		content: "";
 		height: 10.55rem;
 		width: 50rem;
 		position: absolute;
@@ -134,8 +135,12 @@ html, body {
 	font-size: 1.75rem;
 	color: rgb(179, 205, 241);
 }
+
+
 .video {
 	display: flex;
+	height: 16rem;
+
 	&__right-side {
 		margin-left: 4.25rem;
 	}
@@ -265,13 +270,14 @@ html, body {
 .music {
 	display: flex;
 	width: 100%;
-	background-color: pink;
-	
+	align-items: center;
+	height: 13rem;
 
 	&__playing {
 		
 		&-img{
 			height: 3rem;
+			width: 3rem;
 		}
 
 		&-title {
@@ -290,12 +296,19 @@ html, body {
 }
 
 .song {
-
+	
+	&-filter {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, .4);
+	}
 
 	&__img {
 		height: 5rem;
 		width: 5rem;
 		box-shadow: 0 .75rem 2rem -1.5rem;
+		position: relative;
 		
 		&-a {
 			background-image: url("img/music-with-you.jpg");

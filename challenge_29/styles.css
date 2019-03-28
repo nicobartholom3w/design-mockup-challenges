@@ -11,7 +11,9 @@ html, body {
   height: 38.85rem;
   width: 50rem;
   background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 .25rem 2rem -1rem; }
 
 .weather {
   width: 52.63rem;
@@ -23,7 +25,6 @@ html, body {
   position: relative;
   z-index: 0; }
   .weather-filter {
-    content: "";
     height: 10.55rem;
     width: 50rem;
     position: absolute;
@@ -97,7 +98,8 @@ html, body {
   color: #b3cdf1; }
 
 .video {
-  display: flex; }
+  display: flex;
+  height: 16rem; }
   .video__right-side {
     margin-left: 4.25rem; }
   .video__channel {
@@ -177,19 +179,27 @@ html, body {
 .music {
   display: flex;
   width: 100%;
-  background-color: pink; }
+  align-items: center;
+  height: 13rem; }
   .music__playing-img {
-    height: 3rem; }
+    height: 3rem;
+    width: 3rem; }
   .music__playing-artist {
     font-size: .8rem;
     color: #afafaf; }
   .music__playlist {
     display: flex; }
 
+.song-filter {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); }
 .song__img {
   height: 5rem;
   width: 5rem;
-  box-shadow: 0 .75rem 2rem -1.5rem; }
+  box-shadow: 0 .75rem 2rem -1.5rem;
+  position: relative; }
   .song__img-a {
     background-image: url("img/music-with-you.jpg"); }
   .song__img-b {
