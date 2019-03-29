@@ -121,12 +121,12 @@ html, body {
     .video__info-section {
       display: flex;
       flex-direction: column;
-      width: 9.5rem; }
+      width: 9.75rem; }
       .video__info-section-active {
         margin-right: -5rem;
         margin-left: -1rem;
         z-index: 1;
-        width: 10.5rem; }
+        width: 11.75rem; }
     .video__info-time {
       font-size: .75rem;
       color: #aaaaaa; }
@@ -140,7 +140,7 @@ html, body {
   .video__img {
     position: relative;
     height: 5.5rem;
-    width: 9.5rem;
+    width: 9.75rem;
     background-size: 100%;
     background-position: center;
     display: flex;
@@ -154,8 +154,8 @@ html, body {
       background-image: url("img/video-simpsons.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      height: 6.5rem;
-      width: 10.5rem; }
+      height: 6.75rem;
+      width: 11.75rem; }
     .video__img-futurama {
       background-image: url("img/video-futurama.jpg"); }
     .video__img-american {
@@ -181,12 +181,19 @@ html, body {
   width: 100%;
   align-items: center;
   height: 13rem; }
-  .music__playing-img {
-    height: 3rem;
-    width: 3rem; }
-  .music__playing-artist {
-    font-size: .8rem;
-    color: #afafaf; }
+  .music__playing {
+    display: flex;
+    flex-direction: column; }
+    .music__playing-top {
+      display: flex; }
+    .music__playing-img {
+      height: 3rem;
+      width: 3rem; }
+    .music__playing-bar {
+      display: flex; }
+    .music__playing-artist {
+      font-size: .8rem;
+      color: #afafaf; }
   .music__playlist {
     display: flex; }
 

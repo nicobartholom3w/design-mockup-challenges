@@ -136,7 +136,6 @@ html, body {
 	color: rgb(179, 205, 241);
 }
 
-
 .video {
 	display: flex;
 	height: 16rem;
@@ -174,13 +173,13 @@ html, body {
 		&-section {
 			display: flex;
 			flex-direction: column;
-			width: 9.5rem;
+			width: 9.75rem;
 
 			&-active {
 				margin-right: -5rem;
 				margin-left: -1rem;
 				z-index: 1;
-				width: 10.5rem;
+				width: 11.75rem;
 			}
 		}
 
@@ -210,7 +209,7 @@ html, body {
 	&__img {
 		position: relative;
 		height: 5.5rem;
-		width: 9.5rem;
+		width: 9.75rem;
 		background-size: 100%;
 		background-position: center;
 		display: flex;
@@ -231,8 +230,8 @@ html, body {
 			background-repeat: no-repeat;
 			background-size: cover;
 
-			height: 6.5rem;
-			width: 10.5rem;
+			height: 6.75rem;
+			width: 11.75rem;
 		}
 
 		&-futurama {
@@ -274,12 +273,22 @@ html, body {
 	height: 13rem;
 
 	&__playing {
-		
+		display: flex;
+		flex-direction: column;
+
+		&-top {
+			display: flex;
+		}
+
 		&-img{
 			height: 3rem;
 			width: 3rem;
 		}
-
+		
+		&-bar {
+			display: flex;
+		}
+		
 		&-title {
 
 		}
