@@ -194,6 +194,23 @@ html, body {
     .music__playing-artist {
       font-size: .8rem;
       color: #afafaf; }
+    .music__playing-time {
+      font-size: .8rem;
+      color: #afafaf; }
+    .music__playing-progress {
+      width: 15rem;
+      height: 2px;
+      background-image: linear-gradient(to right, black, black 30%, #dedede 30%, #dedede 70%);
+      position: relative; }
+      .music__playing-progress:before {
+        content: "";
+        height: .5rem;
+        width: .5rem;
+        background-color: black;
+        border-radius: 50%;
+        left: 4.25rem;
+        top: -.2rem;
+        position: absolute; }
   .music__playlist {
     display: flex; }
 

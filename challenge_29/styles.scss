@@ -288,6 +288,10 @@ html, body {
 		&-bar {
 			display: flex;
 		}
+
+		&-progress {
+
+		}
 		
 		&-title {
 
@@ -296,6 +300,30 @@ html, body {
 		&-artist {
 			font-size: .8rem;
 			color: rgb(175, 175, 175);
+		}
+
+		&-time {
+			font-size: .8rem;
+			color: rgb(175, 175, 175)
+		}
+
+		&-progress {
+			width: 15rem;
+			height: 2px;
+			background-image: linear-gradient(to right, black, black 30%, rgb(222, 222, 222) 30%, rgb(222, 222, 222) 70%);
+			position: relative;
+
+			&:before {
+				content: "";
+				height: .5rem;
+				width: .5rem;
+				background-color: black;
+				border-radius: 50%;
+				left: 4.25rem;
+				top: -.2rem;
+				position: absolute;
+			}
+
 		}
 	}
 
