@@ -145,7 +145,7 @@ html, body {
     background-position: center;
     display: flex;
     box-shadow: 0 1rem 2rem -1rem;
-    margin: 1rem 0; }
+    margin: 1.2rem 0; }
     .video__img-local {
       background-image: url("img/video-local-programming.jpg"); }
     .video__img-famguy {
@@ -154,6 +154,7 @@ html, body {
       background-image: url("img/video-simpsons.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      margin: .5rem 0;
       height: 6.75rem;
       width: 11.75rem; }
     .video__img-futurama {
@@ -183,14 +184,17 @@ html, body {
   height: 13rem; }
   .music__playing {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: -1rem; }
     .music__playing-top {
-      display: flex; }
+      display: flex;
+      align-items: center; }
     .music__playing-img {
-      height: 3rem;
-      width: 3rem; }
+      height: 4rem;
+      width: 4rem; }
     .music__playing-bar {
-      display: flex; }
+      display: flex;
+      align-items: center; }
     .music__playing-artist {
       font-size: .8rem;
       color: #afafaf; }
@@ -212,7 +216,9 @@ html, body {
         top: -.2rem;
         position: absolute; }
   .music__playlist {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    margin-top: -2rem; }
 
 .song-filter {
   position: absolute;
@@ -223,9 +229,14 @@ html, body {
   height: 5rem;
   width: 5rem;
   box-shadow: 0 .75rem 2rem -1.5rem;
-  position: relative; }
+  background-size: cover;
+  position: relative;
+  margin: 1rem 0rem; }
   .song__img-a {
-    background-image: url("img/music-with-you.jpg"); }
+    background-image: url("img/music-with-you.jpg");
+    height: 7rem;
+    width: 7rem;
+    margin: 0rem; }
   .song__img-b {
     background-image: url("img/music-butter.jpg"); }
   .song__img-c {
