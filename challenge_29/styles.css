@@ -93,7 +93,7 @@ html, body {
   padding: 7.25rem 3rem;
   text-align: center; }
 
-.material-icons {
+.media-icon {
   font-size: 1.75rem;
   color: #b3cdf1; }
 
@@ -194,7 +194,11 @@ html, body {
       width: 4rem; }
     .music__playing-bar {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin-top: .75rem;
+      margin-right: 2rem; }
+    .music__playing-progress {
+      margin: 0 1rem; }
     .music__playing-artist {
       font-size: .8rem;
       color: #afafaf; }
@@ -226,17 +230,17 @@ html, body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4); }
 .song__img {
-  height: 5rem;
-  width: 5rem;
-  box-shadow: 0 .75rem 2rem -1.5rem;
+  height: 5.5rem;
+  width: 5.5rem;
+  box-shadow: 0 1.1rem 2rem -1.25rem;
   background-size: cover;
   position: relative;
   margin: 1rem 0rem; }
   .song__img-a {
     background-image: url("img/music-with-you.jpg");
-    height: 7rem;
-    width: 7rem;
-    margin: 0rem; }
+    height: 6.75rem;
+    width: 6.75rem;
+    margin: .5rem 0; }
   .song__img-b {
     background-image: url("img/music-butter.jpg"); }
   .song__img-c {

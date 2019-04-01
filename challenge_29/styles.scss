@@ -131,11 +131,15 @@ html, body {
 	text-align: center;
 }
 
-.material-icons {
+// .material-icons {
+// 	font-size: 1.75rem;
+// 	color: rgb(179, 205, 241);
+// }
+
+.media-icon {
 	font-size: 1.75rem;
 	color: rgb(179, 205, 241);
 }
-
 .video {
 	display: flex;
 	height: 16rem;
@@ -290,10 +294,12 @@ html, body {
 		&-bar {
 			display: flex;
 			align-items: center;
+			margin-top: .75rem;
+			margin-right: 2rem;
 		}
 
 		&-progress {
-
+			margin: 0 1rem;
 		}
 		
 		&-title {
@@ -347,18 +353,19 @@ html, body {
 	}
 
 	&__img {
-		height: 5rem;
-		width: 5rem;
-		box-shadow: 0 .75rem 2rem -1.5rem;
+		height: 5.5rem;
+		width: 5.5rem;
+		box-shadow: 0 1.1rem 2rem -1.25rem;
 		background-size: cover;
 		position: relative;
 		margin: 1rem 0rem;
 		
 		&-a {
 			background-image: url("img/music-with-you.jpg");
-			height: 7rem;
-			width: 7rem;
-			margin: 0rem;
+			height: 6.75rem;
+			width: 6.75rem;
+			margin: .5rem 0;
+
 		}
 
 		&-b {
