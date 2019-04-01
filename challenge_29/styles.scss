@@ -131,11 +131,6 @@ html, body {
 	text-align: center;
 }
 
-// .material-icons {
-// 	font-size: 1.75rem;
-// 	color: rgb(179, 205, 241);
-// }
-
 .media-icon {
 	font-size: 1.75rem;
 	color: rgb(179, 205, 241);
@@ -158,11 +153,19 @@ html, body {
 		justify-content: space-between;
 		padding: 1rem 0;
 
+
 		&-name {
 			color: rgb(178, 178, 178);
 			font-size: .9rem;
+			cursor: pointer;
+			transition: color .3s;
+
+			&:hover {
+				color: black;
+			}
 
 		}
+
 		&-active {
 			color: black;
 			font-size: 1.25rem;
@@ -178,6 +181,7 @@ html, body {
 			display: flex;
 			flex-direction: column;
 			width: 9.75rem;
+			cursor: pointer;
 
 			&-active {
 				margin-right: -5rem;
@@ -219,6 +223,20 @@ html, body {
 		display: flex;
 		box-shadow: 0 1rem 2rem -1rem;
 		margin: 1.2rem 0;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:before {
+			content: "";
+			height: 47%;
+			width: 28%;
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, .75);
+			position: absolute;
+			visibility: hidden;
+		}
 
 		&-local {
 			background-image: url("img/video-local-programming.jpg");
@@ -251,6 +269,19 @@ html, body {
 
 }
 
+.play-icon {
+	color: white;
+	z-index: 10;
+	opacity: 0;
+	
+	&-active {
+		font-size: 2rem;
+	}
+
+	&-small {
+		font-size: 1rem;
+	}
+}
 
 .line-br {
 	width: 100%;
@@ -289,6 +320,8 @@ html, body {
 		&-img{
 			height: 4rem;
 			width: 4rem;
+
+
 		}
 		
 		&-bar {
@@ -344,6 +377,7 @@ html, body {
 }
 
 .song {
+	cursor: pointer;
 	
 	&-filter {
 		position: absolute;
@@ -359,6 +393,21 @@ html, body {
 		background-size: cover;
 		position: relative;
 		margin: 1rem 0rem;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+
+		&:before {
+			content: "";
+			height: 45%;
+			width: 45%;
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, .75);
+			position: absolute;
+			visibility: hidden;
+		}
 		
 		&-a {
 			background-image: url("img/music-with-you.jpg");
