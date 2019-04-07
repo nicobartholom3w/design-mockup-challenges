@@ -228,6 +228,14 @@ html, body {
 		justify-content: center;
 		align-items: center;
 
+		&:hover:before {
+			visibility: visible;
+		}
+		
+		&:hover > .play-icon {
+			opacity: 1;
+		}
+
 		&:before {
 			content: "";
 			height: 47%;
@@ -279,7 +287,7 @@ html, body {
 	}
 
 	&-small {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 }
 
@@ -350,7 +358,7 @@ html, body {
 		}
 
 		&-progress {
-			width: 15rem;
+			width: 13.75rem;
 			height: 2px;
 			background-image: linear-gradient(to right, black, black 30%, rgb(222, 222, 222) 30%, rgb(222, 222, 222) 70%);
 			position: relative;
@@ -397,7 +405,14 @@ html, body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
+		
+		&:hover:before {
+			visibility: visible;
+		}
+		
+		&:hover > .play-icon {
+			opacity: 1;
+		}
 
 		&:before {
 			content: "";
